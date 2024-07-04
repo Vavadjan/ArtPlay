@@ -20,93 +20,65 @@ body {
 }
 
 header {
+  position: relative;
+  padding: 36px 70px 0 70px;
+  width: 100%;
+  height: 177px;
   background-color: black;
   color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
 }
 
 .logoWrapper {
   display: flex;
   flex-direction: row;
+  width: 246px;
 }
-
-.logoWrapper img {
-  height: 68, 43px;
+.logoWrapper_logoImage {
+  padding: 45px 0 0 0;
+  width: 122.47px;
+  height: 68.43px;
 }
-
 .logoWrapper_logoTitleWrapper {
   display: flex;
   flex-direction: column;
+  padding: 22px 0 0 0;
 }
-
-.logoWrapper_logoTitleWrapper_logoFirstWord {
-  font-family: "chiller";
-  font-size: 149, 32px;
-}
-
-.logoWrapper_logoTitleWrapper_logoSecondWord {
-  font-family: "cormorantSC";
-  font-size: 149, 32px;
-}
-
-.logoWrapper_logoTitleWrapper_logoThirdWord {
-  font-family: "cormorantSC";
-  font-size: 149, 32px;
-}
-
-.language-switch {
-  font-size: 0.9em;
-  margin-right: 10px;
-}
-
-.titleWrapper {
+.logoWrapper__logoFirstWord {
+  margin: -76px 0 0 -16px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-family: "chiller";
+  font-size: 156px;
 }
-
-h1 {
-  flex-grow: 1;
-  text-align: center;
+.logoWrapper__logoSecondWord {
+  margin: -48px 0 0 -12px;
+  display: flex;
+  font-family: "cormorantSC";
+  font-size: 15.35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.logoWrapper__logoThirdWord {
+  display: flex;
+  margin: -3px 0 0 -12px;
+  font-family: "cormorantSC";
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .mainMenu {
   display: flex;
 }
-
 .mainMenu_ul {
-  list-style: none;
   display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
+  flex-direction: row;
 }
-
-.mainMenu_li {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.mainMenu_link {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.social-media, .follow-us, .user-profile {
+.socialWrapper_socialDownSubwrapper {
   display: flex;
-  align-items: center;
-  gap: 10px;
 }
-
-.follow-us span {
-  margin-right: 10px;
-}
-
-.social-media img, .follow-us img, .user-profile img {
-  height: 24px;
+.socialWrapper_followUsAndLogin {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
