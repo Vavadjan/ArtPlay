@@ -1,0 +1,1 @@
+Copyright Esselte Corporation 1997.  Portions Copyright Microsoft 1997.  All rights reserved.

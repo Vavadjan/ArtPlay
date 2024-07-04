@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Chiller';
+    src: url('/font/Chiller/chiller_regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Chiller', Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.language-switch {
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.social-media, .follow-us, .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-us span {
+    margin-right: 10px;
+}
+
+.social-media img, .follow-us img, .user-profile img {
+    height: 24px;
+}
