@@ -1,10 +1,22 @@
 @font-face {
-  font-family: "Chiller";
+  font-family: "firasans";
+  src: url("../font/FiraSans/FiraSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "centurygothic";
+  src: url("../font/CenturyGothic/centurygothic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "cormorantSC";
+  src: url("../font/CormorantSC/CormorantSC-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "chiller";
   src: url("../font/Chiller/chiller_regular.ttf") format("truetype");
 }
 body {
   margin: 0;
-  font-family: "Chiller", Arial, sans-serif;
+  font-family: "firasans", "centurygothic", "cormorantSC", "chiller";
 }
 
 header {
@@ -18,10 +30,41 @@ header {
 
 .logoWrapper {
   display: flex;
+  flex-direction: row;
 }
 
-.logo img {
+.logoWrapper img {
+  height: 68, 43px;
+}
+
+.logoWrapper_logoTitleWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrapper_logoTitleWrapper_logoFirstWord {
+  font-family: "chiller";
+  font-size: 149, 32px;
+}
+
+.logoWrapper_logoTitleWrapper_logoSecondWord {
+  font-family: "cormorantSC";
+  font-size: 149, 32px;
+}
+
+.logoWrapper_logoTitleWrapper_logoThirdWord {
+  font-family: "cormorantSC";
+  font-size: 149, 32px;
+}
+
+.logo {
   height: 50px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
