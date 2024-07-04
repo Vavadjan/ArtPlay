@@ -16,6 +16,10 @@ header {
   padding: 10px 20px;
 }
 
+.logoWrapper {
+  display: flex;
+}
+
 .logo img {
   height: 50px;
 }
