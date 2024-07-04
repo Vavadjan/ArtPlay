@@ -61,29 +61,31 @@ header {
     font-size: 149,32px;
 }
 
-.logo {
-    height: 50px;
-}
 
-.titleWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-}
-
-.title {
-    flex-grow: 1;
-    text-align: center;
-}
 
 .language-switch {
     font-size: 0.9em;
     margin-right: 10px;
 }
 
-nav ul {
+
+
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.mainMenu {
+    display: flex;
+}
+
+.mainMenu_ul {
     list-style: none;
     display: flex;
     gap: 15px;
@@ -91,7 +93,13 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+.mainMenu_li {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.mainMenu_link {
     color: white;
     text-decoration: none;
     font-size: 1em;

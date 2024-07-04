@@ -7,44 +7,60 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <header>
         <div class="logoWrapper">
             <img src="./pic/logo.svg" alt="Art & culture Ukraine">
             <div class="logoWrapper_logoTitleWrapper">
-                <p class="logoWrapper_logoTitleWrapper_logoFirstWord">art</p>
-                <p class="logoWrapper_logoTitleWrapper_logoSecondWord">&<br>culture</p>
-                <p class="logoWrapper_logoTitleWrapper_logoThirdWord">Ukraine</p>
+                <p class="logoWrapper__logoFirstWord">art</p>
+                <p class="logoWrapper__logoSecondWord">&<br>culture</p>
+                <p class="logoWrapper__logoThirdWord">Ukraine</p>
             </div>            
         </div>
+
         <div class="language-switch">Ukrainian ▼</div>
+
         <div class="titleWrapper">            
             <h1>ART & CULTURE ONLINE</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Новини</a></li>
-                    <li><a href="#">Митці</a></li>
-                    <li><a href="#">Виставки</a></li>
-                    <li><a href="#">Музеї</a></li>
-                    <li><a href="#">Арт Терміни</a></li>
+            <nav class="mainMenu">
+                <ul class="mainMenu_ul">
+                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Головна</a></li>
+                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Новини</a></li>
+                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Митці</a></li>
+                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Виставки</a></li>
+                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Музеї</a></li>
+                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Арт Терміни</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="social-media">
-            <a href="#"><img src="like-icon.png" alt="Like"></a>
-            <a href="#"><img src="share-icon.png" alt="Share"></a>
-            <a href="#"><img src="menu-icon.png" alt="Menu"></a>
-        </div>
-        <div class="follow-us">
-            <span>FOLLOW US</span>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="email-icon.png" alt="Email"></a>
-        </div>
-        <div class="user-profile">
-            <a href="#"><img src="user-icon.png" alt="User Profile"></a>
+        <div class="socialWrapper">
+            <div class="socialWrapper_socialUpperSubWrapper">
+                <div class="socialWrapper__socialMediaediaAndBurgerSubWrapper">
+                    <!-- <a href="#"><img src="like-icon.png" alt="Like"></a> -->
+                    <button id="headerLikeButton" class="likeButton"></button>
+                    <!-- <a href="#"><img src="share-icon.png" alt="Share"></a> -->
+                    <button id="headerShareButton" class="shareButton"></button>
+                    <!-- <a href="#"><img src="menu-icon.png" alt="Menu"></a> -->
+                    <button id="headerMenuButton" class="burgerMenuButton"></button>
+                </div>
+            </div>
+            <div class="socialWrapper_socialDownSubwrapper">
+                <div class="socialWrapper_followUsAndLogin">
+                    <p class="socialWrapper_followUs_title">follow<br>us</p>
+                    <!-- <a href="#"><img src="facebook-icon.png" alt="Facebook"></a> -->
+                    <button id="headerFacebookButton" class="headerFacebookButton"></button>
+                    <!-- <a href="#"><img src="instagram-icon.png" alt="Instagram"></a> -->
+                    <button id="headerInstagramButton" class="headerInstagramButton"></button>
+                    <!-- <a href="#"><img src="twitter-icon.png" alt="Twitter"></a> -->
+                    <button id="headerTwitterButton" class="headerTwitterButton"></button>
+                    <!-- <a href="#"><img src="email-icon.png" alt="Email"></a> -->
+                    <button id="headerMailButton" class="headerMailButton"></button>
+                
+                    <!-- <a href="#"><img src="user-icon.png" alt="User Profile"></a> -->
+                    <!-- <button id="headerMenuButton" class="burgerMenuButton"></button> -->
+                </div>
+            </div>
         </div>
     </header>
 </body>

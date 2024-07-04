@@ -57,8 +57,9 @@ header {
   font-size: 149, 32px;
 }
 
-.logo {
-  height: 50px;
+.language-switch {
+  font-size: 0.9em;
+  margin-right: 10px;
 }
 
 .titleWrapper {
@@ -67,17 +68,16 @@ header {
   justify-content: space-between;
 }
 
-.title {
+h1 {
   flex-grow: 1;
   text-align: center;
 }
 
-.language-switch {
-  font-size: 0.9em;
-  margin-right: 10px;
+.mainMenu {
+  display: flex;
 }
 
-nav ul {
+.mainMenu_ul {
   list-style: none;
   display: flex;
   gap: 15px;
@@ -85,7 +85,13 @@ nav ul {
   padding: 0;
 }
 
-nav a {
+.mainMenu_li {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.mainMenu_link {
   color: white;
   text-decoration: none;
   font-size: 1em;
