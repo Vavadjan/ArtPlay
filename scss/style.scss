@@ -197,6 +197,19 @@ header {
             border-radius: calc((51/1440*100vw)/2);
             border-style: hidden;
 		}
+
+        &_burgerMenuButton:hover {
+            color: red;
+            box-shadow: 0 0 10px 5px red;  /* Падающая тень */
+            transition: 0.4s;	
+            // cursor: default; /* Стандартный курсор при наведении */
+            cursor: pointer; /* Изменение вида курсора на палец при наведении */
+        }
+    
+        &_burgerMenuButton:not(:hover) {
+            color: #ff0000;
+            transition: 1s;
+        }
 }
 .socialDownSubwrapper {
     display: flex;
