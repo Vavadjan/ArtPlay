@@ -48,13 +48,28 @@ header {
   flex-direction: column;
   padding: 1.5277777778vw 0 0 0;
 }
-.logoWrapper__logoFirstWord {
+.logoWrapper_logoFirstWord {
+  position: relative;
   margin: -5.2777777778vw 0 0 -1.1111111111vw;
   display: flex;
   font-family: "chiller";
   font-size: calc(0px + 10.8333333333vw);
 }
-.logoWrapper__logoSecondWord {
+.logoWrapper_logoFirstWord::before {
+  content: "";
+  position: absolute;
+  top: 6.1805555556vw;
+  left: 8.6111111111vw;
+  width: 0.4861111111vw;
+  height: 0.3472222222vw;
+  flex-shrink: 0;
+  background: url(../pic/logoPoint.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+}
+.logoWrapper_logoSecondWord {
   margin: -3.3333333333vw 0 0 -0.8333333333vw;
   display: flex;
   font-family: "cormorantSC";
@@ -62,7 +77,7 @@ header {
   text-transform: uppercase;
   letter-spacing: calc(0px + 0.1388888889vw);
 }
-.logoWrapper__logoThirdWord {
+.logoWrapper_logoThirdWord {
   display: flex;
   margin: -0.2083333333vw 0 0 -0.8333333333vw;
   font-family: "cormorantSC";

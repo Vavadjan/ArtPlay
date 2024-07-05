@@ -20,13 +20,11 @@
 
 body {
     margin: 0;
-    // padding: 0 70px;
     font-family: 'firasans', 'centurygothic', 'cormorantSC', 'chiller';
 }
 
 header {
     position: fixed;
-    // padding: 0 calc(70/1440*100vw) 0 calc(70/1440*100vw);    
 	top: 0;
     width: 100vw;
     height: calc(177/1440*100vw);
@@ -35,7 +33,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // padding: 10px 20px;
 }
 
 .logoWrapper {
@@ -43,7 +40,6 @@ header {
     display: flex;
     flex-direction: row;
     width: calc(246/1440*100vw);
-    // gap: 5px;
 
     &_logoImage {
         padding: calc(45/1440*100vw) 0 0 0;
@@ -57,24 +53,39 @@ header {
         padding: calc(22/1440*100vw) 0 0 0;
     }
 
-    &__logoFirstWord {  
+    &_logoFirstWord { 
+        position: relative; 
         margin: calc(-76/1440*100vw) 0 0 calc(-16/1440*100vw);
         display: flex;      
         font-family: 'chiller';
         font-size: calc(0px + 156 * (100vw / 1440));        
     }
 
-    &__logoSecondWord {
+    &_logoFirstWord::before {
+        content: "";
+        position: absolute;
+        top: calc(89/1440*100vw);
+        left: calc(124/1440*100vw);
+        width: calc(7/1440*100vw);
+        height: calc(5/1440*100vw);
+        flex-shrink: 0;
+        background: url(../pic/logoPoint.svg);	
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+    }
+
+    &_logoSecondWord {
         margin: calc(-48/1440*100vw) 0 0 calc(-12/1440*100vw);
         display: flex;
         font-family: 'cormorantSC';
         font-size: calc(0px + 15.35 * (100vw / 1440));
         text-transform: uppercase;
         letter-spacing: calc(0px + 2 * (100vw / 1440));
-        // font-weight: bold;
     }
 
-    &__logoThirdWord {    
+    &_logoThirdWord {    
         display: flex;   
         margin: calc(-3/1440*100vw) 0 0 calc(-12/1440*100vw); 
         font-family: 'cormorantSC';
@@ -120,8 +131,8 @@ header {
         font-size: calc(0px + 18 * (100vw / 1440));
     }
 
-    &_link {
-    }
+    // &_link {
+    // }
 
     &_link:hover {
 		color: #D83934;
@@ -139,14 +150,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
 .socialWrapper {    
     margin: 0 calc(70/1440*100vw) 0 0;
     display: flex;
@@ -154,7 +157,6 @@ header {
     width: calc(356/1440*100vw);
     flex-direction: column;
     gap: calc(33/1440*100vw);
-    // justify-content: space-between;
     align-items: end;
 }
 .socialUpperSubWrapper {
