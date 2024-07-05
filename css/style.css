@@ -186,6 +186,16 @@ header {
   border: none;
   cursor: pointer;
 }
+.socialDownSubwrapper_headerFacebookButton:hover {
+  color: red;
+  box-shadow: 0 0 10px 5px red; /* Падающая тень */
+  transition: 0.4s;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.socialDownSubwrapper_headerFacebookButton:not(:hover) {
+  color: #ff0000;
+  transition: 1s;
+}
 .socialDownSubwrapper_headerInstagramButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
@@ -197,6 +207,16 @@ header {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
+}
+.socialDownSubwrapper_headerInstagramButton:hover {
+  color: red;
+  box-shadow: 0 0 10px 5px red; /* Падающая тень */
+  transition: 0.4s;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.socialDownSubwrapper_headerInstagramButton:not(:hover) {
+  color: #ff0000;
+  transition: 1s;
 }
 .socialDownSubwrapper_headerTwitterButton {
   width: 2.2222222222vw;
@@ -210,6 +230,16 @@ header {
   border: none;
   cursor: pointer;
 }
+.socialDownSubwrapper_headerTwitterButton:hover {
+  color: red;
+  box-shadow: 0 0 10px 5px red; /* Падающая тень */
+  transition: 0.4s;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.socialDownSubwrapper_headerTwitterButton:not(:hover) {
+  color: #ff0000;
+  transition: 1s;
+}
 .socialDownSubwrapper_headerMailButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
@@ -221,6 +251,16 @@ header {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
+}
+.socialDownSubwrapper_headerMailButton:hover {
+  color: red;
+  box-shadow: 0 0 10px 5px red; /* Падающая тень */
+  transition: 0.4s;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.socialDownSubwrapper_headerMailButton:not(:hover) {
+  color: #ff0000;
+  transition: 1s;
 }
 .socialDownSubwrapper_separator {
   margin: 0 1.3888888889vw;
@@ -239,6 +279,16 @@ header {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
+}
+.socialDownSubwrapper_headerLoginButton:hover {
+  color: red;
+  box-shadow: 0 0 10px 5px red; /* Падающая тень */
+  transition: 0.4s;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.socialDownSubwrapper_headerLoginButton:not(:hover) {
+  color: #ff0000;
+  transition: 1s;
 }
 
 .bodyLorem {

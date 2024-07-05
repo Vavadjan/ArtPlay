@@ -223,6 +223,19 @@ header {
             cursor: pointer;
 		}
 
+        &_headerFacebookButton:hover {
+            color: red;
+            box-shadow: 0 0 10px 5px red;  /* Падающая тень */
+            transition: 0.4s;	
+            // cursor: default; /* Стандартный курсор при наведении */
+            cursor: pointer; /* Изменение вида курсора на палец при наведении */
+        }
+    
+        &_headerFacebookButton:not(:hover) {
+            color: #ff0000;
+            transition: 1s;
+        }
+
 		&_headerInstagramButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
@@ -235,6 +248,19 @@ header {
             border: none;
             cursor: pointer;
 		}
+
+        &_headerInstagramButton:hover {
+            color: red;
+            box-shadow: 0 0 10px 5px red;  /* Падающая тень */
+            transition: 0.4s;	
+            // cursor: default; /* Стандартный курсор при наведении */
+            cursor: pointer; /* Изменение вида курсора на палец при наведении */
+        }
+    
+        &_headerInstagramButton:not(:hover) {
+            color: #ff0000;
+            transition: 1s;
+        }
 
 		&_headerTwitterButton {
             width: calc(32/1440*100vw);
@@ -249,6 +275,19 @@ header {
             cursor: pointer;
 		}
 
+        &_headerTwitterButton:hover {
+            color: red;
+            box-shadow: 0 0 10px 5px red;  /* Падающая тень */
+            transition: 0.4s;	
+            // cursor: default; /* Стандартный курсор при наведении */
+            cursor: pointer; /* Изменение вида курсора на палец при наведении */
+        }
+    
+        &_headerTwitterButton:not(:hover) {
+            color: #ff0000;
+            transition: 1s;
+        }
+
 		&_headerMailButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
@@ -261,6 +300,19 @@ header {
             border: none;
             cursor: pointer;
 		}
+
+        &_headerMailButton:hover {
+            color: red;
+            box-shadow: 0 0 10px 5px red;  /* Падающая тень */
+            transition: 0.4s;	
+            // cursor: default; /* Стандартный курсор при наведении */
+            cursor: pointer; /* Изменение вида курсора на палец при наведении */
+        }
+    
+        &_headerMailButton:not(:hover) {
+            color: #ff0000;
+            transition: 1s;
+        }
 
         &_separator {    
             margin: 0 calc(20/1440*100vw);  
@@ -281,6 +333,19 @@ header {
             border: none;
             cursor: pointer;
 		}
+
+        &_headerLoginButton:hover {
+            color: red;
+            box-shadow: 0 0 10px 5px red;  /* Падающая тень */
+            transition: 0.4s;	
+            // cursor: default; /* Стандартный курсор при наведении */
+            cursor: pointer; /* Изменение вида курсора на палец при наведении */
+        }
+    
+        &_headerLoginButton:not(:hover) {
+            color: #ff0000;
+            transition: 1s;
+        }
 }
 
 
