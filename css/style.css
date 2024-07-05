@@ -22,7 +22,6 @@ body {
 
 header {
   position: fixed;
-  padding: 0 4.8611111111vw 0 4.8611111111vw;
   top: 0;
   width: 100vw;
   height: 12.2916666667vw;
@@ -34,6 +33,7 @@ header {
 }
 
 .logoWrapper {
+  margin: 0 0 0 4.8611111111vw;
   display: flex;
   flex-direction: row;
   width: 17.0833333333vw;
@@ -72,6 +72,7 @@ header {
 }
 
 .language-switch {
+  width: 3.1944444444vw;
   padding: 0 0 0 2.7777777778vw;
   font-size: calc(0px + 0.8333333333vw);
 }
@@ -115,10 +116,13 @@ header {
 }
 
 .socialWrapper {
+  margin: 0 4.8611111111vw 0 0;
   display: flex;
+  width: 24.7222222222vw;
   flex-direction: column;
   gap: 2.2916666667vw;
-  justify-content: fix-end;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .socialUpperSubWrapper {
@@ -127,19 +131,63 @@ header {
   flex-direction: row;
 }
 .socialUpperSubWrapper_likeButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
   margin: 3.3333333333vw 0 0 0;
+  border-radius: 50%;
+  border-style: hidden;
 }
 .socialUpperSubWrapper_shareButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
   margin: 3.3333333333vw 1.9444444444vw 0 0;
+  border-radius: 50%;
+  border-style: hidden;
 }
 .socialUpperSubWrapper_burgerMenuButton {
+  width: 10.4861111111vw;
+  height: 3.5416666667vw;
   margin: 2.7083333333vw 0 0 0;
+  border-radius: 1.7708333333vw;
+  border-style: hidden;
 }
 
 .socialDownSubwrapper {
   display: flex;
   flex-direction: row;
+  gap: 0.6944444444vw;
 }
+.socialDownSubwrapper_headerFacebookButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+  border-radius: 50%;
+  border-style: hidden;
+}
+.socialDownSubwrapper_headerInstagramButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+  border-radius: 50%;
+  border-style: hidden;
+}
+.socialDownSubwrapper_headerTwitterButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+  border-radius: 50%;
+  border-style: hidden;
+}
+.socialDownSubwrapper_headerMailButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+  border-radius: 50%;
+  border-style: hidden;
+}
+.socialDownSubwrapper_headerLoginButton {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+  border-radius: 50%;
+  border-style: hidden;
+}
+
 .bodyLorem {
   margin: 12.2916666667vw 0 0 0;
   color: black;

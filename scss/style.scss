@@ -26,7 +26,7 @@ body {
 
 header {
     position: fixed;
-    padding: 0 calc(70/1440*100vw) 0 calc(70/1440*100vw);    
+    // padding: 0 calc(70/1440*100vw) 0 calc(70/1440*100vw);    
 	top: 0;
     width: 100vw;
     height: calc(177/1440*100vw);
@@ -39,6 +39,7 @@ header {
 }
 
 .logoWrapper {
+    margin: 0 0 0 calc(70/1440*100vw);
     display: flex;
     flex-direction: row;
     width: calc(246/1440*100vw);
@@ -84,6 +85,7 @@ header {
 }
 
 .language-switch {
+    width: calc(46/1440*100vw);
     padding: 0 0 0 calc(40/1440*100vw);
     font-size: calc(0px + 12 * (100vw / 1440));
 }
@@ -145,11 +147,14 @@ header {
 
 
 
-.socialWrapper {
+.socialWrapper {    
+    margin: 0 calc(70/1440*100vw) 0 0;
     display: flex;
+    width: calc(356/1440*100vw);
     flex-direction: column;
     gap: calc(33/1440*100vw);
-    justify-content: fix-end;
+    justify-content: space-between;
+    align-items: end;
 }
 .socialUpperSubWrapper {
     margin: 0;
@@ -157,37 +162,70 @@ header {
     flex-direction: row;
 
 		&_likeButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
             margin: calc(48/1440*100vw) 0 0 0;
+            border-radius: 50%;
+            border-style: hidden;
 		}
 
 		&_shareButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
             margin: calc(48/1440*100vw) calc(28/1440*100vw) 0 0;
+            border-radius: 50%;
+            border-style: hidden;
 		}
 
 		&_burgerMenuButton {
+            width: calc(151/1440*100vw);
+            height: calc(51/1440*100vw);
             margin: calc(39/1440*100vw) 0 0 0;
+            border-radius: calc((51/1440*100vw)/2);
+            border-style: hidden;
 		}
 }
 .socialDownSubwrapper {
     display: flex;
     flex-direction: row;
+    gap: calc(10/1440*100vw);
 
 		&_followUs {
 		}
 
 		&_headerFacebookButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
+            border-radius: 50%;
+            border-style: hidden;
 		}
 
 		&_headerInstagramButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
+            border-radius: 50%;
+            border-style: hidden;
 		}
 
 		&_headerTwitterButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
+            border-radius: 50%;
+            border-style: hidden;
 		}
 
 		&_headerMailButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
+            border-radius: 50%;
+            border-style: hidden;
 		}
 
 		&_headerLoginButton {
+            width: calc(32/1440*100vw);
+            height: calc(32/1440*100vw);
+            border-radius: 50%;
+            border-style: hidden;
 		}
 }
 
