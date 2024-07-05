@@ -217,6 +217,12 @@ header {
   border: none;
   cursor: pointer;
 }
+.socialDownSubwrapper_separator {
+  margin: 0 1.3888888889vw;
+  width: 1px;
+  height: 2.2222222222vw;
+  background-color: #fff;
+}
 .socialDownSubwrapper_headerLoginButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;

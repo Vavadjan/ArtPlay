@@ -257,6 +257,13 @@ header {
             cursor: pointer;
 		}
 
+        &_separator {    
+            margin: 0 calc(20/1440*100vw);  
+            width: 1px;
+            height: calc(32/1440*100vw);
+            background-color: #fff;
+        }
+
 		&_headerLoginButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
