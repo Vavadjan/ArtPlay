@@ -118,10 +118,10 @@ header {
 .socialWrapper {
   margin: 0 4.8611111111vw 0 0;
   display: flex;
+  height: 100%;
   width: 24.7222222222vw;
   flex-direction: column;
   gap: 2.2916666667vw;
-  justify-content: space-between;
   align-items: end;
 }
 
@@ -168,6 +168,11 @@ header {
   display: flex;
   flex-direction: row;
   gap: 0.6944444444vw;
+}
+.socialDownSubwrapper_followUsTitle {
+  margin: 0.4861111111vw 0.9722222222vw 0 0;
+  font-size: calc(0px + 1.0902777778vw);
+  text-transform: uppercase;
 }
 .socialDownSubwrapper_headerFacebookButton {
   width: 2.2222222222vw;

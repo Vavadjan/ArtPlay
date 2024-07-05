@@ -150,10 +150,11 @@ header {
 .socialWrapper {    
     margin: 0 calc(70/1440*100vw) 0 0;
     display: flex;
+    height: 100%;
     width: calc(356/1440*100vw);
     flex-direction: column;
     gap: calc(33/1440*100vw);
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: end;
 }
 .socialUpperSubWrapper {
@@ -192,7 +193,7 @@ header {
 		&_burgerMenuButton {
             width: calc(151/1440*100vw);
             height: calc(51/1440*100vw);
-            margin: calc(39/1440*100vw) 0 0 0;
+            margin: calc(39/1440*100vw)0 0 0;
             border-radius: calc((51/1440*100vw)/2);
             border-style: hidden;
 		}
@@ -202,7 +203,11 @@ header {
     flex-direction: row;
     gap: calc(10/1440*100vw);
 
-		&_followUs {
+		&_followUsTitle {
+            margin: calc(7/1440*100vw) calc(14/1440*100vw) 0 0 ;
+            font-size: calc(0px + 15.7 * (100vw / 1440));
+            // justify-content: center;        
+            text-transform: uppercase;        
 		}
 
 		&_headerFacebookButton {
