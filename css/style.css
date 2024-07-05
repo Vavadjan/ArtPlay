@@ -20,52 +20,52 @@ body {
 }
 
 header {
-  position: relative;
-  padding: 36px 70px 0 70px;
+  position: fixed;
+  padding: 2.5vw 4.8611111111vw 0 4.8611111111vw;
   width: 100%;
-  height: 177px;
+  height: 12.2916666667vw;
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .logoWrapper {
   display: flex;
   flex-direction: row;
-  width: 246px;
+  width: 17.0833333333vw;
 }
 .logoWrapper_logoImage {
-  padding: 45px 0 0 0;
-  width: 122.47px;
-  height: 68.43px;
+  padding: 3.125vw 0 0 0;
+  width: 8.5048611111vw;
+  height: 4.7520833333vw;
 }
 .logoWrapper_logoTitleWrapper {
   display: flex;
   flex-direction: column;
-  padding: 22px 0 0 0;
+  padding: 1.5277777778vw 0 0 0;
 }
 .logoWrapper__logoFirstWord {
-  margin: -76px 0 0 -16px;
+  margin: -5.2777777778vw 0 0 -1.1111111111vw;
   display: flex;
   font-family: "chiller";
-  font-size: 156px;
+  font-size: calc(0px + 10.8333333333vw);
 }
 .logoWrapper__logoSecondWord {
-  margin: -48px 0 0 -12px;
+  margin: -3.3333333333vw 0 0 -0.8333333333vw;
   display: flex;
   font-family: "cormorantSC";
-  font-size: 15.35px;
+  font-size: calc(0px + 1.0659722222vw);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: calc(0px + 0.1388888889vw);
 }
 .logoWrapper__logoThirdWord {
   display: flex;
-  margin: -3px 0 0 -12px;
+  margin: -0.2083333333vw 0 0 -0.8333333333vw;
   font-family: "cormorantSC";
-  font-size: 22px;
+  font-size: calc(0px + 1.5277777778vw);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: calc(0px + 0.2083333333vw);
 }
 
 .mainMenu {

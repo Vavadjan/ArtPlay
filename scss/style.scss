@@ -25,59 +25,60 @@ body {
 }
 
 header {
-    position: relative;
-    padding: 36px 70px 0 70px;
+    position: fixed;
+    padding: calc(36/1440*100vw) calc(70/1440*100vw) 0 calc(70/1440*100vw);
     width: 100%;
-    height: 177px;
+    height: calc(177/1440*100vw);
     background-color: black;
     color: white;
     display: flex;
-    // align-items: center;
-    justify-content: space-between;
+    align-items: center;
+    // justify-content: space-between;
     // padding: 10px 20px;
 }
 
 .logoWrapper {
     display: flex;
     flex-direction: row;
-    width: 246px;
+    width: calc(246/1440*100vw);
+    // gap: 5px;
 
     &_logoImage {
-        padding: 45px 0 0 0;
-        width: 122.47px;
-        height: 68.43px;
+        padding: calc(45/1440*100vw) 0 0 0;
+        width: calc(122.47/1440*100vw);
+        height: calc(68.43/1440*100vw);
     }
 
     &_logoTitleWrapper {
         display: flex;
         flex-direction: column;
-        padding: 22px 0 0 0;
+        padding: calc(22/1440*100vw) 0 0 0;
     }
 
     &__logoFirstWord {  
-        margin: -76px 0 0 -16px;
+        margin: calc(-76/1440*100vw) 0 0 calc(-16/1440*100vw);
         display: flex;      
         font-family: 'chiller';
-        font-size: 156px;        
+        font-size: calc(0px + 156 * (100vw / 1440));        
     }
 
     &__logoSecondWord {
-        margin: -48px 0 0 -12px;
+        margin: calc(-48/1440*100vw) 0 0 calc(-12/1440*100vw);
         display: flex;
         font-family: 'cormorantSC';
-        font-size: 15.35px;
+        font-size: calc(0px + 15.35 * (100vw / 1440));
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: calc(0px + 2 * (100vw / 1440));
         // font-weight: bold;
     }
 
     &__logoThirdWord {    
         display: flex;   
-        margin: -3px 0 0 -12px; 
+        margin: calc(-3/1440*100vw) 0 0 calc(-12/1440*100vw); 
         font-family: 'cormorantSC';
-        font-size: 22px;
+        font-size: calc(0px + 22 * (100vw / 1440));
         text-transform: uppercase;        
-        letter-spacing: 3px;
+        letter-spacing: calc(0px + 3 * (100vw / 1440));
     }
 }
 .language-switch {
