@@ -176,6 +176,19 @@ header {
             cursor: pointer;
 		}
 
+        &_likeButtonDiscription {
+            margin: calc(53/1440*100vw) 0 0 calc(5/1440*100vw);
+            font-size: calc(0px + 18 * (100vw / 1440));            
+            font-family: 'firasans';
+        }
+
+        &_shareButtonDiscription {
+            margin: calc(53/1440*100vw) calc(5/1440*100vw) 0 calc(25/1440*100vw);
+            font-size: calc(0px + 18 * (100vw / 1440));
+            font-family: 'firasans';
+            
+        }
+
 		&_shareButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
@@ -209,7 +222,7 @@ header {
 		}
 
         &_burgerMenuButton:hover {
-            box-shadow: 0 0 10px 5px #D83934;  /* Падающая тень */
+            box-shadow: 0 0 10px 5px #D83934;
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
             cursor: pointer; /* Изменение вида курсора на палец при наведении */
@@ -236,7 +249,6 @@ header {
 		&_followUsTitle {
             margin: calc(7/1440*100vw) calc(14/1440*100vw) 0 0 ;
             font-size: calc(0px + 15.7 * (100vw / 1440));
-            // justify-content: center;        
             text-transform: uppercase;        
 		}
 

@@ -143,6 +143,16 @@ header {
   border: none;
   cursor: pointer;
 }
+.socialUpperSubWrapper_likeButtonDiscription {
+  margin: 3.6805555556vw 0 0 0.3472222222vw;
+  font-size: calc(0px + 1.25vw);
+  font-family: "firasans";
+}
+.socialUpperSubWrapper_shareButtonDiscription {
+  margin: 3.6805555556vw 0.3472222222vw 0 1.7361111111vw;
+  font-size: calc(0px + 1.25vw);
+  font-family: "firasans";
+}
 .socialUpperSubWrapper_shareButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
@@ -174,7 +184,7 @@ header {
   background-color: #3A8374;
 }
 .socialUpperSubWrapper_burgerMenuButton:hover {
-  box-shadow: 0 0 10px 5px #D83934; /* Падающая тень */
+  box-shadow: 0 0 10px 5px #D83934;
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
