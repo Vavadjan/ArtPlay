@@ -118,6 +118,7 @@ header {
 
     &_link:hover {
 		color: red;
+        // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;
 		transition: 0.4s;	
         // cursor: default;
         cursor: pointer; /* Изменение вида курсора на палец при наведении */
