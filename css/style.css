@@ -73,12 +73,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4.0972222222vw;
+  gap: 3.125vw;
 }
 .titleWrapper h1 {
   display: flex;
   margin: 0;
-  padding: 1.3888888889vw 0 0 0;
+  padding: 1.9444444444vw 0 0 0;
   font-size: calc(0px + 1.6666666667vw);
   justify-content: center;
   text-transform: uppercase;
@@ -92,7 +92,7 @@ header {
   margin: 0;
   display: flex;
   flex-direction: row;
-  gap: 2.9861111111vw;
+  gap: 2.7777777778vw;
 }
 .mainMenu_li {
   font-size: calc(0px + 1.25vw);

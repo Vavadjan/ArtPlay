@@ -81,18 +81,20 @@ header {
         letter-spacing: calc(0px + 3 * (100vw / 1440));
     }
 }
+
 .language-switch {
 }
+
 .titleWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: calc(59/1440*100vw);
+    gap: calc(45/1440*100vw);
 
     h1 {
         display: flex;
         margin: 0;
-        padding: calc(20/1440*100vw) 0 0 0;
+        padding: calc(28/1440*100vw) 0 0 0;
         font-size: calc(0px + 24 * (100vw / 1440));
         justify-content: center;        
         text-transform: uppercase;        
@@ -106,7 +108,7 @@ header {
         margin: 0;
         display: flex;
         flex-direction: row;
-        gap: calc(43/1440*100vw);
+        gap: calc(40/1440*100vw);
     }
 
     &_li {
@@ -118,9 +120,9 @@ header {
 
     &_link:hover {
 		color: red;
-        // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;
+        // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;  /* Падающая тень */
 		transition: 0.4s;	
-        // cursor: default;
+        // cursor: default; /* Стандартный курсор при наведении */
         cursor: pointer; /* Изменение вида курсора на палец при наведении */
 	}
 
