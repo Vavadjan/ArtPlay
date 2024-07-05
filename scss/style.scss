@@ -26,7 +26,7 @@ body {
 
 header {
     position: fixed;
-    padding: calc(36/1440*100vw) calc(70/1440*100vw) 0 calc(70/1440*100vw);
+    padding: 0 calc(70/1440*100vw) 0 calc(70/1440*100vw);
     width: 100%;
     height: calc(177/1440*100vw);
     background-color: black;
@@ -84,24 +84,49 @@ header {
 .language-switch {
 }
 .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(59/1440*100vw);
 
-    &_h1 {
-
+    h1 {
+        display: flex;
+        margin: 0;
+        padding: calc(20/1440*100vw) 0 0 0;
+        font-size: calc(0px + 24 * (100vw / 1440));
+        justify-content: center;        
+        text-transform: uppercase;        
     }
 }
 .mainMenu {
+    margin: 0;
     display: flex;
 
     &_ul {
+        margin: 0;
         display: flex;
         flex-direction: row;
+        gap: calc(43/1440*100vw);
     }
 
     &_li {
+        font-size: calc(0px + 18 * (100vw / 1440));
     }
 
     &_link {
     }
+
+    &_link:hover {
+		color: red;
+		transition: 0.4s;	
+        // cursor: default;
+        cursor: pointer; /* Изменение вида курсора на палец при наведении */
+	}
+
+	&_link:not(:hover) {
+		color: #fff;
+		transition: 1s;
+	}
 }
 .socialWrapper {
 
