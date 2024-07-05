@@ -85,7 +85,7 @@ header {
 }
 
 .language-switch {
-    width: calc(46/1440*100vw);
+    width: calc(4/1440*100vw);
     padding: 0 0 0 calc(40/1440*100vw);
     font-size: calc(0px + 12 * (100vw / 1440));
 }
@@ -94,12 +94,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: calc(45/1440*100vw);
+    gap: calc(46/1440*100vw);
 
     h1 {
         display: flex;
         margin: 0;
-        padding: calc(28/1440*100vw) 0 0 0;
+        margin: calc(26/1440*100vw) 0 0 0;
         font-size: calc(0px + 24 * (100vw / 1440));
         justify-content: center;        
         text-transform: uppercase;        
@@ -113,7 +113,7 @@ header {
         margin: 0;
         display: flex;
         flex-direction: row;
-        gap: calc(40/1440*100vw);
+        gap: calc(40.7/1440*100vw);
     }
 
     &_li {
@@ -191,15 +191,24 @@ header {
 		}
 
 		&_burgerMenuButton {
+            position: relative;
+            display: flex;
+            flex-direction: row;
             width: calc(151/1440*100vw);
             height: calc(51/1440*100vw);
-            margin: calc(39/1440*100vw)0 0 0;
+            margin: calc(39/1440*100vw) 0 0 0;
             border-radius: calc((51/1440*100vw)/2);
-            border-style: hidden;
+            color: #fff;            
+            flex-shrink: 0;
+            background: url(../pic/burgerButtonIcon.svg);	
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 25% 50%;
+            border: none;
+            background-color: #3A8374;
 		}
 
         &_burgerMenuButton:hover {
-            color: red;
             box-shadow: 0 0 10px 5px red;  /* Падающая тень */
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
@@ -207,9 +216,17 @@ header {
         }
     
         &_burgerMenuButton:not(:hover) {
-            color: #ff0000;
             transition: 1s;
+        }        
+
+        .burgerMenuButtonTitle {
+            position: absolute;
+            font-size: calc(0px + 18 * (100vw / 1440));
+            font-family: 'firasans';
+            top: calc(15/1440*100vw);
+            left: calc(70/1440*100vw);
         }
+
 }
 .socialDownSubwrapper {
     display: flex;
@@ -237,7 +254,6 @@ header {
 		}
 
         &_headerFacebookButton:hover {
-            color: red;
             box-shadow: 0 0 10px 5px red;  /* Падающая тень */
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
@@ -245,7 +261,6 @@ header {
         }
     
         &_headerFacebookButton:not(:hover) {
-            color: #ff0000;
             transition: 1s;
         }
 
@@ -263,7 +278,6 @@ header {
 		}
 
         &_headerInstagramButton:hover {
-            color: red;
             box-shadow: 0 0 10px 5px red;  /* Падающая тень */
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
@@ -271,7 +285,6 @@ header {
         }
     
         &_headerInstagramButton:not(:hover) {
-            color: #ff0000;
             transition: 1s;
         }
 
@@ -289,7 +302,6 @@ header {
 		}
 
         &_headerTwitterButton:hover {
-            color: red;
             box-shadow: 0 0 10px 5px red;  /* Падающая тень */
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
@@ -297,7 +309,6 @@ header {
         }
     
         &_headerTwitterButton:not(:hover) {
-            color: #ff0000;
             transition: 1s;
         }
 
@@ -315,7 +326,6 @@ header {
 		}
 
         &_headerMailButton:hover {
-            color: red;
             box-shadow: 0 0 10px 5px red;  /* Падающая тень */
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
@@ -323,7 +333,6 @@ header {
         }
     
         &_headerMailButton:not(:hover) {
-            color: #ff0000;
             transition: 1s;
         }
 
@@ -348,7 +357,6 @@ header {
 		}
 
         &_headerLoginButton:hover {
-            color: red;
             box-shadow: 0 0 10px 5px red;  /* Падающая тень */
             transition: 0.4s;	
             // cursor: default; /* Стандартный курсор при наведении */
@@ -356,7 +364,6 @@ header {
         }
     
         &_headerLoginButton:not(:hover) {
-            color: #ff0000;
             transition: 1s;
         }
 }

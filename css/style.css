@@ -72,7 +72,7 @@ header {
 }
 
 .language-switch {
-  width: 3.1944444444vw;
+  width: 0.2777777778vw;
   padding: 0 0 0 2.7777777778vw;
   font-size: calc(0px + 0.8333333333vw);
 }
@@ -81,12 +81,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3.125vw;
+  gap: 3.1944444444vw;
 }
 .titleWrapper h1 {
   display: flex;
   margin: 0;
-  padding: 1.9444444444vw 0 0 0;
+  margin: 1.8055555556vw 0 0 0;
   font-size: calc(0px + 1.6666666667vw);
   justify-content: center;
   text-transform: uppercase;
@@ -100,7 +100,7 @@ header {
   margin: 0;
   display: flex;
   flex-direction: row;
-  gap: 2.7777777778vw;
+  gap: 2.8263888889vw;
 }
 .mainMenu_li {
   font-size: calc(0px + 1.25vw);
@@ -157,21 +157,36 @@ header {
   cursor: pointer;
 }
 .socialUpperSubWrapper_burgerMenuButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
   width: 10.4861111111vw;
   height: 3.5416666667vw;
   margin: 2.7083333333vw 0 0 0;
   border-radius: 1.7708333333vw;
-  border-style: hidden;
+  color: #fff;
+  flex-shrink: 0;
+  background: url(../pic/burgerButtonIcon.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 25% 50%;
+  border: none;
+  background-color: #3A8374;
 }
 .socialUpperSubWrapper_burgerMenuButton:hover {
-  color: red;
   box-shadow: 0 0 10px 5px red; /* Падающая тень */
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 .socialUpperSubWrapper_burgerMenuButton:not(:hover) {
-  color: #ff0000;
   transition: 1s;
+}
+.socialUpperSubWrapper .burgerMenuButtonTitle {
+  position: absolute;
+  font-size: calc(0px + 1.25vw);
+  font-family: "firasans";
+  top: 1.0416666667vw;
+  left: 4.8611111111vw;
 }
 
 .socialDownSubwrapper {
@@ -197,13 +212,11 @@ header {
   cursor: pointer;
 }
 .socialDownSubwrapper_headerFacebookButton:hover {
-  color: red;
   box-shadow: 0 0 10px 5px red; /* Падающая тень */
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 .socialDownSubwrapper_headerFacebookButton:not(:hover) {
-  color: #ff0000;
   transition: 1s;
 }
 .socialDownSubwrapper_headerInstagramButton {
@@ -219,13 +232,11 @@ header {
   cursor: pointer;
 }
 .socialDownSubwrapper_headerInstagramButton:hover {
-  color: red;
   box-shadow: 0 0 10px 5px red; /* Падающая тень */
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 .socialDownSubwrapper_headerInstagramButton:not(:hover) {
-  color: #ff0000;
   transition: 1s;
 }
 .socialDownSubwrapper_headerTwitterButton {
@@ -241,13 +252,11 @@ header {
   cursor: pointer;
 }
 .socialDownSubwrapper_headerTwitterButton:hover {
-  color: red;
   box-shadow: 0 0 10px 5px red; /* Падающая тень */
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 .socialDownSubwrapper_headerTwitterButton:not(:hover) {
-  color: #ff0000;
   transition: 1s;
 }
 .socialDownSubwrapper_headerMailButton {
@@ -263,13 +272,11 @@ header {
   cursor: pointer;
 }
 .socialDownSubwrapper_headerMailButton:hover {
-  color: red;
   box-shadow: 0 0 10px 5px red; /* Падающая тень */
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 .socialDownSubwrapper_headerMailButton:not(:hover) {
-  color: #ff0000;
   transition: 1s;
 }
 .socialDownSubwrapper_separator {
@@ -291,13 +298,11 @@ header {
   cursor: pointer;
 }
 .socialDownSubwrapper_headerLoginButton:hover {
-  color: red;
   box-shadow: 0 0 10px 5px red; /* Падающая тень */
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 .socialDownSubwrapper_headerLoginButton:not(:hover) {
-  color: #ff0000;
   transition: 1s;
 }
 
