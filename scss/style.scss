@@ -166,7 +166,13 @@ header {
             height: calc(32/1440*100vw);
             margin: calc(48/1440*100vw) 0 0 0;
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/likeHeart.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 
 		&_shareButton {
@@ -174,7 +180,13 @@ header {
             height: calc(32/1440*100vw);
             margin: calc(48/1440*100vw) calc(28/1440*100vw) 0 0;
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/shareArrow.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 
 		&_burgerMenuButton {
@@ -197,35 +209,65 @@ header {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/fasebook.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 
 		&_headerInstagramButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/instagram.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 
 		&_headerTwitterButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/twitter.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 
 		&_headerMailButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/mail.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 
 		&_headerLoginButton {
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             border-radius: 50%;
-            border-style: hidden;
+            flex-shrink: 0;
+            background: url(../pic/login.svg);	
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+            cursor: pointer;
 		}
 }
 

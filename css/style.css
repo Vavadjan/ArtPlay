@@ -135,14 +135,26 @@ header {
   height: 2.2222222222vw;
   margin: 3.3333333333vw 0 0 0;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/likeHeart.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 .socialUpperSubWrapper_shareButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   margin: 3.3333333333vw 1.9444444444vw 0 0;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/shareArrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 .socialUpperSubWrapper_burgerMenuButton {
   width: 10.4861111111vw;
@@ -161,31 +173,61 @@ header {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/fasebook.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 .socialDownSubwrapper_headerInstagramButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 .socialDownSubwrapper_headerTwitterButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/twitter.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 .socialDownSubwrapper_headerMailButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/mail.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 .socialDownSubwrapper_headerLoginButton {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   border-radius: 50%;
-  border-style: hidden;
+  flex-shrink: 0;
+  background: url(../pic/login.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 
 .bodyLorem {
