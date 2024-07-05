@@ -23,12 +23,14 @@ body {
 header {
   position: fixed;
   padding: 0 4.8611111111vw 0 4.8611111111vw;
-  width: 100%;
+  top: 0;
+  width: 100vw;
   height: 12.2916666667vw;
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logoWrapper {
@@ -69,6 +71,11 @@ header {
   letter-spacing: calc(0px + 0.2083333333vw);
 }
 
+.language-switch {
+  padding: 0 0 0 2.7777777778vw;
+  font-size: calc(0px + 0.8333333333vw);
+}
+
 .titleWrapper {
   display: flex;
   flex-direction: column;
@@ -107,10 +114,33 @@ header {
   transition: 1s;
 }
 
-.socialWrapper_socialDownSubwrapper {
+.socialWrapper {
   display: flex;
+  flex-direction: column;
+  gap: 2.2916666667vw;
+  justify-content: fix-end;
 }
-.socialWrapper_followUsAndLogin {
+
+.socialUpperSubWrapper {
+  margin: 0;
   display: flex;
   flex-direction: row;
+}
+.socialUpperSubWrapper_likeButton {
+  margin: 3.3333333333vw 0 0 0;
+}
+.socialUpperSubWrapper_shareButton {
+  margin: 3.3333333333vw 1.9444444444vw 0 0;
+}
+.socialUpperSubWrapper_burgerMenuButton {
+  margin: 2.7083333333vw 0 0 0;
+}
+
+.socialDownSubwrapper {
+  display: flex;
+  flex-direction: row;
+}
+.bodyLorem {
+  margin: 12.2916666667vw 0 0 0;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

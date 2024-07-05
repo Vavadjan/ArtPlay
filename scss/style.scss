@@ -26,14 +26,15 @@ body {
 
 header {
     position: fixed;
-    padding: 0 calc(70/1440*100vw) 0 calc(70/1440*100vw);
-    width: 100%;
+    padding: 0 calc(70/1440*100vw) 0 calc(70/1440*100vw);    
+	top: 0;
+    width: 100vw;
     height: calc(177/1440*100vw);
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: space-between;
     // padding: 10px 20px;
 }
 
@@ -83,6 +84,8 @@ header {
 }
 
 .language-switch {
+    padding: 0 0 0 calc(40/1440*100vw);
+    font-size: calc(0px + 12 * (100vw / 1440));
 }
 
 .titleWrapper {
@@ -131,37 +134,66 @@ header {
 		transition: 1s;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
 .socialWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(33/1440*100vw);
+    justify-content: fix-end;
+}
+.socialUpperSubWrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
 
-    &_socialUpperSubWrapper {
-    }
+		&_likeButton {
+            margin: calc(48/1440*100vw) 0 0 0;
+		}
 
-    &_socialDownSubwrapper {
-        display: flex;
-    }
+		&_shareButton {
+            margin: calc(48/1440*100vw) calc(28/1440*100vw) 0 0;
+		}
 
-    &_followUsAndLogin {
-        display: flex;
-        flex-direction: row;
-    }
+		&_burgerMenuButton {
+            margin: calc(39/1440*100vw) 0 0 0;
+		}
+}
+.socialDownSubwrapper {
+    display: flex;
+    flex-direction: row;
 
-    &_followUs {
-    }
+		&_followUs {
+		}
 
-    &__socialMediaediaAndBurgerSubWrapper {
-    }
+		&_headerFacebookButton {
+		}
+
+		&_headerInstagramButton {
+		}
+
+		&_headerTwitterButton {
+		}
+
+		&_headerMailButton {
+		}
+
+		&_headerLoginButton {
+		}
 }
-.likeButton {
-}
-.shareButton {
-}
-.burgerMenuButton {
-}
-.headerFacebookButton {
-}
-.headerInstagramButton {
-}
-.headerTwitterButton {
-}
-.headerMailButton {
+
+
+
+.bodyLorem {
+    margin: calc(177/1440*100vw) 0 0 0;
+    color: black;
 }
