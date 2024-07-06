@@ -158,7 +158,26 @@ header {
   gap: 2.8263888889vw;
 }
 .mainMenu_li {
+  position: relative;
   font-size: calc(0px + 1.25vw);
+}
+.mainMenu_link {
+  position: relative;
+  display: inline-block;
+}
+.mainMenu_link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #D83934;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+.mainMenu_link:hover::after {
+  width: 100%;
+  left: 0;
 }
 .mainMenu_link:hover {
   color: #D83934;

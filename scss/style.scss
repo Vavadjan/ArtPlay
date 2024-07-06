@@ -178,11 +178,30 @@ header {
     }
 
     &_li {
+        position: relative;
         font-size: calc(0px + 18 * (100vw / 1440));
     }
 
-    // &_link {
-    // }
+    &_link {
+        position: relative;
+        display: inline-block;
+    }
+
+    &_link::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: #D83934;
+        transition: width 0.4s ease, left 0.4s ease;
+    }
+
+    &_link:hover::after {
+        width: 100%;
+        left: 0;
+    }
 
     &_link:hover {
 		color: #D83934;
@@ -438,8 +457,3 @@ header {
     margin: calc(177/1440*100vw) 0 0 0;
     color: black;
 }
-
-
-
-
-
