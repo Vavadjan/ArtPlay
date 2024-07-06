@@ -96,13 +96,62 @@ header {
     }
 }
 
-.language-switch {
-    width: calc(4/1440*100vw);
-    padding: 0 0 0 calc(40/1440*100vw);
-    font-size: calc(0px + 12 * (100vw / 1440));
+// .language-switch {
+//     width: calc(4/1440*100vw);
+//     margin: calc(40/1440*100vw) 0 0 0;
+//     font-size: calc(0px + 12 * (100vw / 1440));
+// }
+
+.languageButton {
+    margin: calc(57/1440*100vw) 0 0 0;    
+    width: calc(40/1440*100vw);
+    height: calc(20/1440*100vw);
+    position: relative;
+    perspective: 100px; /* Устанавливает перспективу для 3D вращения */
+    // margin: 50px;
+    cursor: pointer;
+}
+.flagContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    animation: rotate 3s linear infinite;
+
+		&_Ukr {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: url('../pic/UkrLang.webp') no-repeat center center;
+            background-size: cover;
+        }
+		
+
+		&_Eng {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: url('../pic/EngLang.webp') no-repeat center center;
+            background-size: cover;
+            transform: rotateX(180deg);
+		}
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0deg);
+            }
+            100% {
+                transform: rotateX(360deg);
+            }
+        }
 }
 
+
 .titleWrapper {
+    margin: 0 0 0 calc(-90/1440*100vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,7 +160,7 @@ header {
     h1 {
         display: flex;
         margin: 0;
-        margin: calc(26/1440*100vw) 0 0 0;
+        margin: calc(26/1440*100vw) 0 0 calc(90/1440*100vw);
         font-size: calc(0px + 24 * (100vw / 1440));
         justify-content: center;        
         text-transform: uppercase;        
@@ -389,3 +438,8 @@ header {
     margin: calc(177/1440*100vw) 0 0 0;
     color: black;
 }
+
+
+
+
+

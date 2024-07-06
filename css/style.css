@@ -87,13 +87,52 @@ header {
   letter-spacing: calc(0px + 0.2777777778vw);
 }
 
-.language-switch {
-  width: 0.2777777778vw;
-  padding: 0 0 0 2.7777777778vw;
-  font-size: calc(0px + 0.8333333333vw);
+.languageButton {
+  margin: 3.9583333333vw 0 0 0;
+  width: 2.7777777778vw;
+  height: 1.3888888889vw;
+  position: relative;
+  perspective: 100px; /* Устанавливает перспективу для 3D вращения */
+  cursor: pointer;
+}
+
+.flagContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: rotate 3s linear infinite;
+}
+.flagContainer_Ukr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background: url("../pic/UkrLang.webp") no-repeat center center;
+  background-size: cover;
+}
+.flagContainer_Eng {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background: url("../pic/EngLang.webp") no-repeat center center;
+  background-size: cover;
+  transform: rotateX(180deg);
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
 }
 
 .titleWrapper {
+  margin: 0 0 0 -6.25vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +141,7 @@ header {
 .titleWrapper h1 {
   display: flex;
   margin: 0;
-  margin: 1.8055555556vw 0 0 0;
+  margin: 1.8055555556vw 0 0 6.25vw;
   font-size: calc(0px + 1.6666666667vw);
   justify-content: center;
   text-transform: uppercase;
