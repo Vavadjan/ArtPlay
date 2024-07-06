@@ -111,6 +111,20 @@ header {
     // margin: 50px;
     cursor: pointer;
 }
+
+.languageButton:hover {
+    box-shadow: 0 0 10px 5px #D83934;  /* Падающая тень */
+    // background-color: #D83934;
+    background-color: rgba(216, 57, 52, 0.85); /* 50% прозрачности фона */
+    transition: 0.4s;	
+    // cursor: default; /* Стандартный курсор при наведении */
+    cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+
+.languageButton:not(:hover) {
+    transition: 1s;
+}
+
 .flagContainer {
     width: 100%;
     height: 100%;
@@ -127,8 +141,7 @@ header {
             backface-visibility: hidden;
             background: url('../pic/UkrLang.webp') no-repeat center center;
             background-size: cover;
-        }
-		
+        }		
 
 		&_Eng {
             width: 100%;
@@ -139,6 +152,7 @@ header {
             background-size: cover;
             transform: rotateX(180deg);
 		}
+
         @keyframes rotate {
             0% {
                 transform: rotateX(0deg);

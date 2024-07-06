@@ -96,6 +96,17 @@ header {
   cursor: pointer;
 }
 
+.languageButton:hover {
+  box-shadow: 0 0 10px 5px #D83934; /* Падающая тень */
+  background-color: rgba(216, 57, 52, 0.85); /* 50% прозрачности фона */
+  transition: 0.4s;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+
+.languageButton:not(:hover) {
+  transition: 1s;
+}
+
 .flagContainer {
   width: 100%;
   height: 100%;
