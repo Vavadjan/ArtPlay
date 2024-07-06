@@ -183,7 +183,7 @@ header {
   bottom: -5px;
   width: 0;
   height: 2px;
-  background-color: #D83934;
+  background: linear-gradient(to right, rgba(216, 57, 52, 0), rgb(216, 57, 52), rgba(216, 57, 52, 0));
   transition: width 0.4s ease, left 0.4s ease;
 }
 .mainMenu_link:hover::after {
