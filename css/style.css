@@ -55,6 +55,9 @@ header {
   line-height: 0.55;
   display: inline-block; /* Необходимо для применения transform */
   transform: scaleX(1.1); /* Масштабирование по горизонтали */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .logoWrapper_logoFirstWord::before {
   content: "";
@@ -77,6 +80,9 @@ header {
   font-size: calc(0px + 1.0659722222vw);
   text-transform: uppercase;
   letter-spacing: calc(0px + 0.2361111111vw);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .logoWrapper_logoThirdWord {
   display: flex;
@@ -85,6 +91,9 @@ header {
   font-size: calc(0px + 1.5277777778vw);
   text-transform: uppercase;
   letter-spacing: calc(0px + 0.2777777778vw);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .languageButton {
@@ -155,6 +164,9 @@ header {
   font-size: calc(0px + 1.6666666667vw);
   justify-content: center;
   text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .mainMenu {
@@ -231,11 +243,17 @@ header {
   margin: 3.8194444444vw 0 0 0.3472222222vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .socialUpperSubWrapper_shareButtonDiscription {
   margin: 3.8194444444vw 0.3472222222vw 0 1.7361111111vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .socialUpperSubWrapper_shareButton {
   width: 2.2222222222vw;
@@ -292,6 +310,9 @@ header {
   margin: 0.625vw 0.9722222222vw 0 0;
   font-size: calc(0px + 1.0902777778vw);
   text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .socialDownSubwrapper_headerFacebookButton {
   width: 2.2222222222vw;
