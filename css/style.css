@@ -143,11 +143,10 @@ header {
 }
 
 .titleWrapper {
-  margin: 0 0 0 -6.25vw;
+  margin: 0 0 0 -5.9027777778vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3.1944444444vw;
 }
 .titleWrapper h1 {
   display: flex;
@@ -159,7 +158,7 @@ header {
 }
 
 .mainMenu {
-  margin: 0;
+  margin: 3.4722222222vw 0 0 0;
   display: flex;
 }
 .mainMenu_ul {
@@ -229,12 +228,12 @@ header {
   cursor: pointer;
 }
 .socialUpperSubWrapper_likeButtonDiscription {
-  margin: 3.6805555556vw 0 0 0.3472222222vw;
+  margin: 3.8194444444vw 0 0 0.3472222222vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
 }
 .socialUpperSubWrapper_shareButtonDiscription {
-  margin: 3.6805555556vw 0.3472222222vw 0 1.7361111111vw;
+  margin: 3.8194444444vw 0.3472222222vw 0 1.7361111111vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
 }
@@ -290,7 +289,7 @@ header {
   gap: 0.6944444444vw;
 }
 .socialDownSubwrapper_followUsTitle {
-  margin: 0.4861111111vw 0.9722222222vw 0 0;
+  margin: 0.625vw 0.9722222222vw 0 0;
   font-size: calc(0px + 1.0902777778vw);
   text-transform: uppercase;
 }
