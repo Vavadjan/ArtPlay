@@ -31,7 +31,6 @@ header {
     background-color: black;
     color: white;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -42,7 +41,7 @@ header {
     width: calc(246/1440*100vw);
 
     &_logoImage {
-        padding: calc(45/1440*100vw) 0 0 0;
+        margin: calc(77/1440*100vw) 0 0 0;
         width: calc(122.47/1440*100vw);
         height: calc(68.43/1440*100vw);
     }
@@ -50,24 +49,26 @@ header {
     &_logoTitleWrapper {
         display: flex;
         flex-direction: column;
-        padding: calc(22/1440*100vw) 0 0 0;
     }
 
     &_logoFirstWord { 
         position: relative; 
-        margin: calc(-76/1440*100vw) 0 0 calc(-16/1440*100vw);
+        margin: calc(29/1440*100vw) 0 0 calc(-12/1440*100vw);
         display: flex;      
         font-family: 'chiller';
-        font-size: calc(0px + 156 * (100vw / 1440));        
+        font-size: calc(0px + 156 * (100vw / 1440));         
+        line-height: 0.55;  //Важная строка!!! 
+        display: inline-block; /* Необходимо для применения transform */
+        transform: scaleX(1.1); /* Масштабирование по горизонтали */    
     }
 
     &_logoFirstWord::before {
         content: "";
         position: absolute;
-        top: calc(89/1440*100vw);
-        left: calc(124/1440*100vw);
-        width: calc(7/1440*100vw);
-        height: calc(5/1440*100vw);
+        top: calc(40/1440*100vw);
+        left: calc(123/1440*100vw);
+        width: calc(8/1440*100vw);
+        height: calc(6/1440*100vw);
         flex-shrink: 0;
         background: url(../pic/logoPoint.svg);	
         background-repeat: no-repeat;
@@ -77,21 +78,21 @@ header {
     }
 
     &_logoSecondWord {
-        margin: calc(-48/1440*100vw) 0 0 calc(-12/1440*100vw);
+        margin: calc(0/1440*100vw) 0 0 calc(-13/1440*100vw);
         display: flex;
         font-family: 'cormorantSC';
         font-size: calc(0px + 15.35 * (100vw / 1440));
         text-transform: uppercase;
-        letter-spacing: calc(0px + 2 * (100vw / 1440));
+        letter-spacing: calc(0px + 3.4 * (100vw / 1440));
     }
 
     &_logoThirdWord {    
         display: flex;   
-        margin: calc(-3/1440*100vw) 0 0 calc(-12/1440*100vw); 
+        margin: calc(-2/1440*100vw) 0 0 calc(-13/1440*100vw); 
         font-family: 'cormorantSC';
         font-size: calc(0px + 22 * (100vw / 1440));
         text-transform: uppercase;        
-        letter-spacing: calc(0px + 3 * (100vw / 1440));
+        letter-spacing: calc(0px + 4 * (100vw / 1440));
     }
 }
 

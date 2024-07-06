@@ -28,7 +28,6 @@ header {
   background-color: black;
   color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -39,29 +38,31 @@ header {
   width: 17.0833333333vw;
 }
 .logoWrapper_logoImage {
-  padding: 3.125vw 0 0 0;
+  margin: 5.3472222222vw 0 0 0;
   width: 8.5048611111vw;
   height: 4.7520833333vw;
 }
 .logoWrapper_logoTitleWrapper {
   display: flex;
   flex-direction: column;
-  padding: 1.5277777778vw 0 0 0;
 }
 .logoWrapper_logoFirstWord {
   position: relative;
-  margin: -5.2777777778vw 0 0 -1.1111111111vw;
+  margin: 2.0138888889vw 0 0 -0.8333333333vw;
   display: flex;
   font-family: "chiller";
   font-size: calc(0px + 10.8333333333vw);
+  line-height: 0.55;
+  display: inline-block; /* Необходимо для применения transform */
+  transform: scaleX(1.1); /* Масштабирование по горизонтали */
 }
 .logoWrapper_logoFirstWord::before {
   content: "";
   position: absolute;
-  top: 6.1805555556vw;
-  left: 8.6111111111vw;
-  width: 0.4861111111vw;
-  height: 0.3472222222vw;
+  top: 2.7777777778vw;
+  left: 8.5416666667vw;
+  width: 0.5555555556vw;
+  height: 0.4166666667vw;
   flex-shrink: 0;
   background: url(../pic/logoPoint.svg);
   background-repeat: no-repeat;
@@ -70,20 +71,20 @@ header {
   border: none;
 }
 .logoWrapper_logoSecondWord {
-  margin: -3.3333333333vw 0 0 -0.8333333333vw;
+  margin: 0vw 0 0 -0.9027777778vw;
   display: flex;
   font-family: "cormorantSC";
   font-size: calc(0px + 1.0659722222vw);
   text-transform: uppercase;
-  letter-spacing: calc(0px + 0.1388888889vw);
+  letter-spacing: calc(0px + 0.2361111111vw);
 }
 .logoWrapper_logoThirdWord {
   display: flex;
-  margin: -0.2083333333vw 0 0 -0.8333333333vw;
+  margin: -0.1388888889vw 0 0 -0.9027777778vw;
   font-family: "cormorantSC";
   font-size: calc(0px + 1.5277777778vw);
   text-transform: uppercase;
-  letter-spacing: calc(0px + 0.2083333333vw);
+  letter-spacing: calc(0px + 0.2777777778vw);
 }
 
 .language-switch {
