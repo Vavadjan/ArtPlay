@@ -252,6 +252,7 @@ header {
     flex-direction: row;
 
 		&_likeButton {
+            position: relative;
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             margin: calc(48/1440*100vw) 0 0 0;
@@ -263,7 +264,23 @@ header {
             background-position: 100% 100%;
             border: none;
             cursor: pointer;
+            overflow: hidden;
 		}
+
+        &_likeButton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../pic/likeHeart.svg) center center/contain no-repeat;
+            transition: transform 0.3s ease;
+        }
+
+        &_likeButton:hover::before {
+            transform: scale(1.1);
+        }
 
         &_likeButtonDiscription {
             margin: calc(55/1440*100vw) 0 0 calc(5/1440*100vw);
@@ -280,6 +297,7 @@ header {
         }
 
 		&_shareButton {
+            position: relative;
             width: calc(32/1440*100vw);
             height: calc(32/1440*100vw);
             margin: calc(48/1440*100vw) calc(28/1440*100vw) 0 0;
@@ -291,7 +309,23 @@ header {
             background-position: 100% 100%;
             border: none;
             cursor: pointer;
+            overflow: hidden;
 		}
+
+        &_shareButton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../pic/shareArrow.svg) center center/contain no-repeat;
+            transition: transform 0.3s ease;
+        }
+
+        &_shareButton:hover::before {
+            transform: scale(1.1);
+        }
 
 		&_burgerMenuButton {
             position: relative;

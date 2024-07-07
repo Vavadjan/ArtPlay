@@ -227,6 +227,7 @@ header {
   flex-direction: row;
 }
 .socialUpperSubWrapper_likeButton {
+  position: relative;
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   margin: 3.3333333333vw 0 0 0;
@@ -238,6 +239,20 @@ header {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
+  overflow: hidden;
+}
+.socialUpperSubWrapper_likeButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../pic/likeHeart.svg) center center/contain no-repeat;
+  transition: transform 0.3s ease;
+}
+.socialUpperSubWrapper_likeButton:hover::before {
+  transform: scale(1.1);
 }
 .socialUpperSubWrapper_likeButtonDiscription {
   margin: 3.8194444444vw 0 0 0.3472222222vw;
@@ -256,6 +271,7 @@ header {
           user-select: none;
 }
 .socialUpperSubWrapper_shareButton {
+  position: relative;
   width: 2.2222222222vw;
   height: 2.2222222222vw;
   margin: 3.3333333333vw 1.9444444444vw 0 0;
@@ -267,6 +283,20 @@ header {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
+  overflow: hidden;
+}
+.socialUpperSubWrapper_shareButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../pic/shareArrow.svg) center center/contain no-repeat;
+  transition: transform 0.3s ease;
+}
+.socialUpperSubWrapper_shareButton:hover::before {
+  transform: scale(1.1);
 }
 .socialUpperSubWrapper_burgerMenuButton {
   position: relative;
