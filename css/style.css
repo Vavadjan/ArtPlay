@@ -477,11 +477,9 @@ body {
   display: flex;
   flex-direction: row;
   width: 8.1944444444vw;
+  align-items: center;
 }
 .staticHeaderLogoWrapper_staticHeaderlogoImage {
-  margin: 5.3472222222vw 0 0 0;
-  width: 8.5048611111vw;
-  height: 4.7520833333vw;
   display: none;
 }
 .staticHeaderLogoWrapper_staticHeaderlogoTitleWrapper {
@@ -490,10 +488,10 @@ body {
 }
 .staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
   position: relative;
-  margin: 0.6944444444vw 0 0 0vw;
+  margin: 0vw 0 0 0vw;
   display: flex;
   font-family: "chiller";
-  font-size: calc(0px + 9.375vw);
+  font-size: calc(90px + 3.125vw);
   line-height: 0.55;
   display: inline-block; /* Необходимо для применения transform */
   transform: scaleX(1.1); /* Масштабирование по горизонтали */
@@ -516,28 +514,120 @@ body {
   border: none;
 }
 .staticHeaderLogoWrapper_staticHeaderlogoSecondWord {
-  margin: 0vw 0 0 -0.9027777778vw;
   display: none;
-  font-family: "cormorantSC";
-  font-size: calc(0px + 1.0659722222vw);
-  text-transform: uppercase;
-  letter-spacing: calc(0px + 0.2361111111vw);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 .staticHeaderLogoWrapper_staticHeaderlogoThirdWord {
   display: none;
-  margin: -0.1388888889vw 0 0 -0.9027777778vw;
-  font-family: "cormorantSC";
-  font-size: calc(0px + 1.5277777778vw);
+}
+
+.staticHeader.visible {
+  transform: translateY(0);
+}
+
+.staticHeaderTitleWrapper {
+  margin: 0 0 0 6.9444444444vw;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2.1527777778vw;
+}
+
+.staticHeaderLikeButton {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: url(../pic/likeHeart.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.staticHeaderTitle {
+  display: flex;
+  margin: 0;
+  margin: 0 0 0 0vw;
+  font-size: calc(12px + 0.8333333333vw);
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
-  letter-spacing: calc(0px + 0.2777777778vw);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
 
-.staticHeader.visible {
-  transform: translateY(0);
+.staticHeaderShareButton {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: url(../pic/shareArrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.staticHeaderLoginWrapper {
+  margin: 0 4.8611111111vw 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.1805555556vw;
+}
+
+.staticHeadereaderLoginButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: url(../pic/loginBlack.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.staticHeaderSeparator {
+  margin: 0;
+  width: 1px;
+  height: 2.2222222222vw;
+  background-color: #000000;
+}
+
+.staticHeaderBurgerMenuButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 151px;
+  height: 51px;
+  margin: 0;
+  border-radius: 51px;
+  color: #fff;
+  flex-shrink: 0;
+  background: url(../pic/burgerButtonIcon.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 25% 50%;
+  border: none;
+  background-color: #3a8374;
+}
+
+.staticHeaderИurgerMenuButtonTitle {
+  position: absolute;
+  font-size: calc(0px + 1.25vw);
+  font-family: "firasans";
+  top: 1.0416666667vw;
+  left: 4.8611111111vw;
 }/*# sourceMappingURL=style.css.map */

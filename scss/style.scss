@@ -526,11 +526,9 @@ body {
     display: flex;
     flex-direction: row;
     width: calc(118 / 1440 * 100vw);
+    align-items: center;
 
 		&_staticHeaderlogoImage {
-            margin: calc(77 / 1440 * 100vw) 0 0 0;
-            width: calc(122.47 / 1440 * 100vw);
-            height: calc(68.43 / 1440 * 100vw);
             display: none;
 		}
 
@@ -541,10 +539,10 @@ body {
 
 		&_staticHeaderlogoFirstWord {
             position: relative;
-            margin: calc(10 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
+            margin: calc(0 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
             display: flex;
             font-family: "chiller";
-            font-size: calc(0px + 135 * (100vw / 1440));
+            font-size: calc(90px + 45 * (100vw / 1440));
             line-height: 0.55; //Важная строка!!!
             display: inline-block; /* Необходимо для применения transform */
             transform: scaleX(1.1); /* Масштабирование по горизонтали */
@@ -567,27 +565,132 @@ body {
         }		
 
 		&_staticHeaderlogoSecondWord {
-            margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
             display: none;
-            font-family: "cormorantSC";
-            font-size: calc(0px + 15.35 * (100vw / 1440));
-            text-transform: uppercase;
-            letter-spacing: calc(0px + 3.4 * (100vw / 1440));
-            user-select: none;
 		}
 
 		&_staticHeaderlogoThirdWord {
             display: none;
-            margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
-            font-family: "cormorantSC";
-            font-size: calc(0px + 22 * (100vw / 1440));
-            text-transform: uppercase;
-            letter-spacing: calc(0px + 4 * (100vw / 1440));
-            user-select: none;
         }
 	}
 
 .staticHeader.visible {
     transform: translateY(0);
+}
+
+.staticHeaderTitleWrapper {
+    margin: 0 0 0 calc(100 / 1440 * 100vw);
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: calc(31 / 1440 * 100vw);
+}
+
+.staticHeaderLikeButton {
+    position: relative;
+    // width: calc(32 / 1440 * 100vw);
+    // height: calc(32 / 1440 * 100vw);
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: url(../pic/likeHeart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.staticHeaderTitle {
+    display: flex;
+    margin: 0;
+    margin: 0 0 0 calc(0 / 1440 * 100vw);
+    font-size: calc(12px + 12 * (100vw / 1440));
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.staticHeaderShareButton {
+    position: relative;
+    // width: calc(32 / 1440 * 100vw);
+    // height: calc(32 / 1440 * 100vw);
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: url(../pic/shareArrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.staticHeaderLoginWrapper {
+    margin: 0 calc(70 / 1440 * 100vw) 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(17 / 1440 * 100vw);
+}
+
+.staticHeadereaderLoginButton {
+    // width: calc(32 / 1440 * 100vw);
+    // height: calc(32 / 1440 * 100vw);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: url(../pic/loginBlack.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.staticHeaderSeparator {
+    margin: 0;
+    width: 1px;
+    height: calc(32 / 1440 * 100vw);
+    background-color: #000000;
+}
+
+.staticHeaderBurgerMenuButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    // width: calc(151 / 1440 * 100vw);
+    // height: calc(51 / 1440 * 100vw);
+    width: 151px;
+    height: 51px;
+    margin: 0;
+    // border-radius: calc((51 / 1440 * 100vw) / 2);
+    border-radius: 51px;
+    color: #fff;
+    flex-shrink: 0;
+    background: url(../pic/burgerButtonIcon.svg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 25% 50%;
+    border: none;
+    background-color: #3a8374;
+}
+
+.staticHeaderИurgerMenuButtonTitle {
+    position: absolute;
+    font-size: calc(0px + 18 * (100vw / 1440));
+    font-family: "firasans";
+    top: calc(15 / 1440 * 100vw);
+    left: calc(70 / 1440 * 100vw);
 }
 
