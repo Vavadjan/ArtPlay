@@ -521,16 +521,17 @@ body {
     z-index: 999;
 }
 
-.logoWrapper {
+.staticHeaderLogoWrapper {
     margin: 0 0 0 calc(70 / 1440 * 100vw);
     display: flex;
     flex-direction: row;
-    width: calc(246 / 1440 * 100vw);
+    width: calc(118 / 1440 * 100vw);
 
 		&_staticHeaderlogoImage {
             margin: calc(77 / 1440 * 100vw) 0 0 0;
             width: calc(122.47 / 1440 * 100vw);
             height: calc(68.43 / 1440 * 100vw);
+            display: none;
 		}
 
 		&_staticHeaderlogoTitleWrapper {
@@ -540,10 +541,10 @@ body {
 
 		&_staticHeaderlogoFirstWord {
             position: relative;
-            margin: calc(29 / 1440 * 100vw) 0 0 calc(-12 / 1440 * 100vw);
+            margin: calc(10 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
             display: flex;
             font-family: "chiller";
-            font-size: calc(0px + 156 * (100vw / 1440));
+            font-size: calc(0px + 135 * (100vw / 1440));
             line-height: 0.55; //Важная строка!!!
             display: inline-block; /* Необходимо для применения transform */
             transform: scaleX(1.1); /* Масштабирование по горизонтали */
@@ -553,8 +554,8 @@ body {
         &_staticHeaderlogoFirstWord::before {
             content: "";
             position: absolute;
-            top: calc(41 / 1440 * 100vw);
-            left: calc(123 / 1440 * 100vw);
+            top: calc(35 / 1440 * 100vw);
+            left: calc(104 / 1440 * 100vw);
             width: calc(8 / 1440 * 100vw);
             height: calc(6 / 1440 * 100vw);
             flex-shrink: 0;
@@ -567,7 +568,7 @@ body {
 
 		&_staticHeaderlogoSecondWord {
             margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
-            display: flex;
+            display: none;
             font-family: "cormorantSC";
             font-size: calc(0px + 15.35 * (100vw / 1440));
             text-transform: uppercase;
@@ -576,7 +577,7 @@ body {
 		}
 
 		&_staticHeaderlogoThirdWord {
-            display: flex;
+            display: none;
             margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
             font-family: "cormorantSC";
             font-size: calc(0px + 22 * (100vw / 1440));

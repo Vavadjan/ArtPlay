@@ -472,27 +472,28 @@ body {
   z-index: 999;
 }
 
-.logoWrapper {
+.staticHeaderLogoWrapper {
   margin: 0 0 0 4.8611111111vw;
   display: flex;
   flex-direction: row;
-  width: 17.0833333333vw;
+  width: 8.1944444444vw;
 }
-.logoWrapper_staticHeaderlogoImage {
+.staticHeaderLogoWrapper_staticHeaderlogoImage {
   margin: 5.3472222222vw 0 0 0;
   width: 8.5048611111vw;
   height: 4.7520833333vw;
+  display: none;
 }
-.logoWrapper_staticHeaderlogoTitleWrapper {
+.staticHeaderLogoWrapper_staticHeaderlogoTitleWrapper {
   display: flex;
   flex-direction: column;
 }
-.logoWrapper_staticHeaderlogoFirstWord {
+.staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
   position: relative;
-  margin: 2.0138888889vw 0 0 -0.8333333333vw;
+  margin: 0.6944444444vw 0 0 0vw;
   display: flex;
   font-family: "chiller";
-  font-size: calc(0px + 10.8333333333vw);
+  font-size: calc(0px + 9.375vw);
   line-height: 0.55;
   display: inline-block; /* Необходимо для применения transform */
   transform: scaleX(1.1); /* Масштабирование по горизонтали */
@@ -500,11 +501,11 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.logoWrapper_staticHeaderlogoFirstWord::before {
+.staticHeaderLogoWrapper_staticHeaderlogoFirstWord::before {
   content: "";
   position: absolute;
-  top: 2.8472222222vw;
-  left: 8.5416666667vw;
+  top: 2.4305555556vw;
+  left: 7.2222222222vw;
   width: 0.5555555556vw;
   height: 0.4166666667vw;
   flex-shrink: 0;
@@ -514,9 +515,9 @@ body {
   background-position: 100% 100%;
   border: none;
 }
-.logoWrapper_staticHeaderlogoSecondWord {
+.staticHeaderLogoWrapper_staticHeaderlogoSecondWord {
   margin: 0vw 0 0 -0.9027777778vw;
-  display: flex;
+  display: none;
   font-family: "cormorantSC";
   font-size: calc(0px + 1.0659722222vw);
   text-transform: uppercase;
@@ -525,8 +526,8 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.logoWrapper_staticHeaderlogoThirdWord {
-  display: flex;
+.staticHeaderLogoWrapper_staticHeaderlogoThirdWord {
+  display: none;
   margin: -0.1388888889vw 0 0 -0.9027777778vw;
   font-family: "cormorantSC";
   font-size: calc(0px + 1.5277777778vw);
