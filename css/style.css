@@ -24,7 +24,7 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: calc(76px + 7.0138888889vw);
+  height: calc(0px + 12.2916666667vw);
   background-color: black;
   color: white;
   display: flex;
@@ -163,7 +163,7 @@ body {
   display: flex;
   margin: 0;
   margin: 1.8055555556vw 0 0 6.25vw;
-  font-size: calc(12px + 0.8333333333vw);
+  font-size: calc(0px + 1.6666666667vw);
   justify-content: center;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -183,7 +183,7 @@ body {
 }
 .mainMenu_li {
   position: relative;
-  font-size: calc(10px + 0.5555555556vw);
+  font-size: calc(0px + 1.25vw);
 }
 .mainMenu_link {
   position: relative;
@@ -343,7 +343,6 @@ body {
 }
 .socialDownSubwrapper_followUsTitle {
   width: 6.7361111111vw;
-  margin: 0vw 0vw 0 0;
   font-size: calc(0px + 1.0902777778vw);
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -629,7 +628,7 @@ body {
   background-color: #3a8374;
 }
 
-.staticHeaderИurgerMenuButtonTitle {
+.staticHeaderBurgerMenuButtonTitle {
   position: absolute;
   font-size: calc(18px + 0vw);
   font-family: "firasans";
