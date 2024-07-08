@@ -163,7 +163,7 @@ body {
   display: flex;
   margin: 0;
   margin: 1.8055555556vw 0 0 6.25vw;
-  font-size: calc(0px + 1.6666666667vw);
+  font-size: calc(12px + 0.8333333333vw);
   justify-content: center;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -183,7 +183,7 @@ body {
 }
 .mainMenu_li {
   position: relative;
-  font-size: calc(0px + 1.25vw);
+  font-size: calc(10px + 0.5555555556vw);
 }
 .mainMenu_link {
   position: relative;
@@ -219,20 +219,21 @@ body {
   height: 100%;
   width: 24.7222222222vw;
   flex-direction: column;
-  gap: 2.2916666667vw;
   align-items: end;
+  justify-content: space-between;
 }
 
 .socialUpperSubWrapper {
   margin: 0;
+  padding: 3.8194444444vw 0 0 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .socialUpperSubWrapper_likeButton {
   position: relative;
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
-  margin: 3.3333333333vw 0 0 0;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/likeHeart.svg);
@@ -257,7 +258,7 @@ body {
   transform: scale(1.1);
 }
 .socialUpperSubWrapper_likeButtonDiscription {
-  margin: 3.8194444444vw 0 0 0.3472222222vw;
+  margin: 0vw 0 0 0.3472222222vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
   -webkit-user-select: none;
@@ -265,7 +266,7 @@ body {
           user-select: none;
 }
 .socialUpperSubWrapper_shareButtonDiscription {
-  margin: 3.8194444444vw 0.3472222222vw 0 1.7361111111vw;
+  margin: 0vw 0.3472222222vw 0 1.7361111111vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
   -webkit-user-select: none;
@@ -274,9 +275,9 @@ body {
 }
 .socialUpperSubWrapper_shareButton {
   position: relative;
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
-  margin: 3.3333333333vw 1.9444444444vw 0 0;
+  width: 32px;
+  height: 32px;
+  margin: 0vw 1.9444444444vw 0 0;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/shareArrow.svg);
@@ -304,10 +305,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 10.4861111111vw;
-  height: 3.5416666667vw;
-  margin: 2.7083333333vw 0 0 0;
-  border-radius: 1.7708333333vw;
+  width: 151px;
+  height: 51px;
+  margin: 0vw 0 0 0;
+  border-radius: 51px;
   color: #fff;
   flex-shrink: 0;
   background: url(../pic/burgerButtonIcon.svg);
@@ -327,19 +328,22 @@ body {
 }
 .socialUpperSubWrapper .burgerMenuButtonTitle {
   position: absolute;
-  font-size: calc(0px + 1.25vw);
+  font-size: calc(18px + 0vw);
   font-family: "firasans";
-  top: 1.0416666667vw;
-  left: 4.8611111111vw;
+  top: 15px;
+  left: 70px;
 }
 
 .socialDownSubwrapper {
   display: flex;
+  padding: 0 0 1.5277777778vw 0;
   flex-direction: row;
+  align-items: center;
   gap: 0.6944444444vw;
 }
 .socialDownSubwrapper_followUsTitle {
-  margin: 0.625vw 0.9722222222vw 0 0;
+  width: 6.7361111111vw;
+  margin: 0vw 0vw 0 0;
   font-size: calc(0px + 1.0902777778vw);
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -347,8 +351,8 @@ body {
           user-select: none;
 }
 .socialDownSubwrapper_headerFacebookButton {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/fasebook.svg);
@@ -367,8 +371,8 @@ body {
   transition: 1s;
 }
 .socialDownSubwrapper_headerInstagramButton {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/instagram.svg);
@@ -387,8 +391,8 @@ body {
   transition: 1s;
 }
 .socialDownSubwrapper_headerTwitterButton {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/twitter.svg);
@@ -407,8 +411,8 @@ body {
   transition: 1s;
 }
 .socialDownSubwrapper_headerMailButton {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/mail.svg);
@@ -433,8 +437,8 @@ body {
   background-color: #fff;
 }
 .socialDownSubwrapper_headerLoginButton {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   background: url(../pic/login.svg);
@@ -603,6 +607,7 @@ body {
   margin: 0;
   width: 1px;
   height: 2.2222222222vw;
+  height: 32px;
   background-color: #000000;
 }
 
@@ -626,8 +631,8 @@ body {
 
 .staticHeaderИurgerMenuButtonTitle {
   position: absolute;
-  font-size: calc(0px + 1.25vw);
+  font-size: calc(18px + 0vw);
   font-family: "firasans";
-  top: 1.0416666667vw;
-  left: 4.8611111111vw;
+  top: 15px;
+  left: 70px;
 }/*# sourceMappingURL=style.css.map */
