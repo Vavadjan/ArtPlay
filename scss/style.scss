@@ -27,7 +27,7 @@ header {
     position: fixed;
 	top: 0;
     width: 100vw;
-    height: calc(177/1440*100vw);
+    height: calc(76px + 101 * (100vw / 1440));
     background-color: black;
     color: white;
     display: flex;
