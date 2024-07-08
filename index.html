@@ -7,59 +7,72 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">    
     <link rel="stylesheet" href="./css/media-queries.css">
+    <script src="./js/staticHeader.js"></script>
 </head>
 <body>
     <header>
-        <div class="logoWrapper">
-            <img class="logoWrapper_logoImage" src="./pic/logo.svg" alt="Art & culture Ukraine">
-            <div class="logoWrapper_logoTitleWrapper">
-                <p class="logoWrapper_logoFirstWord">art</p>
-                <p class="logoWrapper_logoSecondWord">&culture</p>
-                <p class="logoWrapper_logoThirdWord">Ukraine</p>
-            </div>            
-        </div>
+        <div class="mainHeader">
+            <div class="logoWrapper">
+                <img class="logoWrapper_logoImage" src="./pic/logo.svg" alt="Art & culture Ukraine">
+                <div class="logoWrapper_logoTitleWrapper">
+                    <p class="logoWrapper_logoFirstWord">art</p>
+                    <p class="logoWrapper_logoSecondWord">&culture</p>
+                    <p class="logoWrapper_logoThirdWord">Ukraine</p>
+                </div>            
+            </div>
 
-        <div class="languageButton">
-            <div class="flagContainer">
-                <div class="flagContainer_Ukr"></div>
-                <div class="flagContainer_Eng"></div>
+            <div class="languageButton">
+                <div class="flagContainer">
+                    <div class="flagContainer_Ukr"></div>
+                    <div class="flagContainer_Eng"></div>
+                </div>
+            </div>
+
+            <div class="titleWrapper">            
+                <h1>Ukrainian art & culture online</h1>
+                <nav class="mainMenu">
+                    <ul class="mainMenu_ul">
+                        <li class="mainMenu_li"><a class="mainMenu_link" href="#">Головна</a></li>
+                        <li class="mainMenu_li"><a class="mainMenu_link" href="#">Новини</a></li>
+                        <li class="mainMenu_li"><a class="mainMenu_link" href="#">Митці</a></li>
+                        <li class="mainMenu_li"><a class="mainMenu_link" href="#">Виставки</a></li>
+                        <li class="mainMenu_li"><a class="mainMenu_link" href="#">Музеї</a></li>
+                        <li class="mainMenu_li"><a class="mainMenu_link" href="#">Арт Терміни</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="socialWrapper">
+                <div class="socialUpperSubWrapper">
+                    <button id="socialUpperSubWrapper_headerLikeButton" class="socialUpperSubWrapper_likeButton"></button>
+                    <p class="socialUpperSubWrapper_likeButtonDiscription">Like</p>
+                    <p class="socialUpperSubWrapper_shareButtonDiscription">Share</p>
+                    <button id="socialUpperSubWrapper_headerShareButton" class="socialUpperSubWrapper_shareButton"></button>
+                    <button id="socialUpperSubWrapper_headerMenuButton" class="socialUpperSubWrapper_burgerMenuButton">
+                        <p class="burgerMenuButtonTitle">Меню</p>
+                    </button>
+                </div>
+                <div class="socialDownSubwrapper">
+                    <p class="socialDownSubwrapper_followUsTitle">follow us</p>
+                    <button id="socialDownSubwrapper_headerFacebookButton" class="socialDownSubwrapper_headerFacebookButton"></button>
+                    <button id="socialDownSubwrapper_headerInstagramButton" class="socialDownSubwrapper_headerInstagramButton"></button>
+                    <button id="socialDownSubwrapper_headerTwitterButton" class="socialDownSubwrapper_headerTwitterButton"></button>
+                    <button id="socialDownSubwrapper_headerMailButton" class="socialDownSubwrapper_headerMailButton"></button>
+                    <div class="socialDownSubwrapper_separator"></div>                
+                    <button id="socialDownSubwrapper_headerLoginButton" class="socialDownSubwrapper_headerLoginButton"></button>
+                </div>
             </div>
         </div>
-
-        <div class="titleWrapper">            
-            <h1>Ukrainian art & culture online</h1>
-            <nav class="mainMenu">
-                <ul class="mainMenu_ul">
-                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Головна</a></li>
-                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Новини</a></li>
-                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Митці</a></li>
-                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Виставки</a></li>
-                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Музеї</a></li>
-                    <li class="mainMenu_li"><a class="mainMenu_link" href="#">Арт Терміни</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="socialWrapper">
-            <div class="socialUpperSubWrapper">
-                <button id="socialUpperSubWrapper_headerLikeButton" class="socialUpperSubWrapper_likeButton"></button>
-                <p class="socialUpperSubWrapper_likeButtonDiscription">Like</p>
-                <p class="socialUpperSubWrapper_shareButtonDiscription">Share</p>
-                <button id="socialUpperSubWrapper_headerShareButton" class="socialUpperSubWrapper_shareButton"></button>
-                <button id="socialUpperSubWrapper_headerMenuButton" class="socialUpperSubWrapper_burgerMenuButton">
-                    <p class="burgerMenuButtonTitle">Меню</p>
-                </button>
+        <div class="staticHeader">
+            <div class="logoWrapper">
+                <img class="logoWrapper_staticHeaderlogoImage" src="./pic/logoBlack.svg" alt="Art & culture Ukraine">
+                <div class="logoWrapper_staticHeaderlogoTitleWrapper">
+                    <p class="logoWrapper_staticHeaderlogoFirstWord">art</p>
+                    <p class="logoWrapper_staticHeaderlogoSecondWord">&culture</p>
+                    <p class="logoWrapper_staticHeaderlogoThirdWord">Ukraine</p>
+                </div>            
             </div>
-            <div class="socialDownSubwrapper">
-                <p class="socialDownSubwrapper_followUsTitle">follow us</p>
-                <button id="socialDownSubwrapper_headerFacebookButton" class="socialDownSubwrapper_headerFacebookButton"></button>
-                <button id="socialDownSubwrapper_headerInstagramButton" class="socialDownSubwrapper_headerInstagramButton"></button>
-                <button id="socialDownSubwrapper_headerTwitterButton" class="socialDownSubwrapper_headerTwitterButton"></button>
-                <button id="socialDownSubwrapper_headerMailButton" class="socialDownSubwrapper_headerMailButton"></button>
-                <div class="socialDownSubwrapper_separator"></div>                
-                <button id="socialDownSubwrapper_headerLoginButton" class="socialDownSubwrapper_headerLoginButton"></button>
-            </div>
-        </div>
+        </div> 
     </header>
 
     </div>
