@@ -167,7 +167,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // gap: calc(46/1440*100vw);
 
     h1 {
         display: flex;
@@ -539,7 +538,7 @@ body {
 
 		&_staticHeaderlogoFirstWord {
             position: relative;
-            margin: calc(0 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
+            margin: calc(-20 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
             display: flex;
             font-family: "chiller";
             font-size: calc(90px + 45 * (100vw / 1440));
@@ -578,7 +577,7 @@ body {
 }
 
 .staticHeaderTitleWrapper {
-    margin: 0 0 0 calc(100 / 1440 * 100vw);
+    margin: 0 0 0 calc(75 / 1440 * 100vw);
     display: flex;
     justify-content: center;
     display: flex;

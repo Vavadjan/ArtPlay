@@ -488,7 +488,7 @@ body {
 }
 .staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
   position: relative;
-  margin: 0vw 0 0 0vw;
+  margin: -1.3888888889vw 0 0 0vw;
   display: flex;
   font-family: "chiller";
   font-size: calc(90px + 3.125vw);
@@ -525,7 +525,7 @@ body {
 }
 
 .staticHeaderTitleWrapper {
-  margin: 0 0 0 6.9444444444vw;
+  margin: 0 0 0 5.2083333333vw;
   display: flex;
   justify-content: center;
   display: flex;
