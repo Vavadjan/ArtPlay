@@ -361,6 +361,8 @@ body {
         height: calc(51 / 1440 * 100vw);
         // width: 151px;
         // height: 51px;
+        min-width: 94.75px;
+        min-height: 32px;
         margin: 0;
         padding: 0;
         border-radius: calc((51 / 1440 * 100vw) / 2);

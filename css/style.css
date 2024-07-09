@@ -328,6 +328,8 @@ body {
   gap: 0.5555555556vw;
   width: 10.4861111111vw;
   height: 3.5416666667vw;
+  min-width: 94.75px;
+  min-height: 32px;
   margin: 0;
   padding: 0;
   border-radius: 1.7708333333vw;
