@@ -379,6 +379,7 @@ body {
 }
 
 .socialDownSubwrapper {
+    margin: 0;
     display: flex;
     width: 100%;
     padding: 0 0 calc(22 / 1440 * 100vw) 0;
@@ -503,6 +504,7 @@ body {
         width: 1px;
         height: calc(32 / 1440 * 100vw);
         background-color: #fff;
+        order: 5;
     }
 
     &_headerLoginButton {
@@ -518,6 +520,7 @@ body {
         background-position: 100% 100%;
         border: none;
         cursor: pointer;
+        order: 6;
     }
 
     &_headerLoginButton:hover {
