@@ -310,11 +310,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5555555556vw;
-  width: 151px;
-  height: 51px;
+  width: 10.4861111111vw;
+  height: 3.5416666667vw;
   margin: 0;
   padding: 0;
-  border-radius: 51px;
+  border-radius: 1.7708333333vw;
   color: #fff;
   flex-shrink: 0;
   border: none;
@@ -469,7 +469,7 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: calc(104px + 1.3194444444vw);
+  height: 6.9444444444vw;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   display: flex;
@@ -498,7 +498,7 @@ body {
   margin: -1.3888888889vw 0 0 0vw;
   display: flex;
   font-family: "chiller";
-  font-size: calc(90px + 3.125vw);
+  font-size: 9.375vw;
   line-height: 0.55;
   display: inline-block; /* Необходимо для применения transform */
   transform: scaleX(1.1); /* Масштабирование по горизонтали */
@@ -618,24 +618,28 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 151px;
-  height: 51px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5555555556vw;
+  width: 10.4861111111vw;
+  height: 3.5416666667vw;
+  min-width: 94.75px;
+  min-height: 32px;
   margin: 0;
-  border-radius: 51px;
+  padding: 0;
+  border-radius: 1.7708333333vw;
   color: #fff;
   flex-shrink: 0;
-  background: url(../pic/burgerButtonIcon.svg);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 25% 50%;
   border: none;
   background-color: #3a8374;
 }
 
+.staticBurgerMenuButtonTitleImage {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
 .staticHeaderBurgerMenuButtonTitle {
-  position: absolute;
-  font-size: calc(18px + 0vw);
+  font-size: calc(9px + 0.625vw);
   font-family: "firasans";
-  top: 15px;
-  left: 70px;
 }/*# sourceMappingURL=style.css.map */

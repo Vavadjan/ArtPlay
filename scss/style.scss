@@ -338,14 +338,14 @@ body {
         justify-content: center;
         align-items: center;
         gap: calc(8 / 1440 * 100vw);
-        // width: calc(151 / 1440 * 100vw);
-        // height: calc(51 / 1440 * 100vw);
-        width: 151px;
-        height: 51px;
+        width: calc(151 / 1440 * 100vw);
+        height: calc(51 / 1440 * 100vw);
+        // width: 151px;
+        // height: 51px;
         margin: 0;
         padding: 0;
-        // border-radius: calc((51 / 1440 * 100vw) / 2);
-        border-radius: 51px;
+        border-radius: calc((51 / 1440 * 100vw) / 2);
+        // border-radius: 51px;
         color: #fff;
         flex-shrink: 0;
         border: none;
@@ -542,7 +542,7 @@ body {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: calc(104px + 19 * (100vw / 1440));
+    height: calc(100 / 1440 * 100vw);
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
@@ -573,7 +573,7 @@ body {
             margin: calc(-20 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
             display: flex;
             font-family: "chiller";
-            font-size: calc(90px + 45 * (100vw / 1440));
+            font-size: calc(135 / 1440 * 100vw);
             line-height: 0.55; //Важная строка!!!
             display: inline-block; /* Необходимо для применения transform */
             transform: scaleX(1.1); /* Масштабирование по горизонтали */
@@ -664,8 +664,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .staticHeaderLoginWrapper {
     margin: 0 calc(70 / 1440 * 100vw) 0 0;
     display: flex;
@@ -701,30 +699,34 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    // width: calc(151 / 1440 * 100vw);
-    // height: calc(51 / 1440 * 100vw);
-    width: 151px;
-    height: 51px;
+    justify-content: center;
+    align-items: center;
+    gap: calc(8 / 1440 * 100vw);
+    width: calc(151 / 1440 * 100vw);
+    height: calc(51 / 1440 * 100vw);
+    // width: 151px;
+    // height: 51px;
+    min-width: 94.75px;
+    min-height: 32px;
     margin: 0;
-    // border-radius: calc((51 / 1440 * 100vw) / 2);
-    border-radius: 51px;
+    padding: 0;
+    border-radius: calc((51 / 1440 * 100vw) / 2);
+    // border-radius: 51px;
     color: #fff;
     flex-shrink: 0;
-    background: url(../pic/burgerButtonIcon.svg);
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: 25% 50%;
     border: none;
     background-color: #3a8374;
 }
 
+.staticBurgerMenuButtonTitleImage {
+    // width: 32px;
+    // height: 32px;
+    width: calc(32 / 1440 * 100vw);
+    height: calc(32 / 1440 * 100vw);
+}
+
 .staticHeaderBurgerMenuButtonTitle {
-    position: absolute;
-    font-size: calc(18px + 0 * (100vw / 1440));
+    font-size: calc(9px + 9 * (100vw / 1440));
     font-family: "firasans";
-    // top: calc(15 / 1440 * 100vw);
-    // left: calc(70 / 1440 * 100vw);
-    top: 15px;
-    left: 70px;
 }
 

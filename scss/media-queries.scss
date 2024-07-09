@@ -25,38 +25,57 @@
         margin: calc(0 / 1440 * 100vw) calc(0 / 1440 * 100vw) 0 0;
     } 
 
-    .socialUpperSubWrapper_burgerMenuButton {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: calc(8 / 1440 * 100vw);
-        width: calc(151 / 1279 * 100vw);
-        height: calc(0px + 51 * (100vw / 1279));
-        // width: 151px;
-        // height: 51px;
-        margin: 0;
-        padding: 0;
-        border-radius: calc((51 / 1279 * 100vw) / 2);
-        // border-radius: 51px;
-        color: #fff;
-        flex-shrink: 0;
-        border: none;
-        background-color: #3a8374;
-    }
-
-    // .burgerMenuButtonTitleImage {
-    //     // width: 32px;
-    //     // height: 32px;
-    //     width: calc(32 / 1279 * 100vw);
-    //     height: calc(32 / 1279 * 100vw);
+    // .socialUpperSubWrapper_burgerMenuButton staticHeaderBurgerMenuButton{
+    //     position: relative;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: calc(8 / 1440 * 100vw);
+    //     width: calc(151 / 1279 * 100vw);
+    //     height: calc(0px + 51 * (100vw / 1279));
+    //     // width: 151px;
+    //     // height: 51px;
+    //     margin: 0;
+    //     padding: 0;
+    //     border-radius: calc((51 / 1279 * 100vw) / 2);
+    //     // border-radius: 51px;
+    //     color: #fff;
+    //     flex-shrink: 0;
+    //     border: none;
+    //     background-color: #3a8374;
     // }
     
-    .burgerMenuButtonTitle {
-        font-size: calc(10px + 8 * (100vw / 1279));
-        font-family: "firasans";
-    }
+    // .burgerMenuButtonTitle {
+    //     font-size: calc(10px + 8 * (100vw / 1279));
+    //     font-family: "firasans";
+    // }
+
+    // .staticHeaderBurgerMenuButton{
+    //     position: relative;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: calc(8 / 1279 * 100vw);
+    //     width: calc(151 / 1279 * 100vw);
+    //     height: calc(0px + 51 * (100vw / 1279));
+    //     // width: 151px;
+    //     // height: 51px;
+    //     margin: 0;
+    //     padding: 0;
+    //     border-radius: calc((51 / 1279 * 100vw) / 2);
+    //     // border-radius: 51px;
+    //     color: #fff;
+    //     flex-shrink: 0;
+    //     border: none;
+    //     background-color: #3a8374;
+    // }
+    
+    // .staticHeaderBurgerMenuButtonTitle {
+    //     font-size: calc(10px + 8 * (100vw / 1279));
+    //     font-family: "firasans";
+    // }
 }
 
 
