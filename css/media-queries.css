@@ -25,6 +25,19 @@
   .logoWrapper {
     padding: 0;
   }
+  .logoWrapper_logoFirstWord {
+    position: relative;
+    margin: -0.1388888889vw 0 0 -0.8333333333vw;
+    display: flex;
+    font-family: "chiller";
+    font-size: calc(0px + 10.8333333333vw);
+    line-height: 0.55;
+    display: inline-block; /* Необходимо для применения transform */
+    transform: scaleX(1.1); /* Масштабирование по горизонтали */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
   .titleWrapper {
     margin: 0;
     padding: 0;
@@ -108,6 +121,8 @@
     display: none;
   }
   .socialWrapper {
+    align-items: center;
+    flex-direction: row;
     justify-content: end;
     height: 100%;
     width: auto;
@@ -115,12 +130,13 @@
   }
   .socialUpperSubWrapper {
     flex-direction: row;
+    justify-content: end;
     height: 100%;
     width: auto;
     padding: 0;
     gap: 10px;
   }
-  .socialUpperSubWrapper_mobileHeaderLoginButton {
+  .mobileHeaderLoginButton {
     margin: 0;
     display: flex;
     width: 32px;
@@ -134,19 +150,20 @@
     border: none;
     cursor: pointer;
   }
-  .socialUpperSubWrapper_mobileHeaderLoginButton:hover {
+  .mobileHeaderLoginButton:hover {
     box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
     transition: 0.4s;
     cursor: pointer; /* Изменение вида курсора на палец при наведении */
   }
-  .socialUpperSubWrapper_mobileHeaderLoginButton:not(:hover) {
+  .mobileHeaderLoginButton:not(:hover) {
     transition: 1s;
   }
-  .socialUpperSubWrapper_mobileHeaderSeparator {
+  .mobileHeaderSeparator {
     display: flex;
     margin: 0 1.3888888889vw;
     width: 1px;
     height: 2.2222222222vw;
+    height: 32px;
     background-color: #fff;
   }
   .socialUpperSubWrapper_likeButton {
@@ -163,5 +180,71 @@
   }
   .socialDownSubwrapper_headerLoginButton {
     display: none;
+  }
+  .staticHeaderTitleWrapper {
+    margin: 0;
+    width: 42.2287390029vw;
+  }
+}
+@media (max-width: 902px) {
+  .staticHeaderBurgerMenuButton {
+    gap: 8px;
+    width: 95px;
+    height: 32px;
+    border-radius: 32px;
+  }
+  .staticBurgerMenuButtonTitleImage {
+    width: 20px;
+    height: 20px;
+  }
+  .staticHeaderBurgerMenuButtonTitle {
+    font-size: 14.64px;
+    font-family: "firasans";
+  }
+}
+@media (max-width: 665px) {
+  .mobileHeaderLoginButton {
+    display: none;
+  }
+  .mobileHeaderSeparator {
+    display: none;
+  }
+  .staticHeaderTitleWrapper {
+    margin: 0;
+  }
+  .staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
+    font-size: 68px;
+  }
+  .staticHeadereaderLoginButton {
+    display: none;
+  }
+  .staticHeaderSeparator {
+    display: none;
+  }
+  .staticHeaderLogoWrapper {
+    width: auto;
+  }
+  .staticHeaderLogoWrapper_staticHeaderlogoFirstWord::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 54px;
+    width: 4.06px;
+    height: 2.77px;
+    flex-shrink: 0;
+    background: url(../pic/logoPoint.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+  }
+}
+@media (max-width: 510px) {
+  .staticHeaderTitle {
+    display: none;
+  }
+  .staticHeaderTitleWrapper {
+    justify-content: space-around;
+    width: auto;
   }
 }/*# sourceMappingURL=media-queries.css.map */

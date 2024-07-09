@@ -156,6 +156,7 @@ body {
 }
 
 .titleWrapper {
+  width: 42.2287390029vw;
   margin: 0 0 0 -5.9027777778vw;
   padding: 1.8055555556vw 0 0 6.25vw;
   display: flex;
@@ -171,6 +172,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  text-align: center;
 }
 
 .mobileHeaderLikeButton {
@@ -314,33 +316,10 @@ body {
   transform: scale(1.1);
 }
 .socialUpperSubWrapper .mobileHeaderLoginButton {
-  margin: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/login.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
   display: none;
-}
-.socialUpperSubWrapper .mobileHeaderLoginButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.socialUpperSubWrapper .mobileHeaderLoginButton:not(:hover) {
-  transition: 1s;
 }
 .socialUpperSubWrapper .mobileHeaderSeparator {
   display: none;
-  margin: 0 1.3888888889vw;
-  width: 1px;
-  height: 2.2222222222vw;
-  background-color: #fff;
 }
 .socialUpperSubWrapper_burgerMenuButton {
   position: relative;
@@ -480,7 +459,6 @@ body {
   width: 1px;
   height: 2.2222222222vw;
   background-color: #fff;
-  order: 5;
 }
 .socialDownSubwrapper_headerLoginButton {
   width: 32px;
@@ -493,7 +471,6 @@ body {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
-  order: 6;
 }
 .socialDownSubwrapper_headerLoginButton:hover {
   box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
@@ -514,6 +491,7 @@ body {
   top: 0;
   width: 100vw;
   height: 6.9444444444vw;
+  min-height: 50px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   display: flex;
@@ -527,7 +505,7 @@ body {
   margin: 0 0 0 4.8611111111vw;
   display: flex;
   flex-direction: row;
-  width: 8.1944444444vw;
+  width: auto;
   align-items: center;
 }
 .staticHeaderLogoWrapper_staticHeaderlogoImage {
@@ -610,6 +588,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  text-align: center;
 }
 
 .staticHeaderShareButton {

@@ -34,6 +34,18 @@
         padding: 0;
     }
 
+    .logoWrapper_logoFirstWord {
+        position: relative;
+        margin: calc(-2 / 1440 * 100vw) 0 0 calc(-12 / 1440 * 100vw);
+        display: flex;
+        font-family: "chiller";
+        font-size: calc(0px + 156 * (100vw / 1440));
+        line-height: 0.55; //Важная строка!!!
+        display: inline-block; /* Необходимо для применения transform */
+        transform: scaleX(1.1); /* Масштабирование по горизонтали */
+        user-select: none;
+    }
+
     .titleWrapper {
         margin: 0;
         padding: 0;
@@ -135,6 +147,8 @@
     }
 
     .socialWrapper {
+        align-items: center;
+        flex-direction: row;
         justify-content: end;
         height: 100%;
         width: auto;
@@ -143,14 +157,14 @@
 
     .socialUpperSubWrapper {
         flex-direction: row;
-        // justify-content: end;
+        justify-content: end;
         height: 100%;
         width: auto;
         padding: 0;
         gap: 10px;
     }
 
-    .socialUpperSubWrapper_mobileHeaderLoginButton {
+    .mobileHeaderLoginButton {
         margin: 0;
         display: flex;
         // width: calc(32 / 1440 * 100vw);
@@ -167,22 +181,23 @@
         cursor: pointer;
     }
 
-    .socialUpperSubWrapper_mobileHeaderLoginButton:hover {
+    .mobileHeaderLoginButton:hover {
         box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
         transition: 0.4s;
         // cursor: default; /* Стандартный курсор при наведении */
         cursor: pointer; /* Изменение вида курсора на палец при наведении */
     }
 
-    .socialUpperSubWrapper_mobileHeaderLoginButton:not(:hover) {
+    .mobileHeaderLoginButton:not(:hover) {
         transition: 1s;
     }
 
-    .socialUpperSubWrapper_mobileHeaderSeparator {
+    .mobileHeaderSeparator {
         display: flex;
         margin: 0 calc(20 / 1440 * 100vw);
         width: 1px;
         height: calc(32 / 1440 * 100vw);
+        height: 32px;
         background-color: #fff;
     }
 
@@ -205,14 +220,101 @@
     .socialDownSubwrapper_headerLoginButton {
         display: none;
     }
+
+    .staticHeaderTitleWrapper {
+        margin: 0;
+        width: calc(432 / 1023 * 100vw);
+    }
+    
 }
 
-@media (max-width: 980px) {
+@media (max-width: 902px) {
+    .staticHeaderBurgerMenuButton {
+        gap: 8px;
+        width: 95px;
+        height: 32px;
+        border-radius: 32px;
+    }
+    
+    .staticBurgerMenuButtonTitleImage {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .staticHeaderBurgerMenuButtonTitle {
+        font-size: 14.64px;
+        font-family: "firasans";
+    }
 }
-@media (max-width: 838px) {
+
+@media (max-width: 665px) {
+    
+.mobileHeaderLoginButton {
+    display: none;
 }
-@media (max-width: 800px) {
+
+.mobileHeaderSeparator {
+    display: none;
 }
+
+.staticHeaderTitleWrapper {
+    margin: 0;
+    // width: calc(432 / 1023 * 100vw);
+}
+
+.staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
+    font-size: min(68px);
+}
+
+.staticHeadereaderLoginButton {
+    display: none;
+}
+
+.staticHeaderSeparator {
+    display: none;
+}
+
+.staticHeaderLogoWrapper {
+    width: auto;
+}
+
+.staticHeaderLogoWrapper_staticHeaderlogoFirstWord::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 54px;
+    width: 4.06px;
+    height: 2.77px;
+    flex-shrink: 0;
+    background: url(../pic/logoPoint.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+}
+
+
+
+
+}
+
+
+
+
+@media (max-width: 510px) {
+    .staticHeaderTitle {
+        display: none;
+    }
+
+    .staticHeaderTitleWrapper {
+        justify-content: space-around;
+        width: auto;
+    }
+}
+
+
+
+
 @media (max-width: 639px) {
 }
 @media (max-width: 400px) {
