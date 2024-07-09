@@ -225,10 +225,12 @@ body {
 
 .socialUpperSubWrapper {
   margin: 0;
-  padding: 3.8194444444vw 0 0 0;
+  padding: 2.7083333333vw 0 0 0;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .socialUpperSubWrapper_likeButton {
   position: relative;
@@ -305,16 +307,16 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5555555556vw;
   width: 151px;
   height: 51px;
-  margin: 0vw 0 0 0;
+  margin: 0;
+  padding: 0;
   border-radius: 51px;
   color: #fff;
   flex-shrink: 0;
-  background: url(../pic/burgerButtonIcon.svg);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 25% 50%;
   border: none;
   background-color: #3a8374;
 }
@@ -326,20 +328,22 @@ body {
 .socialUpperSubWrapper_burgerMenuButton:not(:hover) {
   transition: 1s;
 }
+.socialUpperSubWrapper .burgerMenuButtonTitleImage {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
 .socialUpperSubWrapper .burgerMenuButtonTitle {
-  position: absolute;
   font-size: calc(18px + 0vw);
   font-family: "firasans";
-  top: 15px;
-  left: 70px;
 }
 
 .socialDownSubwrapper {
   display: flex;
+  width: 100%;
   padding: 0 0 1.5277777778vw 0;
   flex-direction: row;
   align-items: center;
-  gap: 0.6944444444vw;
+  justify-content: space-between;
 }
 .socialDownSubwrapper_followUsTitle {
   width: 6.7361111111vw;

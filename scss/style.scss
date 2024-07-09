@@ -244,10 +244,12 @@ body {
 
 .socialUpperSubWrapper {
     margin: 0;
-    padding: calc(55 / 1440 * 100vw) 0 0 0;
+    padding: calc(39 / 1440 * 100vw) 0 0 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
     &_likeButton {
         position: relative;
@@ -333,19 +335,19 @@ body {
         position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: calc(8 / 1440 * 100vw);
         // width: calc(151 / 1440 * 100vw);
         // height: calc(51 / 1440 * 100vw);
         width: 151px;
         height: 51px;
-        margin: calc(0 / 1440 * 100vw) 0 0 0;
+        margin: 0;
+        padding: 0;
         // border-radius: calc((51 / 1440 * 100vw) / 2);
         border-radius: 51px;
         color: #fff;
         flex-shrink: 0;
-        background: url(../pic/burgerButtonIcon.svg);
-        background-repeat: no-repeat;
-        background-size: 20%;
-        background-position: 25% 50%;
         border: none;
         background-color: #3a8374;
     }
@@ -361,23 +363,27 @@ body {
         transition: 1s;
     }
 
+    .burgerMenuButtonTitleImage {
+        // width: 32px;
+        // height: 32px;
+        width: calc(32 / 1440 * 100vw);
+        height: calc(32 / 1440 * 100vw);
+    }
+
     .burgerMenuButtonTitle {
-        position: absolute;
         font-size: calc(18px + 0 * (100vw / 1440));
         font-family: "firasans";
-        // top: calc(15 / 1440 * 100vw);
-        // left: calc(70 / 1440 * 100vw);
-        top: 15px;
-        left: 70px;
     }
 }
 
 .socialDownSubwrapper {
     display: flex;
+    width: 100%;
     padding: 0 0 calc(22 / 1440 * 100vw) 0;
     flex-direction: row;
     align-items: center;
-    gap: calc(10 / 1440 * 100vw);
+    justify-content: space-between;
+    // gap: calc(10 / 1440 * 100vw);
 
     &_followUsTitle {
         width: calc(97 / 1440 * 100vw);

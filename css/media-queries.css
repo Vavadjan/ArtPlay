@@ -1,11 +1,40 @@
-@charset "UTF-8";
-/* это без учёта margin */
-/* Медиа-запрос для изменения порядка отображения на ширине 1441px и выше */
-/* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
-/* Медиа-запрос для изменения порядка отображения на ширине 1137px и ниже */
-/* Медиа-запрос для изменения порядка отображения на ширине 980px и ниже */
-/* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
-/* Медиа-запрос для изменения порядка отображения на ширине 800px и ниже */
-/* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
-/* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
-/*# sourceMappingURL=media-queries.css.map */
+@media (max-width: 1439px) {
+  .socialUpperSubWrapper_likeButtonDiscription {
+    display: none;
+  }
+  .socialUpperSubWrapper_shareButtonDiscription {
+    display: none;
+  }
+}
+@media (max-width: 1279px) {
+  .socialDownSubwrapper_followUsTitle {
+    display: none;
+  }
+  .socialUpperSubWrapper {
+    gap: 0.6944444444vw;
+  }
+  .socialUpperSubWrapper_shareButton {
+    margin: 0vw 0vw 0 0;
+  }
+  .socialUpperSubWrapper_burgerMenuButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5555555556vw;
+    width: 11.8060985145vw;
+    height: calc(0px + 3.9874902267vw);
+    margin: 0;
+    padding: 0;
+    border-radius: 1.9937451134vw;
+    color: #fff;
+    flex-shrink: 0;
+    border: none;
+    background-color: #3a8374;
+  }
+  .burgerMenuButtonTitle {
+    font-size: calc(10px + 0.625488663vw);
+    font-family: "firasans";
+  }
+}/*# sourceMappingURL=media-queries.css.map */
