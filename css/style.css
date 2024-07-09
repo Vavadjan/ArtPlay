@@ -165,12 +165,20 @@ body {
 .titleWrapper .titleH1 {
   display: flex;
   margin: 0;
-  font-size: calc(0px + 1.6666666667vw);
+  font-size: calc(12px + 0.8333333333vw);
   justify-content: center;
   text-transform: uppercase;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.mobileHeaderLikeButton {
+  display: none;
+}
+
+.mobileHeaderShareButton {
+  display: none;
 }
 
 .mainMenu {
@@ -304,6 +312,12 @@ body {
 }
 .socialUpperSubWrapper_shareButton:hover::before {
   transform: scale(1.1);
+}
+.socialUpperSubWrapper .mobileHeaderLoginButton {
+  display: none;
+}
+.socialUpperSubWrapper .mobileHeaderSeparator {
+  display: none;
 }
 .socialUpperSubWrapper_burgerMenuButton {
   position: relative;
@@ -563,7 +577,6 @@ body {
 
 .staticHeaderTitle {
   display: flex;
-  margin: 0;
   margin: 0 0 0 0vw;
   font-size: calc(12px + 0.8333333333vw);
   justify-content: center;

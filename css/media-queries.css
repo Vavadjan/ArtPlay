@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 1439px) {
   .socialUpperSubWrapper_likeButtonDiscription {
     display: none;
@@ -27,6 +28,66 @@
   .titleWrapper {
     margin: 0;
     padding: 0;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.1527777778vw;
+  }
+  .mobileHeaderLikeButton {
+    display: flex;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: url(../pic/likeHeart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .mobileHeaderLikeButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../pic/likeHeart.svg) center center/contain no-repeat;
+    transition: transform 0.3s ease;
+  }
+  .mobileHeaderLikeButton:hover::before {
+    transform: scale(1.1);
+  }
+  .mobileHeaderShareButton {
+    position: relative;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin: 0vw 0vw 0 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: url(../pic/shareArrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .mobileHeaderShareButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../pic/shareArrow.svg) center center/contain no-repeat;
+    transition: transform 0.3s ease;
+  }
+  .mobileHeaderShareButton:hover::before {
+    transform: scale(1.1);
   }
   .mainMenu {
     display: none;
@@ -53,10 +114,40 @@
     padding: 0;
   }
   .socialUpperSubWrapper {
-    justify-content: end;
+    flex-direction: row;
     height: 100%;
     width: auto;
     padding: 0;
+    gap: 10px;
+  }
+  .mobileHeaderLoginButton {
+    margin: 0;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: url(../pic/login.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+    cursor: pointer;
+  }
+  .mobileHeaderLoginButton:hover {
+    box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
+    transition: 0.4s;
+    cursor: pointer; /* Изменение вида курсора на палец при наведении */
+  }
+  .mobileHeaderLoginButton:not(:hover) {
+    transition: 1s;
+  }
+  .mobileHeaderSeparator {
+    display: flex;
+    margin: 0 1.3888888889vw;
+    width: 1px;
+    height: 2.2222222222vw;
+    background-color: #fff;
   }
   .socialUpperSubWrapper_likeButton {
     display: none;

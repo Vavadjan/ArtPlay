@@ -8,24 +8,22 @@
     }
     .socialUpperSubWrapper_shareButtonDiscription {
         display: none;
-    }  
+    }
 }
 
-
-@media (max-width: 1279px) { 
+@media (max-width: 1279px) {
     .socialDownSubwrapper_followUsTitle {
-        display: none; 
+        display: none;
     }
 
     .socialUpperSubWrapper {
         gap: calc(10 / 1440 * 100vw);
     }
-    
+
     .socialUpperSubWrapper_shareButton {
         margin: calc(0 / 1440 * 100vw) calc(0 / 1440 * 100vw) 0 0;
     }
 }
-
 
 @media (max-width: 1023px) {
     .mainHeader {
@@ -33,12 +31,83 @@
     }
 
     .logoWrapper {
-        padding: 0;        
+        padding: 0;
     }
 
     .titleWrapper {
         margin: 0;
         padding: 0;
+        align-items: center;
+        flex-direction: row;
+        gap: calc(31 / 1440 * 100vw);
+    }
+
+    .mobileHeaderLikeButton {
+        display: flex;
+        position: relative;
+        // width: calc(32 / 1440 * 100vw);
+        // height: calc(32 / 1440 * 100vw);
+        width: 32px;
+        height: 32px;
+        // margin: calc(48 / 1440 * 100vw) 0 0 0;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: url(../pic/likeHeart.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .mobileHeaderLikeButton::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../pic/likeHeart.svg) center center/contain no-repeat;
+        transition: transform 0.3s ease;
+    }
+
+    .mobileHeaderLikeButton:hover::before {
+        transform: scale(1.1);
+    }
+
+    .mobileHeaderShareButton {
+        position: relative;
+        display: flex;
+        // width: calc(32 / 1440 * 100vw);
+        // height: calc(32 / 1440 * 100vw);
+        width: 32px;
+        height: 32px;
+        margin: calc(0 / 1440 * 100vw) calc(0 / 1440 * 100vw) 0 0;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: url(../pic/shareArrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .mobileHeaderShareButton::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../pic/shareArrow.svg) center center/contain no-repeat;
+        transition: transform 0.3s ease;
+    }
+
+    .mobileHeaderShareButton:hover::before {
+        transform: scale(1.1);
     }
 
     .mainMenu {
@@ -48,15 +117,15 @@
     .socialDownSubwrapper_headerFacebookButton {
         display: none;
     }
-    
+
     .socialDownSubwrapper_headerInstagramButton {
         display: none;
     }
-    
+
     .socialDownSubwrapper_headerTwitterButton {
         display: none;
     }
-    
+
     .socialDownSubwrapper_headerMailButton {
         display: none;
     }
@@ -73,10 +142,48 @@
     }
 
     .socialUpperSubWrapper {
-        justify-content: end;
+        flex-direction: row;
+        // justify-content: end;
         height: 100%;
         width: auto;
         padding: 0;
+        gap: 10px;
+    }
+
+    .mobileHeaderLoginButton {
+        margin: 0;
+        display: flex;
+        // width: calc(32 / 1440 * 100vw);
+        // height: calc(32 / 1440 * 100vw);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: url(../pic/login.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobileHeaderLoginButton:hover {
+        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
+        transition: 0.4s;
+        // cursor: default; /* Стандартный курсор при наведении */
+        cursor: pointer; /* Изменение вида курсора на палец при наведении */
+    }
+
+    .mobileHeaderLoginButton:not(:hover) {
+        transition: 1s;
+    }
+
+    .mobileHeaderSeparator {
+        display: flex;
+        margin: 0 calc(20 / 1440 * 100vw);
+        width: 1px;
+        height: calc(32 / 1440 * 100vw);
+        background-color: #fff;
     }
 
     .socialUpperSubWrapper_likeButton {
@@ -98,9 +205,7 @@
     .socialDownSubwrapper_headerLoginButton {
         display: none;
     }
-
 }
-
 
 @media (max-width: 980px) {
 }

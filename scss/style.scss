@@ -174,12 +174,21 @@ body {
     .titleH1 {
         display: flex;
         margin: 0;
-        font-size: calc(0px + 24 * (100vw / 1440));
+        font-size: calc(12px + 12 * (100vw / 1440));
         justify-content: center;
         text-transform: uppercase;
         user-select: none;
     }
 }
+
+.mobileHeaderLikeButton {
+    display: none;
+}
+
+.mobileHeaderShareButton {
+    display: none;
+}
+
 .mainMenu {
     margin: calc(50 / 1440 * 100vw) 0 0 0;
     display: flex;
@@ -331,6 +340,14 @@ body {
 
     &_shareButton:hover::before {
         transform: scale(1.1);
+    }
+
+    .mobileHeaderLoginButton {
+        display: none;
+    }
+
+    .mobileHeaderSeparator {
+        display: none;
     }
 
     &_burgerMenuButton {
@@ -540,10 +557,7 @@ body {
     color: black;
 }
 
-
-
-
-.staticHeader {    
+.staticHeader {
     position: fixed;
     top: 0;
     width: 100vw;
@@ -564,50 +578,50 @@ body {
     width: calc(118 / 1440 * 100vw);
     align-items: center;
 
-		&_staticHeaderlogoImage {
-            display: none;
-		}
+    &_staticHeaderlogoImage {
+        display: none;
+    }
 
-		&_staticHeaderlogoTitleWrapper {
-            display: flex;
-            flex-direction: column;
-		}
+    &_staticHeaderlogoTitleWrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
-		&_staticHeaderlogoFirstWord {
-            position: relative;
-            margin: calc(-20 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
-            display: flex;
-            font-family: "chiller";
-            font-size: calc(135 / 1440 * 100vw);
-            line-height: 0.55; //Важная строка!!!
-            display: inline-block; /* Необходимо для применения transform */
-            transform: scaleX(1.1); /* Масштабирование по горизонтали */
-            user-select: none;
-        }
-    
-        &_staticHeaderlogoFirstWord::before {
-            content: "";
-            position: absolute;
-            top: calc(35 / 1440 * 100vw);
-            left: calc(104 / 1440 * 100vw);
-            width: calc(8 / 1440 * 100vw);
-            height: calc(6 / 1440 * 100vw);
-            flex-shrink: 0;
-            background: url(../pic/logoPoint.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: 100% 100%;
-            border: none;
-        }		
+    &_staticHeaderlogoFirstWord {
+        position: relative;
+        margin: calc(-20 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
+        display: flex;
+        font-family: "chiller";
+        font-size: calc(135 / 1440 * 100vw);
+        line-height: 0.55; //Важная строка!!!
+        display: inline-block; /* Необходимо для применения transform */
+        transform: scaleX(1.1); /* Масштабирование по горизонтали */
+        user-select: none;
+    }
 
-		&_staticHeaderlogoSecondWord {
-            display: none;
-		}
+    &_staticHeaderlogoFirstWord::before {
+        content: "";
+        position: absolute;
+        top: calc(35 / 1440 * 100vw);
+        left: calc(104 / 1440 * 100vw);
+        width: calc(8 / 1440 * 100vw);
+        height: calc(6 / 1440 * 100vw);
+        flex-shrink: 0;
+        background: url(../pic/logoPoint.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+    }
 
-		&_staticHeaderlogoThirdWord {
-            display: none;
-        }
-	}
+    &_staticHeaderlogoSecondWord {
+        display: none;
+    }
+
+    &_staticHeaderlogoThirdWord {
+        display: none;
+    }
+}
 
 .staticHeader.visible {
     transform: translateY(0);
@@ -642,7 +656,6 @@ body {
 
 .staticHeaderTitle {
     display: flex;
-    margin: 0;
     margin: 0 0 0 calc(0 / 1440 * 100vw);
     font-size: calc(12px + 12 * (100vw / 1440));
     justify-content: center;
@@ -734,4 +747,3 @@ body {
     font-size: calc(9px + 9 * (100vw / 1440));
     font-family: "firasans";
 }
-
