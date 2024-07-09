@@ -343,11 +343,39 @@ body {
     }
 
     .mobileHeaderLoginButton {
+        margin: 0;
+        // width: calc(32 / 1440 * 100vw);
+        // height: calc(32 / 1440 * 100vw);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: url(../pic/login.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+        cursor: pointer;
         display: none;
+    }
+
+    .mobileHeaderLoginButton:hover {
+        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
+        transition: 0.4s;
+        // cursor: default; /* Стандартный курсор при наведении */
+        cursor: pointer; /* Изменение вида курсора на палец при наведении */
+    }
+
+    .mobileHeaderLoginButton:not(:hover) {
+        transition: 1s;
     }
 
     .mobileHeaderSeparator {
         display: none;
+        margin: 0 calc(20 / 1440 * 100vw);
+        width: 1px;
+        height: calc(32 / 1440 * 100vw);
+        background-color: #fff;
     }
 
     &_burgerMenuButton {

@@ -150,7 +150,7 @@
         gap: 10px;
     }
 
-    .mobileHeaderLoginButton {
+    .socialUpperSubWrapper_mobileHeaderLoginButton {
         margin: 0;
         display: flex;
         // width: calc(32 / 1440 * 100vw);
@@ -167,18 +167,18 @@
         cursor: pointer;
     }
 
-    .mobileHeaderLoginButton:hover {
+    .socialUpperSubWrapper_mobileHeaderLoginButton:hover {
         box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
         transition: 0.4s;
         // cursor: default; /* Стандартный курсор при наведении */
         cursor: pointer; /* Изменение вида курсора на палец при наведении */
     }
 
-    .mobileHeaderLoginButton:not(:hover) {
+    .socialUpperSubWrapper_mobileHeaderLoginButton:not(:hover) {
         transition: 1s;
     }
 
-    .mobileHeaderSeparator {
+    .socialUpperSubWrapper_mobileHeaderSeparator {
         display: flex;
         margin: 0 calc(20 / 1440 * 100vw);
         width: 1px;
