@@ -38,12 +38,13 @@ body {
 
 .logoWrapper {
     margin: 0 0 0 calc(70 / 1440 * 100vw);
+    padding: calc(29 / 1440 * 100vw) 0 0 0;
     display: flex;
     flex-direction: row;
     width: calc(246 / 1440 * 100vw);
 
     &_logoImage {
-        margin: calc(77 / 1440 * 100vw) 0 0 0;
+        margin: calc(48 / 1440 * 100vw) 0 0 0;
         width: calc(122.47 / 1440 * 100vw);
         height: calc(68.43 / 1440 * 100vw);
     }
@@ -55,7 +56,7 @@ body {
 
     &_logoFirstWord {
         position: relative;
-        margin: calc(29 / 1440 * 100vw) 0 0 calc(-12 / 1440 * 100vw);
+        margin: 0 0 0 calc(-12 / 1440 * 100vw);
         display: flex;
         font-family: "chiller";
         font-size: calc(0px + 156 * (100vw / 1440));
@@ -102,12 +103,13 @@ body {
 }
 
 .languageButton {
-    margin: calc(57 / 1440 * 100vw) 0 0 0;
+    // display: flex;
+    margin: calc(57 / 1440 * 100vw) calc(-90 / 1440 * 100vw) 0 0;
     width: calc(40 / 1440 * 100vw);
     height: calc(20 / 1440 * 100vw);
+    flex-shrink: 0;
     position: relative;
     perspective: 100px; /* Устанавливает перспективу для 3D вращения */
-    // margin: 50px;
     cursor: pointer;
 }
 
@@ -164,14 +166,14 @@ body {
 
 .titleWrapper {
     margin: 0 0 0 calc(-85 / 1440 * 100vw);
+    padding: calc(26 / 1440 * 100vw) 0 0 calc(90 / 1440 * 100vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    h1 {
+    .titleH1 {
         display: flex;
         margin: 0;
-        margin: calc(26 / 1440 * 100vw) 0 0 calc(90 / 1440 * 100vw);
         font-size: calc(0px + 24 * (100vw / 1440));
         justify-content: center;
         text-transform: uppercase;

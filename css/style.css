@@ -35,12 +35,13 @@ body {
 
 .logoWrapper {
   margin: 0 0 0 4.8611111111vw;
+  padding: 2.0138888889vw 0 0 0;
   display: flex;
   flex-direction: row;
   width: 17.0833333333vw;
 }
 .logoWrapper_logoImage {
-  margin: 5.3472222222vw 0 0 0;
+  margin: 3.3333333333vw 0 0 0;
   width: 8.5048611111vw;
   height: 4.7520833333vw;
 }
@@ -50,7 +51,7 @@ body {
 }
 .logoWrapper_logoFirstWord {
   position: relative;
-  margin: 2.0138888889vw 0 0 -0.8333333333vw;
+  margin: 0 0 0 -0.8333333333vw;
   display: flex;
   font-family: "chiller";
   font-size: calc(0px + 10.8333333333vw);
@@ -99,9 +100,10 @@ body {
 }
 
 .languageButton {
-  margin: 3.9583333333vw 0 0 0;
+  margin: 3.9583333333vw -6.25vw 0 0;
   width: 2.7777777778vw;
   height: 1.3888888889vw;
+  flex-shrink: 0;
   position: relative;
   perspective: 100px; /* Устанавливает перспективу для 3D вращения */
   cursor: pointer;
@@ -155,14 +157,14 @@ body {
 
 .titleWrapper {
   margin: 0 0 0 -5.9027777778vw;
+  padding: 1.8055555556vw 0 0 6.25vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.titleWrapper h1 {
+.titleWrapper .titleH1 {
   display: flex;
   margin: 0;
-  margin: 1.8055555556vw 0 0 6.25vw;
   font-size: calc(0px + 1.6666666667vw);
   justify-content: center;
   text-transform: uppercase;

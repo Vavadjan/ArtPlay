@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 1439px) {
   .socialUpperSubWrapper_likeButtonDiscription {
     display: none;
@@ -15,5 +16,107 @@
   }
   .socialUpperSubWrapper_shareButton {
     margin: 0vw 0vw 0 0;
+  }
+}
+@media (max-width: 1023px) {
+  .mainHeader {
+    display: flex;
+    align-items: center;
+  }
+  .logoWrapper {
+    margin: 0 0 0 4.8611111111vw;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 17.0833333333vw;
+  }
+  .logoWrapper_logoImage {
+    margin: 3.3333333333vw 0 0 0;
+    width: 8.5048611111vw;
+    height: 4.7520833333vw;
+  }
+  .logoWrapper_logoTitleWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .logoWrapper_logoFirstWord {
+    position: relative;
+    margin: 0vw 0 0 -0.8333333333vw;
+    display: flex;
+    font-family: "chiller";
+    font-size: calc(0px + 10.8333333333vw);
+    line-height: 0.55;
+    display: inline-block; /* Необходимо для применения transform */
+    transform: scaleX(1.1); /* Масштабирование по горизонтали */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .logoWrapper_logoFirstWord::before {
+    content: "";
+    position: absolute;
+    top: 2.8472222222vw;
+    left: 8.5416666667vw;
+    width: 0.5555555556vw;
+    height: 0.4166666667vw;
+    flex-shrink: 0;
+    background: url(../pic/logoPoint.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+  }
+  .logoWrapper_logoSecondWord {
+    margin: 0vw 0 0 -0.9027777778vw;
+    display: flex;
+    font-family: "cormorantSC";
+    font-size: calc(0px + 1.0659722222vw);
+    text-transform: uppercase;
+    letter-spacing: calc(0px + 0.2361111111vw);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .logoWrapper_logoThirdWord {
+    display: flex;
+    margin: -0.1388888889vw 0 0 -0.9027777778vw;
+    font-family: "cormorantSC";
+    font-size: calc(0px + 1.5277777778vw);
+    text-transform: uppercase;
+    letter-spacing: calc(0px + 0.2777777778vw);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+  }
+  .mainMenu {
+    display: none;
+  }
+  .socialDownSubwrapper_headerFacebookButton {
+    display: none;
+  }
+  .socialDownSubwrapper_headerInstagramButton {
+    display: none;
+  }
+  .socialDownSubwrapper_headerTwitterButton {
+    display: none;
+  }
+  .socialDownSubwrapper_headerMailButton {
+    display: none;
+  }
+  .languageButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .flagContainer {
+    position: relative;
   }
 }/*# sourceMappingURL=media-queries.css.map */

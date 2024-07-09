@@ -23,64 +23,123 @@
     
     .socialUpperSubWrapper_shareButton {
         margin: calc(0 / 1440 * 100vw) calc(0 / 1440 * 100vw) 0 0;
-    } 
-
-    // .socialUpperSubWrapper_burgerMenuButton staticHeaderBurgerMenuButton{
-    //     position: relative;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     align-items: center;
-    //     gap: calc(8 / 1440 * 100vw);
-    //     width: calc(151 / 1279 * 100vw);
-    //     height: calc(0px + 51 * (100vw / 1279));
-    //     // width: 151px;
-    //     // height: 51px;
-    //     margin: 0;
-    //     padding: 0;
-    //     border-radius: calc((51 / 1279 * 100vw) / 2);
-    //     // border-radius: 51px;
-    //     color: #fff;
-    //     flex-shrink: 0;
-    //     border: none;
-    //     background-color: #3a8374;
-    // }
-    
-    // .burgerMenuButtonTitle {
-    //     font-size: calc(10px + 8 * (100vw / 1279));
-    //     font-family: "firasans";
-    // }
-
-    // .staticHeaderBurgerMenuButton{
-    //     position: relative;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     align-items: center;
-    //     gap: calc(8 / 1279 * 100vw);
-    //     width: calc(151 / 1279 * 100vw);
-    //     height: calc(0px + 51 * (100vw / 1279));
-    //     // width: 151px;
-    //     // height: 51px;
-    //     margin: 0;
-    //     padding: 0;
-    //     border-radius: calc((51 / 1279 * 100vw) / 2);
-    //     // border-radius: 51px;
-    //     color: #fff;
-    //     flex-shrink: 0;
-    //     border: none;
-    //     background-color: #3a8374;
-    // }
-    
-    // .staticHeaderBurgerMenuButtonTitle {
-    //     font-size: calc(10px + 8 * (100vw / 1279));
-    //     font-family: "firasans";
-    // }
+    }
 }
 
 
-@media (max-width: 1137px) {
+@media (max-width: 1023px) {
+    .mainHeader {
+        display: flex;
+        align-items: center;
+    }
+
+    .logoWrapper {
+        margin: 0 0 0 calc(70 / 1440 * 100vw);
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: calc(246 / 1440 * 100vw);
+    
+        &_logoImage {
+            margin: calc(48 / 1440 * 100vw) 0 0 0;
+            width: calc(122.47 / 1440 * 100vw);
+            height: calc(68.43 / 1440 * 100vw);
+        }
+    
+        &_logoTitleWrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &_logoFirstWord {
+            position: relative;
+            margin: calc(0 / 1440 * 100vw) 0 0 calc(-12 / 1440 * 100vw);
+            display: flex;
+            font-family: "chiller";
+            font-size: calc(0px + 156 * (100vw / 1440));
+            line-height: 0.55; //Важная строка!!!
+            display: inline-block; /* Необходимо для применения transform */
+            transform: scaleX(1.1); /* Масштабирование по горизонтали */
+            user-select: none;
+        }
+    
+        &_logoFirstWord::before {
+            content: "";
+            position: absolute;
+            top: calc(41 / 1440 * 100vw);
+            left: calc(123 / 1440 * 100vw);
+            width: calc(8 / 1440 * 100vw);
+            height: calc(6 / 1440 * 100vw);
+            flex-shrink: 0;
+            background: url(../pic/logoPoint.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            border: none;
+        }
+    
+        &_logoSecondWord {
+            margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
+            display: flex;
+            font-family: "cormorantSC";
+            font-size: calc(0px + 15.35 * (100vw / 1440));
+            text-transform: uppercase;
+            letter-spacing: calc(0px + 3.4 * (100vw / 1440));
+            user-select: none;
+        }
+    
+        &_logoThirdWord {
+            display: flex;
+            margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
+            font-family: "cormorantSC";
+            font-size: calc(0px + 22 * (100vw / 1440));
+            text-transform: uppercase;
+            letter-spacing: calc(0px + 4 * (100vw / 1440));
+            user-select: none;
+        }
+    }
+
+    .titleWrapper {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+    .socialDownSubwrapper_headerFacebookButton {
+        display: none;
+    }
+    
+    .socialDownSubwrapper_headerInstagramButton {
+        display: none;
+    }
+    
+    .socialDownSubwrapper_headerTwitterButton {
+        display: none;
+    }
+    
+    .socialDownSubwrapper_headerMailButton {
+        display: none;
+    }
+
+    .languageButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .flagContainer {
+    position: relative;
+    }
 }
+
+
 @media (max-width: 980px) {
 }
 @media (max-width: 838px) {
