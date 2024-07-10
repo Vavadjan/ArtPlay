@@ -42,7 +42,7 @@ body {
     padding: calc(29 / 1440 * 100vw) 0 0 0;
     display: flex;
     flex-direction: row;
-    width: calc(246 / 1440 * 100vw);
+    width: auto;
 
     &_logoImage {
         margin: calc(48 / 1440 * 100vw) 0 0 0;
@@ -166,7 +166,7 @@ body {
 }
 
 .titleWrapper {
-    width: calc(432 / 1023 * 100vw);
+    width: auto;
     margin: 0 0 0 calc(-85 / 1440 * 100vw);
     padding: calc(26 / 1440 * 100vw) 0 0 calc(90 / 1440 * 100vw);
     display: flex;
