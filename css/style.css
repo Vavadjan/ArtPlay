@@ -39,7 +39,7 @@ body {
   padding: 2.0138888889vw 0 0 0;
   display: flex;
   flex-direction: row;
-  width: auto;
+  width: 17.0833333333vw;
 }
 .logoWrapper_logoImage {
   margin: 3.3333333333vw 0 0 0;
@@ -157,6 +157,7 @@ body {
 }
 
 .titleWrapper {
+  width: 42.2287390029vw;
   width: auto;
   margin: 0 0 0 -5.9027777778vw;
   padding: 1.8055555556vw 0 0 6.25vw;
