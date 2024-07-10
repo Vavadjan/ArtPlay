@@ -127,6 +127,7 @@
     height: 100%;
     width: auto;
     padding: 0;
+    gap: 1.1805555556vw;
   }
   .socialUpperSubWrapper {
     flex-direction: row;
@@ -160,7 +161,7 @@
   }
   .mobileHeaderSeparator {
     display: flex;
-    margin: 0 1.3888888889vw;
+    margin: 0;
     width: 1px;
     height: 2.2222222222vw;
     height: 32px;
@@ -294,5 +295,11 @@
   }
   h1 {
     display: none;
+  }
+  .staticHeaderLogoWrapper {
+    margin: 0 0 0 4.8611111111vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }/*# sourceMappingURL=media-queries.css.map */

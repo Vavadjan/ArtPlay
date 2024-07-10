@@ -234,7 +234,6 @@ h1 {
   display: flex;
   width: 24.7222222222vw;
   flex-direction: column;
-  gap: 0.3819444444vw;
   align-items: end;
   justify-content: space-between;
 }

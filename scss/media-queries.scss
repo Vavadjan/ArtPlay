@@ -153,6 +153,7 @@
         height: 100%;
         width: auto;
         padding: 0;
+        gap: calc(17 / 1440 * 100vw);
     }
 
     .socialUpperSubWrapper {
@@ -194,7 +195,7 @@
 
     .mobileHeaderSeparator {
         display: flex;
-        margin: 0 calc(20 / 1440 * 100vw);
+        margin: 0;
         width: 1px;
         height: calc(32 / 1440 * 100vw);
         height: 32px;
@@ -360,7 +361,14 @@
     h1 {
         display: none;
     }
+
+    .staticHeaderLogoWrapper {
+        margin: 0 0 0 calc(70 / 1440 * 100vw);
+        display: flex;
+        flex-direction: row;
+        width: calc(94.39px / 510 * 100vw);
+    }
 }
 
-@media (max-width: 400px) {
-}
+// @media (max-width: 400px) {
+// }
