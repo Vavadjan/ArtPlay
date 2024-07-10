@@ -28,6 +28,7 @@ body {
     top: 0;
     width: 100vw;
     height: calc(0px + 177 * (100vw / 1440));
+    min-height: 70px;
     background-color: black;
     color: white;
     display: flex;
@@ -171,16 +172,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
-    .titleH1 {
-        display: flex;
-        margin: 0;
-        font-size: calc(12px + 12 * (100vw / 1440));
-        justify-content: center;
-        text-transform: uppercase;
-        user-select: none;
-        text-align: center;
-    }
+h1 {
+    display: flex;
+    margin: 0;
+    font-size: calc(12px + 12 * (100vw / 1440));
+    justify-content: center;
+    text-transform: uppercase;
+    user-select: none;
+    text-align: center;
 }
 
 .mobileHeaderLikeButton {
@@ -351,52 +352,52 @@ body {
     .mobileHeaderSeparator {
         display: none;
     }
+}
 
-    &_burgerMenuButton {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: calc(8 / 1440 * 100vw);
-        width: calc(151 / 1440 * 100vw);
-        height: calc(51 / 1440 * 100vw);
-        // width: 151px;
-        // height: 51px;
-        min-width: 94.75px;
-        min-height: 32px;
-        margin: 0;
-        padding: 0;
-        border-radius: calc((51 / 1440 * 100vw) / 2);
-        // border-radius: 51px;
-        color: #fff;
-        flex-shrink: 0;
-        border: none;
-        background-color: #3a8374;
-    }
+.headerBurgerMenuButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: calc(8 / 1440 * 100vw);
+    width: calc(151 / 1440 * 100vw);
+    height: calc(51 / 1440 * 100vw);
+    // width: 151px;
+    // height: 51px;
+    min-width: 94.75px;
+    min-height: 32px;
+    margin: 0;
+    padding: 0;
+    // border-radius: calc((51 / 1440 * 100vw) / 2);
+    border-radius: 51px;
+    color: #fff;
+    flex-shrink: 0;
+    border: none;
+    background-color: #3a8374;
+}
 
-    &_burgerMenuButton:hover {
-        box-shadow: 0 0 10px 5px #d83934;
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
+.headerBurgerMenuButton:hover {
+    box-shadow: 0 0 10px 5px #d83934;
+    transition: 0.4s;
+    // cursor: default; /* Стандартный курсор при наведении */
+    cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
 
-    &_burgerMenuButton:not(:hover) {
-        transition: 1s;
-    }
+.headerBurgerMenuButton:not(:hover) {
+    transition: 1s;
+}
 
-    .burgerMenuButtonTitleImage {
-        // width: 32px;
-        // height: 32px;
-        width: calc(32 / 1440 * 100vw);
-        height: calc(32 / 1440 * 100vw);
-    }
+.headerBurgerMenuButtonTitleImage {
+    // width: 32px;
+    // height: 32px;
+    width: calc(32 / 1440 * 100vw);
+    height: calc(32 / 1440 * 100vw);
+}
 
-    .burgerMenuButtonTitle {
-        font-size: calc(18px + 0 * (100vw / 1440));
-        font-family: "firasans";
-    }
+.headerBurgerMenuButtonTitle {
+    font-size: calc(18px + 0 * (100vw / 1440));
+    font-family: "firasans";
 }
 
 .socialDownSubwrapper {
@@ -733,8 +734,8 @@ body {
     min-height: 32px;
     margin: 0;
     padding: 0;
-    border-radius: calc((51 / 1440 * 100vw) / 2);
-    // border-radius: 51px;
+    // border-radius: calc((51 / 1440 * 100vw) / 2);
+    border-radius: 51px;
     color: #fff;
     flex-shrink: 0;
     border: none;

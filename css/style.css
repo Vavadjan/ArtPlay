@@ -25,6 +25,7 @@ body {
   top: 0;
   width: 100vw;
   height: calc(0px + 12.2916666667vw);
+  min-height: 70px;
   background-color: black;
   color: white;
   display: flex;
@@ -163,7 +164,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.titleWrapper .titleH1 {
+
+h1 {
   display: flex;
   margin: 0;
   font-size: calc(12px + 0.8333333333vw);
@@ -321,7 +323,8 @@ body {
 .socialUpperSubWrapper .mobileHeaderSeparator {
   display: none;
 }
-.socialUpperSubWrapper_burgerMenuButton {
+
+.headerBurgerMenuButton {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -334,25 +337,29 @@ body {
   min-height: 32px;
   margin: 0;
   padding: 0;
-  border-radius: 1.7708333333vw;
+  border-radius: 51px;
   color: #fff;
   flex-shrink: 0;
   border: none;
   background-color: #3a8374;
 }
-.socialUpperSubWrapper_burgerMenuButton:hover {
+
+.headerBurgerMenuButton:hover {
   box-shadow: 0 0 10px 5px #d83934;
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.socialUpperSubWrapper_burgerMenuButton:not(:hover) {
+
+.headerBurgerMenuButton:not(:hover) {
   transition: 1s;
 }
-.socialUpperSubWrapper .burgerMenuButtonTitleImage {
+
+.headerBurgerMenuButtonTitleImage {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
 }
-.socialUpperSubWrapper .burgerMenuButtonTitle {
+
+.headerBurgerMenuButtonTitle {
   font-size: calc(18px + 0vw);
   font-family: "firasans";
 }
@@ -649,7 +656,7 @@ body {
   min-height: 32px;
   margin: 0;
   padding: 0;
-  border-radius: 1.7708333333vw;
+  border-radius: 51px;
   color: #fff;
   flex-shrink: 0;
   border: none;

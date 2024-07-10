@@ -225,7 +225,6 @@
         margin: 0;
         width: calc(432 / 1023 * 100vw);
     }
-    
 }
 
 @media (max-width: 902px) {
@@ -233,73 +232,120 @@
         gap: 8px;
         width: 95px;
         height: 32px;
-        border-radius: 32px;
+        // border-radius: 32px;
     }
-    
+
     .staticBurgerMenuButtonTitleImage {
         width: 20px;
         height: 20px;
     }
-    
+
     .staticHeaderBurgerMenuButtonTitle {
         font-size: 14.64px;
-        font-family: "firasans";
+    }
+
+    .headerBurgerMenuButton {
+        gap: 8px;
+        width: 95px;
+        height: 32px;
+        border-radius: 32px;
+    }
+
+    .headerBurgerMenuButtonTitleImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    .headerBurgerMenuButtonTitle {
+        font-size: 14.64px;
     }
 }
 
 @media (max-width: 665px) {
-    
-.mobileHeaderLoginButton {
-    display: none;
+    .mobileHeaderLoginButton {
+        display: none;
+    }
+
+    .mobileHeaderSeparator {
+        display: none;
+    }
+
+    .staticHeaderTitleWrapper {
+        margin: 0;
+        // width: calc(432 / 1023 * 100vw);
+    }
+
+    .staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
+        font-size: min(68px);
+    }
+
+    .staticHeadereaderLoginButton {
+        display: none;
+    }
+
+    .staticHeaderSeparator {
+        display: none;
+    }
+
+    .staticHeaderLogoWrapper {
+        width: auto;
+    }
+
+    .staticHeaderLogoWrapper_staticHeaderlogoFirstWord::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 54px;
+        width: 4.06px;
+        height: 2.77px;
+        flex-shrink: 0;
+        background: url(../pic/logoPoint.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        border: none;
+    }
 }
 
-.mobileHeaderSeparator {
-    display: none;
+@media (max-width: 569px) {
+    .logoWrapper {
+        padding: 0;
+        width: auto;
+
+        &_logoImage {
+            margin: 18.97px 0 0 0;
+            width: 48.39px;
+            height: 27.03px;
+        }
+
+        &_logoFirstWord {
+            margin: 0 0 0 -4.74px;
+            font-size: 61.64px;
+        }
+
+        &_logoFirstWord::before {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: 47.766px;
+            width: 3.74px;
+            height: 2.36px;
+        }
+
+        &_logoSecondWord {
+            margin: 0 0 0 -4.5px;
+            font-size: 6.2px;
+            letter-spacing: 1.4px;
+        }
+
+        &_logoThirdWord {
+            margin: -1px 0 0 -5px;
+            font-size: calc(0px + 22 * (100vw / 1440));
+            font-size: 9px;
+            letter-spacing: 1.7px;
+        }
+    }
 }
-
-.staticHeaderTitleWrapper {
-    margin: 0;
-    // width: calc(432 / 1023 * 100vw);
-}
-
-.staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
-    font-size: min(68px);
-}
-
-.staticHeadereaderLoginButton {
-    display: none;
-}
-
-.staticHeaderSeparator {
-    display: none;
-}
-
-.staticHeaderLogoWrapper {
-    width: auto;
-}
-
-.staticHeaderLogoWrapper_staticHeaderlogoFirstWord::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 54px;
-    width: 4.06px;
-    height: 2.77px;
-    flex-shrink: 0;
-    background: url(../pic/logoPoint.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    border: none;
-}
-
-
-
-
-}
-
-
-
 
 @media (max-width: 510px) {
     .staticHeaderTitle {
@@ -310,12 +356,11 @@
         justify-content: space-around;
         width: auto;
     }
+
+    h1 {
+        display: none;
+    }
 }
 
-
-
-
-@media (max-width: 639px) {
-}
 @media (max-width: 400px) {
 }
