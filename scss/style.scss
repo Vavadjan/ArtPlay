@@ -166,7 +166,7 @@ body {
     }
 }
 
-.titleWrapper {
+.headerTitleWrapper {
     // width: calc(432 / 1 * 100vw);
     width: auto;
     margin: 0 0 0 calc(-85 / 1440 * 100vw);
@@ -194,28 +194,28 @@ h1 {
     display: none;
 }
 
-.mainMenu {
+.headerMenu {
     margin: calc(50 / 1440 * 100vw) 0 0 0;
     display: flex;
 
-    &_ul {
+    &__ul {
         margin: 0;
         display: flex;
         flex-direction: row;
         gap: calc(40.7 / 1440 * 100vw);
     }
 
-    &_li {
+    &__li {
         position: relative;
         font-size: calc(0px + 18 * (100vw / 1440));
     }
 
-    &_link {
+    &__link {
         position: relative;
         display: inline-block;
     }
 
-    &_link::after {
+    &__link::after {
         content: "";
         position: absolute;
         left: 50%;
@@ -228,12 +228,12 @@ h1 {
             left 0.4s ease;
     }
 
-    &_link:hover::after {
+    &__link:hover::after {
         width: 100%;
         left: 0;
     }
 
-    &_link:hover {
+    &__link:hover {
         color: #d83934;
         // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;  /* Падающая тень */
         transition: 0.4s;
@@ -241,7 +241,7 @@ h1 {
         cursor: pointer; /* Изменение вида курсора на палец при наведении */
     }
 
-    &_link:not(:hover) {
+    &__link:not(:hover) {
         color: #fff;
         transition: 1s;
     }

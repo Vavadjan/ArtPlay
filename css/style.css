@@ -165,7 +165,7 @@ body {
     transform: rotateX(360deg);
   }
 }
-.titleWrapper {
+.headerTitleWrapper {
   width: auto;
   margin: 0 0 0 -5.9027777778vw;
   padding: 1.8055555556vw 0 0 6.25vw;
@@ -194,25 +194,25 @@ h1 {
   display: none;
 }
 
-.mainMenu {
+.headerMenu {
   margin: 3.4722222222vw 0 0 0;
   display: flex;
 }
-.mainMenu_ul {
+.headerMenu__ul {
   margin: 0;
   display: flex;
   flex-direction: row;
   gap: 2.8263888889vw;
 }
-.mainMenu_li {
+.headerMenu__li {
   position: relative;
   font-size: calc(0px + 1.25vw);
 }
-.mainMenu_link {
+.headerMenu__link {
   position: relative;
   display: inline-block;
 }
-.mainMenu_link::after {
+.headerMenu__link::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -222,16 +222,16 @@ h1 {
   background: linear-gradient(to right, rgba(216, 57, 52, 0), rgb(216, 57, 52), rgba(216, 57, 52, 0));
   transition: width 0.4s ease, left 0.4s ease;
 }
-.mainMenu_link:hover::after {
+.headerMenu__link:hover::after {
   width: 100%;
   left: 0;
 }
-.mainMenu_link:hover {
+.headerMenu__link:hover {
   color: #d83934;
   transition: 0.4s;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.mainMenu_link:not(:hover) {
+.headerMenu__link:not(:hover) {
   color: #fff;
   transition: 1s;
 }
