@@ -44,64 +44,64 @@ body {
     display: flex;
     flex-direction: row;
     width: calc(246 / 1440 * 100vw);
+}
 
-    &_logoImage {
-        margin: calc(48 / 1440 * 100vw) 0 0 0;
-        width: calc(122.47 / 1440 * 100vw);
-        height: calc(68.43 / 1440 * 100vw);
-    }
+.logoImage {
+    margin: calc(48 / 1440 * 100vw) 0 0 0;
+    width: calc(122.47 / 1440 * 100vw);
+    height: calc(68.43 / 1440 * 100vw);
+}
 
-    &_logoTitleWrapper {
-        display: flex;
-        flex-direction: column;
-    }
+.logoTitleWrapper {
+    display: flex;
+    flex-direction: column;
+}
 
-    &_logoFirstWord {
-        position: relative;
-        margin: 0 0 0 calc(-12 / 1440 * 100vw);
-        display: flex;
-        font-family: "chiller";
-        font-size: calc(0px + 156 * (100vw / 1440));
-        line-height: 0.55; //Важная строка!!!
-        display: inline-block; /* Необходимо для применения transform */
-        transform: scaleX(1.1); /* Масштабирование по горизонтали */
-        user-select: none;
-    }
+.logoFirstWord {
+    position: relative;
+    margin: 0 0 0 calc(-12 / 1440 * 100vw);
+    display: flex;
+    font-family: "chiller";
+    font-size: calc(0px + 156 * (100vw / 1440));
+    line-height: 0.55; //Важная строка!!!
+    display: inline-block; /* Необходимо для применения transform */
+    transform: scaleX(1.1); /* Масштабирование по горизонтали */
+    user-select: none;
+}
 
-    &_logoFirstWord::before {
-        content: "";
-        position: absolute;
-        top: calc(41 / 1440 * 100vw);
-        left: calc(123 / 1440 * 100vw);
-        width: calc(8 / 1440 * 100vw);
-        height: calc(6 / 1440 * 100vw);
-        flex-shrink: 0;
-        background: url(../pic/logoPoint.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-    }
+.logoFirstWord::before {
+    content: "";
+    position: absolute;
+    top: calc(41 / 1440 * 100vw);
+    left: calc(123 / 1440 * 100vw);
+    width: calc(8 / 1440 * 100vw);
+    height: calc(6 / 1440 * 100vw);
+    flex-shrink: 0;
+    background: url(../pic/logoPoint.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    border: none;
+}
 
-    &_logoSecondWord {
-        margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
-        display: flex;
-        font-family: "cormorantSC";
-        font-size: calc(0px + 15.35 * (100vw / 1440));
-        text-transform: uppercase;
-        letter-spacing: calc(0px + 3.4 * (100vw / 1440));
-        user-select: none;
-    }
+.logoSecondWord {
+    margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
+    display: flex;
+    font-family: "cormorantSC";
+    font-size: calc(0px + 15.35 * (100vw / 1440));
+    text-transform: uppercase;
+    letter-spacing: calc(0px + 3.4 * (100vw / 1440));
+    user-select: none;
+}
 
-    &_logoThirdWord {
-        display: flex;
-        margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
-        font-family: "cormorantSC";
-        font-size: calc(0px + 22 * (100vw / 1440));
-        text-transform: uppercase;
-        letter-spacing: calc(0px + 4 * (100vw / 1440));
-        user-select: none;
-    }
+.logoThirdWord {
+    display: flex;
+    margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
+    font-family: "cormorantSC";
+    font-size: calc(0px + 22 * (100vw / 1440));
+    text-transform: uppercase;
+    letter-spacing: calc(0px + 4 * (100vw / 1440));
+    user-select: none;
 }
 
 .languageButton {

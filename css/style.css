@@ -42,16 +42,19 @@ body {
   flex-direction: row;
   width: 17.0833333333vw;
 }
-.logoWrapper_logoImage {
+
+.logoImage {
   margin: 3.3333333333vw 0 0 0;
   width: 8.5048611111vw;
   height: 4.7520833333vw;
 }
-.logoWrapper_logoTitleWrapper {
+
+.logoTitleWrapper {
   display: flex;
   flex-direction: column;
 }
-.logoWrapper_logoFirstWord {
+
+.logoFirstWord {
   position: relative;
   margin: 0 0 0 -0.8333333333vw;
   display: flex;
@@ -64,7 +67,8 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.logoWrapper_logoFirstWord::before {
+
+.logoFirstWord::before {
   content: "";
   position: absolute;
   top: 2.8472222222vw;
@@ -78,7 +82,8 @@ body {
   background-position: 100% 100%;
   border: none;
 }
-.logoWrapper_logoSecondWord {
+
+.logoSecondWord {
   margin: 0vw 0 0 -0.9027777778vw;
   display: flex;
   font-family: "cormorantSC";
@@ -89,7 +94,8 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.logoWrapper_logoThirdWord {
+
+.logoThirdWord {
   display: flex;
   margin: -0.1388888889vw 0 0 -0.9027777778vw;
   font-family: "cormorantSC";
