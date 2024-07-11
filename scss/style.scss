@@ -128,7 +128,7 @@ body {
     transition: 1s;
 }
 
-.flagContainer {
+.languageContainer {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -136,33 +136,33 @@ body {
     left: 0;
     transform-style: preserve-3d;
     animation: rotate 3s linear infinite;
+}
 
-    &_Ukr {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        backface-visibility: hidden;
-        background: url("../pic/UkrLang.webp") no-repeat center center;
-        background-size: cover;
+.ukr {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background: url("../pic/UkrLang.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.eng {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background: url("../pic/EngLang.webp") no-repeat center center;
+    background-size: cover;
+    transform: rotateX(180deg);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg);
     }
-
-    &_Eng {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        backface-visibility: hidden;
-        background: url("../pic/EngLang.webp") no-repeat center center;
-        background-size: cover;
-        transform: rotateX(180deg);
-    }
-
-    @keyframes rotate {
-        0% {
-            transform: rotateX(0deg);
-        }
-        100% {
-            transform: rotateX(360deg);
-        }
+    100% {
+        transform: rotateX(360deg);
     }
 }
 
