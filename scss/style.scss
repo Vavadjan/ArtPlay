@@ -246,319 +246,239 @@ h1 {
         transition: 1s;
     }
 }
-
-.socialWrapper {
-    margin: 0 calc(70 / 1440 * 100vw) 0 0;
-    padding: 0;
-    display: flex;
-    // height: 100%;
-    width: calc(356 / 1440 * 100vw);
-    flex-direction: column;
-    // gap: calc(5.5 / 1440 * 100vw);
-    align-items: end;
-    justify-content: space-between;
-}
-
-.socialUpperSubWrapper {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-
-    &_likeButton {
-        position: relative;
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        // margin: calc(48 / 1440 * 100vw) 0 0 0;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: url(../pic/likeHeart.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-        cursor: pointer;
-        overflow: hidden;
+    .socialWrapper {
+        margin: 0 calc(70 / 1440 * 100vw) 0 0;
+        padding: 0;
+        display: flex;
+        // height: 100%;
+        width: calc(356 / 1440 * 100vw);
+        flex-direction: column;
+        // gap: calc(5.5 / 1440 * 100vw);
+        align-items: end;
+        justify-content: space-between;
     }
-
-    &_likeButton::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
+    .socialUpperSubWrapper {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
-        background: url(../pic/likeHeart.svg) center center/contain no-repeat;
-        transition: transform 0.3s ease;
+    
+            &__headerLoginButton {
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                // width: 32px;
+                // height: 32px;
+                // border-radius: 50%;
+                // flex-shrink: 0;
+                // background: url(../pic/loginBlack.svg);
+                // background-repeat: no-repeat;
+                // background-size: contain;
+                // background-position: 100% 100%;
+                // border: none;
+                // cursor: pointer;
+                display: none;
+            }
+    
+            &__headerSeparator {
+                // margin: 0;
+                // width: 1px;
+                // height: calc(32 / 1440 * 100vw);
+                // height: 32px;
+                // background-color: #000000;
+                display: none;
+            }
+    
+            &__likeButton {
+                position: relative;
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                // margin: calc(48 / 1440 * 100vw) 0 0 0;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/likeHeart.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+            }
+    
+            &__likeButtonDiscription {
+                margin: calc(0 / 1440 * 100vw) 0 0 calc(5 / 1440 * 100vw);
+                font-size: calc(0px + 18 * (100vw / 1440));
+                font-family: "firasans";
+                user-select: none;
+            }
+    
+            &__shareButtonDiscription {
+                margin: calc(0 / 1440 * 100vw) calc(5 / 1440 * 100vw) 0 calc(25 / 1440 * 100vw);
+                font-size: calc(0px + 18 * (100vw / 1440));
+                font-family: "firasans";
+                user-select: none;
+            }
+    
+            &__shareButton {
+                position: relative;
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                margin: calc(0 / 1440 * 100vw) calc(28 / 1440 * 100vw) 0 0;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/shareArrow.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+            }
     }
-
-    &_likeButton:hover::before {
-        transform: scale(1.1);
-    }
-
-    &_likeButtonDiscription {
-        margin: calc(0 / 1440 * 100vw) 0 0 calc(5 / 1440 * 100vw);
-        font-size: calc(0px + 18 * (100vw / 1440));
-        font-family: "firasans";
-        user-select: none;
-    }
-
-    &_shareButtonDiscription {
-        margin: calc(0 / 1440 * 100vw) calc(5 / 1440 * 100vw) 0 calc(25 / 1440 * 100vw);
-        font-size: calc(0px + 18 * (100vw / 1440));
-        font-family: "firasans";
-        user-select: none;
-    }
-
-    &_shareButton {
+    .headerBurgerMenuButton {
         position: relative;
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        margin: calc(0 / 1440 * 100vw) calc(28 / 1440 * 100vw) 0 0;
-        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: calc(8 / 1440 * 100vw);
+        width: calc(151 / 1440 * 100vw);
+        height: calc(51 / 1440 * 100vw);
+        // width: 151px;
+        // height: 51px;
+        min-width: 94.75px;
+        min-height: 32px;
+        margin: 0;
+        padding: 0;
+        // border-radius: calc((51 / 1440 * 100vw) / 2);
+        border-radius: 51px;
+        color: #fff;
         flex-shrink: 0;
-        background: url(../pic/shareArrow.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
         border: none;
-        cursor: pointer;
-        overflow: hidden;
+        background-color: #3a8374;
+    
+            &__headerBurgerMenuButtonTitleImage {
+                // width: 32px;
+                // height: 32px;
+                width: calc(32 / 1440 * 100vw);
+                height: calc(32 / 1440 * 100vw);
+            }
+    
+            &__headerBurgerMenuButtonTitle {
+                font-size: calc(18px + 0 * (100vw / 1440));
+                font-family: "firasans";
+            }
     }
-
-    &_shareButton::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
+    .socialDownSubwrapper {
+        // height: 100%;
+        margin: 0;
+        display: flex;
         width: 100%;
-        height: 100%;
-        background: url(../pic/shareArrow.svg) center center/contain no-repeat;
-        transition: transform 0.3s ease;
+        padding: 0 0 calc(22 / 1440 * 100vw) 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        // gap: calc(10 / 1440 * 100vw);
+    
+            &__headerFollowUsTitle {
+                width: calc(97 / 1440 * 100vw);
+                font-size: calc(0px + 15.7 * (100vw / 1440));
+                text-transform: uppercase;
+                user-select: none;
+            }
+    
+            &__headerFacebookButton {
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/fasebook.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+            }
+    
+            &__headerInstagramButton {
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/instagram.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+            }
+    
+            &__headerTwitterButton {
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/twitter.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+            }
+    
+            &__headerMailButton {
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/mail.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+            }
+    
+            &__headerSeparator {
+                margin: 0 calc(20 / 1440 * 100vw);
+                width: 1px;
+                height: calc(32 / 1440 * 100vw);
+                background-color: #fff;
+            }
+    
+            &__headerLoginButton {
+                // width: calc(32 / 1440 * 100vw);
+                // height: calc(32 / 1440 * 100vw);
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                background: url(../pic/login.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 100% 100%;
+                border: none;
+                cursor: pointer;
+            }
     }
+    
 
-    &_shareButton:hover::before {
-        transform: scale(1.1);
-    }
 
-    .mobileHeaderLoginButton {
-        display: none;
-    }
-
-    .mobileHeaderSeparator {
-        display: none;
-    }
-}
-
-.headerBurgerMenuButton {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: calc(8 / 1440 * 100vw);
-    width: calc(151 / 1440 * 100vw);
-    height: calc(51 / 1440 * 100vw);
-    // width: 151px;
-    // height: 51px;
-    min-width: 94.75px;
-    min-height: 32px;
-    margin: 0;
-    padding: 0;
-    // border-radius: calc((51 / 1440 * 100vw) / 2);
-    border-radius: 51px;
-    color: #fff;
-    flex-shrink: 0;
-    border: none;
-    background-color: #3a8374;
-}
-
-.headerBurgerMenuButton:hover {
-    box-shadow: 0 0 10px 5px #d83934;
-    transition: 0.4s;
-    // cursor: default; /* Стандартный курсор при наведении */
-    cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-
-.headerBurgerMenuButton:not(:hover) {
-    transition: 1s;
-}
-
-.headerBurgerMenuButtonTitleImage {
-    // width: 32px;
-    // height: 32px;
-    width: calc(32 / 1440 * 100vw);
-    height: calc(32 / 1440 * 100vw);
-}
-
-.headerBurgerMenuButtonTitle {
-    font-size: calc(18px + 0 * (100vw / 1440));
-    font-family: "firasans";
-}
-
-.socialDownSubwrapper {
-    // height: 100%;
-    margin: 0;
-    display: flex;
-    width: 100%;
-    padding: 0 0 calc(22 / 1440 * 100vw) 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    // gap: calc(10 / 1440 * 100vw);
-
-    &_followUsTitle {
-        width: calc(97 / 1440 * 100vw);
-        font-size: calc(0px + 15.7 * (100vw / 1440));
-        text-transform: uppercase;
-        user-select: none;
-    }
-
-    &_headerFacebookButton {
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: url(../pic/fasebook.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-        cursor: pointer;
-    }
-
-    &_headerFacebookButton:hover {
-        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
-
-    &_headerFacebookButton:not(:hover) {
-        transition: 1s;
-    }
-
-    &_headerInstagramButton {
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: url(../pic/instagram.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-        cursor: pointer;
-    }
-
-    &_headerInstagramButton:hover {
-        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
-
-    &_headerInstagramButton:not(:hover) {
-        transition: 1s;
-    }
-
-    &_headerTwitterButton {
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: url(../pic/twitter.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-        cursor: pointer;
-    }
-
-    &_headerTwitterButton:hover {
-        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
-
-    &_headerTwitterButton:not(:hover) {
-        transition: 1s;
-    }
-
-    &_headerMailButton {
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: url(../pic/mail.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-        cursor: pointer;
-    }
-
-    &_headerMailButton:hover {
-        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
-
-    &_headerMailButton:not(:hover) {
-        transition: 1s;
-    }
-
-    &_separator {
-        margin: 0 calc(20 / 1440 * 100vw);
-        width: 1px;
-        height: calc(32 / 1440 * 100vw);
-        background-color: #fff;
-    }
-
-    &_headerLoginButton {
-        // width: calc(32 / 1440 * 100vw);
-        // height: calc(32 / 1440 * 100vw);
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: url(../pic/login.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-        cursor: pointer;
-    }
-
-    &_headerLoginButton:hover {
-        box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
-
-    &_headerLoginButton:not(:hover) {
-        transition: 1s;
-    }
-}
 
 .bodyLorem {
     margin: calc(177 / 1440 * 100vw) 0 0 0;

@@ -256,7 +256,13 @@ h1 {
   width: 100%;
   height: 100%;
 }
-.socialUpperSubWrapper_likeButton {
+.socialUpperSubWrapper__headerLoginButton {
+  display: none;
+}
+.socialUpperSubWrapper__headerSeparator {
+  display: none;
+}
+.socialUpperSubWrapper__likeButton {
   position: relative;
   width: 32px;
   height: 32px;
@@ -270,20 +276,7 @@ h1 {
   cursor: pointer;
   overflow: hidden;
 }
-.socialUpperSubWrapper_likeButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../pic/likeHeart.svg) center center/contain no-repeat;
-  transition: transform 0.3s ease;
-}
-.socialUpperSubWrapper_likeButton:hover::before {
-  transform: scale(1.1);
-}
-.socialUpperSubWrapper_likeButtonDiscription {
+.socialUpperSubWrapper__likeButtonDiscription {
   margin: 0vw 0 0 0.3472222222vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
@@ -291,7 +284,7 @@ h1 {
      -moz-user-select: none;
           user-select: none;
 }
-.socialUpperSubWrapper_shareButtonDiscription {
+.socialUpperSubWrapper__shareButtonDiscription {
   margin: 0vw 0.3472222222vw 0 1.7361111111vw;
   font-size: calc(0px + 1.25vw);
   font-family: "firasans";
@@ -299,7 +292,7 @@ h1 {
      -moz-user-select: none;
           user-select: none;
 }
-.socialUpperSubWrapper_shareButton {
+.socialUpperSubWrapper__shareButton {
   position: relative;
   width: 32px;
   height: 32px;
@@ -313,25 +306,6 @@ h1 {
   border: none;
   cursor: pointer;
   overflow: hidden;
-}
-.socialUpperSubWrapper_shareButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../pic/shareArrow.svg) center center/contain no-repeat;
-  transition: transform 0.3s ease;
-}
-.socialUpperSubWrapper_shareButton:hover::before {
-  transform: scale(1.1);
-}
-.socialUpperSubWrapper .mobileHeaderLoginButton {
-  display: none;
-}
-.socialUpperSubWrapper .mobileHeaderSeparator {
-  display: none;
 }
 
 .headerBurgerMenuButton {
@@ -353,23 +327,11 @@ h1 {
   border: none;
   background-color: #3a8374;
 }
-
-.headerBurgerMenuButton:hover {
-  box-shadow: 0 0 10px 5px #d83934;
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-
-.headerBurgerMenuButton:not(:hover) {
-  transition: 1s;
-}
-
-.headerBurgerMenuButtonTitleImage {
+.headerBurgerMenuButton__headerBurgerMenuButtonTitleImage {
   width: 2.2222222222vw;
   height: 2.2222222222vw;
 }
-
-.headerBurgerMenuButtonTitle {
+.headerBurgerMenuButton__headerBurgerMenuButtonTitle {
   font-size: calc(18px + 0vw);
   font-family: "firasans";
 }
@@ -383,7 +345,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-.socialDownSubwrapper_followUsTitle {
+.socialDownSubwrapper__headerFollowUsTitle {
   width: 6.7361111111vw;
   font-size: calc(0px + 1.0902777778vw);
   text-transform: uppercase;
@@ -391,7 +353,7 @@ h1 {
      -moz-user-select: none;
           user-select: none;
 }
-.socialDownSubwrapper_headerFacebookButton {
+.socialDownSubwrapper__headerFacebookButton {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -403,15 +365,7 @@ h1 {
   border: none;
   cursor: pointer;
 }
-.socialDownSubwrapper_headerFacebookButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.socialDownSubwrapper_headerFacebookButton:not(:hover) {
-  transition: 1s;
-}
-.socialDownSubwrapper_headerInstagramButton {
+.socialDownSubwrapper__headerInstagramButton {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -423,15 +377,7 @@ h1 {
   border: none;
   cursor: pointer;
 }
-.socialDownSubwrapper_headerInstagramButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.socialDownSubwrapper_headerInstagramButton:not(:hover) {
-  transition: 1s;
-}
-.socialDownSubwrapper_headerTwitterButton {
+.socialDownSubwrapper__headerTwitterButton {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -443,15 +389,7 @@ h1 {
   border: none;
   cursor: pointer;
 }
-.socialDownSubwrapper_headerTwitterButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.socialDownSubwrapper_headerTwitterButton:not(:hover) {
-  transition: 1s;
-}
-.socialDownSubwrapper_headerMailButton {
+.socialDownSubwrapper__headerMailButton {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -463,21 +401,13 @@ h1 {
   border: none;
   cursor: pointer;
 }
-.socialDownSubwrapper_headerMailButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.socialDownSubwrapper_headerMailButton:not(:hover) {
-  transition: 1s;
-}
-.socialDownSubwrapper_separator {
+.socialDownSubwrapper__headerSeparator {
   margin: 0 1.3888888889vw;
   width: 1px;
   height: 2.2222222222vw;
   background-color: #fff;
 }
-.socialDownSubwrapper_headerLoginButton {
+.socialDownSubwrapper__headerLoginButton {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -488,14 +418,6 @@ h1 {
   background-position: 100% 100%;
   border: none;
   cursor: pointer;
-}
-.socialDownSubwrapper_headerLoginButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.socialDownSubwrapper_headerLoginButton:not(:hover) {
-  transition: 1s;
 }
 
 .bodyLorem {
