@@ -84,7 +84,7 @@
 //     border: none;
 // }
 
-// // .logoSecondWord {
+//  .logoSecondWord {
 //     margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
 //     display: flex;
 //     font-family: "cormorantSC";
@@ -198,53 +198,53 @@
 //     margin: calc(50 / 1440 * 100vw) 0 0 0;
 //     display: flex;
 
-//     &__ul {
-//         margin: 0;
-//         display: flex;
-//         flex-direction: row;
-//         gap: calc(40.7 / 1440 * 100vw);
-//     }
+    // &__ul {
+    //     margin: 0;
+    //     display: flex;
+    //     flex-direction: row;
+    //     gap: calc(40.7 / 1440 * 100vw);
+    // }
 
-//     &__li {
-//         position: relative;
-//         font-size: calc(0px + 18 * (100vw / 1440));
-//     }
+    // &__li {
+    //     position: relative;
+    //     font-size: calc(0px + 18 * (100vw / 1440));
+    // }
 
-//     &__link {
-//         position: relative;
-//         display: inline-block;
-//     }
+    // &__link {
+    //     position: relative;
+    //     display: inline-block;
+    // }
 
-//     &__link::after {
-//         content: "";
-//         position: absolute;
-//         left: 50%;
-//         bottom: -5px;
-//         width: 0;
-//         height: 2px;
-//         background: linear-gradient(to right, rgba(216, 57, 52, 0), rgba(216, 57, 52, 1), rgba(216, 57, 52, 0));
-//         transition:
-//             width 0.4s ease,
-//             left 0.4s ease;
-//     }
+    // &__link::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 50%;
+    //     bottom: -5px;
+    //     width: 0;
+    //     height: 2px;
+    //     background: linear-gradient(to right, rgba(216, 57, 52, 0), rgba(216, 57, 52, 1), rgba(216, 57, 52, 0));
+    //     transition:
+    //         width 0.4s ease,
+    //         left 0.4s ease;
+    // }
 
-//     &__link:hover::after {
-//         width: 100%;
-//         left: 0;
-//     }
+    // &__link:hover::after {
+    //     width: 100%;
+    //     left: 0;
+    // }
 
-//     &__link:hover {
-//         color: #d83934;
-//         // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;  /* Падающая тень */
-//         transition: 0.4s;
-//         // cursor: default; /* Стандартный курсор при наведении */
-//         cursor: pointer; /* Изменение вида курсора на палец при наведении */
-//     }
+    // &__link:hover {
+    //     color: #d83934;
+    //     // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;  /* Падающая тень */
+    //     transition: 0.4s;
+    //     // cursor: default; /* Стандартный курсор при наведении */
+    //     cursor: pointer; /* Изменение вида курсора на палец при наведении */
+    // }
 
-//     &__link:not(:hover) {
-//         color: #fff;
-//         transition: 1s;
-//     }
+    // &__link:not(:hover) {
+    //     color: #fff;
+    //     transition: 1s;
+    // }
 // }
 //     .socialWrapper {
 //         margin: 0 calc(70 / 1440 * 100vw) 0 0;
@@ -310,18 +310,18 @@
 //                 overflow: hidden;
 //             }
     
-//             &__likeButtonDiscription {
-//                 margin: calc(0 / 1440 * 100vw) 0 0 calc(5 / 1440 * 100vw);
-//                 font-size: calc(0px + 18 * (100vw / 1440));
-//                 font-family: "firasans";
-//                 user-select: none;
-//             }
+            // &__likeButtonDiscription {
+            //     margin: calc(0 / 1440 * 100vw) 0 0 calc(5 / 1440 * 100vw);
+            //     font-size: calc(0px + 18 * (100vw / 1440));
+            //     font-family: "firasans";
+            //     user-select: none;
+            // }
     
 //             &__shareButtonDiscription {
 //                 margin: calc(0 / 1440 * 100vw) calc(5 / 1440 * 100vw) 0 calc(25 / 1440 * 100vw);
-//                 font-size: calc(0px + 18 * (100vw / 1440));
-//                 font-family: "firasans";
-//                 user-select: none;
+                // font-size: calc(0px + 18 * (100vw / 1440));
+                // font-family: "firasans";
+                // user-select: none;
 //             }
     
 //             &__shareButton {
@@ -341,7 +341,7 @@
 //                 cursor: pointer;
 //                 overflow: hidden;
 //             }
-//     }
+// //     }
 //     .headerBurgerMenuButton {
 //         position: relative;
 //         display: flex;
@@ -599,18 +599,18 @@
 //     position: relative;
 //     // width: calc(32 / 1440 * 100vw);
 //     // height: calc(32 / 1440 * 100vw);
-//     width: 32px;
-//     height: 32px;
-//     margin: 0;
-//     border-radius: 50%;
-//     flex-shrink: 0;
-//     background: url(../pic/shareArrow.svg);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: 100% 100%;
-//     border: none;
-//     cursor: pointer;
-//     overflow: hidden;
+    // width: 32px;
+    // height: 32px;
+    // margin: 0;
+    // border-radius: 50%;
+    // flex-shrink: 0;
+    // background: url(../pic/shareArrow.svg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: 100% 100%;
+    // border: none;
+    // cursor: pointer;
+    // overflow: hidden;
 // }
 
 // .staticHeaderLoginWrapper {
@@ -688,13 +688,13 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: calc(177 / 1440 * 100vw);
+    height: calc(0px + 177 * (100vw / 1440));
     min-height: 70px;
     background-color: #000000;
 }
 .headerContainer {
     margin: calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw);
-    padding: calc(39 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(22 / 1440 * 100vw) calc(0 / 1440 * 100vw);
+    padding: calc(0px + 39 * (100vw / 1440)) calc(0 / 1440 * 100vw) calc(29 / 1440 * 100vw) calc(0 / 1440 * 100vw);
     height: 100%;
     color: white;
     display: flex;
@@ -703,9 +703,9 @@ header {
     z-index: 1000;
 }
 .headerLogoContainer {
-    padding: 0 0 calc(7 / 1440 * 100vw) 0;
+    margin: 0 22.5px 0 0;
     display: flex;
-    width: 100%;
+    width: auto;
 }
 .logoContainer {
     position: relative;
@@ -774,9 +774,15 @@ header {
     color: #ffffff;
 }
 .titleContainer {
-    
+    margin: calc(17 / 1440 * 100vw) 22.5px 0 22.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 .titleWrapper {
+    display: flex;
+    justify-content: space-between;
 
 		&__likeButton {
 		}
@@ -785,6 +791,7 @@ header {
 		}
 }
 .headerLanguageSwitchContainer {
+    margin: 0 10px 10px 0;
 
 		&__ukrainianButton {
 		}
@@ -793,57 +800,154 @@ header {
 		}
 
 		&__englishButton {
+            display: none;
 		}
 
 		&__englishButtonTitle {
 		}
 }
 .headerLanguageSwitchButton {
+    border: none;
+    cursor: pointer;
+    background: #000000;
+    color: #fff;
 }
 .likeButton {
+    display: none;
 }
 .likeButtonImg {
 }
+.circleButton{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #000000;
+}
+h1 {    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: calc(12px + 12 * (100vw / 1440));
+    text-transform: uppercase;
+    text-align: center;
+    user-select: none;
+}
 .shareButton {
+    display: none;
 }
 .shareButtonImg {
 }
 .mainMenuContainer {
 }
 .mainMenu {
+    display: flex;
 
-		&_ul {
+		&__ul {
+            display: flex;
+            justify-content: space-between;
 		}
 
-		&_li {
+		&__li {
+            font-size: calc(0px + 18 * (100vw / 1440));
 		}
 
-		&_link {
-		}
+        &__link {
+            position: relative;
+            display: inline-block;
+        }
+    
+        &__link::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(to right, rgba(216, 57, 52, 0), rgb(255, 255, 255), rgba(216, 57, 52, 0));
+            transition: width 0.4s ease, left 0.4s ease;
+        }
+    
+        &__link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        &__link:hover {
+            color: #ffffff;
+            transition: 0.4s;
+            cursor: pointer;
+        }        
+    
+        &__link:not(:hover) {
+            color: #fff;
+            transition: 1s;
+        }
 }
 .socialContainer {
+    margin: 0 0 -7px 22.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
 }
 .socialUpperWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 		&__loginButton {
 		}
 
 		&__separator {
+            display: none;
 		}
 
 		&__likeButton {
+            position: relative;
+            display: flex;
+            margin: 0 auto 0 0;
 		}
 
+        &__likeButton::after {
+            content: "Like";
+            position: absolute;
+            top: 6px;
+            left: 38px;
+            font-size: 18px;
+            user-select: none;
+            color: #fff;
+        }
+
 		&__shareButton {
+            position: relative;
+            display: flex;
+            margin: 0 0 0 auto;
 		}
+
+        &__shareButton::before {
+            content: "Share";
+            position: absolute;
+            top: 6px;
+            right: 38px;
+            font-size: 18px;
+            user-select: none;
+            color: #fff;
+        }
 }
 .loginButton {
+    display: none;
 }
 .loginButtonImg {
 }
 .separatorImg {
+    display: flex;
+    width: 1px;
+    height: 32px;
 }
 .headerBurgerMenuButton {
+    margin: 0 0 0 28px;
 
 		&__img {
 		}
@@ -852,29 +956,74 @@ header {
 		}
 }
 .burgerButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(151 / 1440 * 100vw);
+    height: calc(51 / 1440 * 100vw);
+    min-width: 94.75px;
+    min-height: 32px;
+    border-radius: 51px;
+    color: #fff;
+    border: none;
+    background-color: #3a8374;
+
+        &__img {
+            margin: 0 calc(6 / 1440 * 100vw) 0 0;
+            width: calc(32 / 1440 * 100vw);
+            height: calc(32 / 1440 * 100vw);
+            min-width: 20px;
+            min-height: 20px;
+        }
+
+        &__title {
+            margin: 0 0 0 calc(6 / 1440 * 100vw);
+            font-size: calc(18px + 0 * (100vw / 1440));
+        }
 }
 .socialDownWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -5px 0 0; //Важный параметр! Меняется вместе с параметром свойства .socialDownWrapperButton{margin:0:5px;}
 
 		&__followUsTitle {
+            margin: 0 20px -1px 0;
+            width: auto;
+            font-size: 16px;
+            text-transform: uppercase;
+            user-select: none;
+            white-space: nowrap;
 		}
 
 		&__facebookButton {
+            // margin: 0 5px;
 		}
 
 		&__instagramButton {
+            // margin: 0 5px;
 		}
 
 		&__twitterButton {
+            // margin: 0 5px;
 		}
 
 		&__mailButton {
+            // margin: 0 5px;
 		}
 
 		&__separator {
+            margin: 0 25px 0 24px;
 		}
 
 		&__loginButton {
+            // margin: 0 5px;
 		}
+}
+.socialDownWrapperButton {    
+    margin: 0 5px;
 }
 .socialButton {
 }

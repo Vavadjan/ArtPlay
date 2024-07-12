@@ -23,14 +23,14 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 12.2916666667vw;
+  height: calc(0px + 12.2916666667vw);
   min-height: 70px;
   background-color: #000000;
 }
 
 .headerContainer {
   margin: 0vw 4.8611111111vw 0vw 4.8611111111vw;
-  padding: 2.7083333333vw 0vw 1.5277777778vw 0vw;
+  padding: calc(0px + 2.7083333333vw) 0vw 2.0138888889vw 0vw;
   height: 100%;
   color: white;
   display: flex;
@@ -40,9 +40,9 @@ header {
 }
 
 .headerLogoContainer {
-  padding: 0 0 0.4861111111vw 0;
+  margin: 0 22.5px 0 0;
   display: flex;
-  width: 100%;
+  width: auto;
 }
 
 .logoContainer {
@@ -111,6 +111,210 @@ header {
 
 .white {
   color: #ffffff;
+}
+
+.titleContainer {
+  margin: 1.1805555556vw 22.5px 0 22.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.headerLanguageSwitchContainer {
+  margin: 0 10px 10px 0;
+}
+.headerLanguageSwitchContainer__englishButton {
+  display: none;
+}
+.headerLanguageSwitchButton {
+  border: none;
+  cursor: pointer;
+  background: #000000;
+  color: #fff;
+}
+
+.likeButton {
+  display: none;
+}
+
+.circleButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #000000;
+}
+
+h1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: calc(12px + 0.8333333333vw);
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.shareButton {
+  display: none;
+}
+
+.mainMenu {
+  display: flex;
+}
+.mainMenu__ul {
+  display: flex;
+  justify-content: space-between;
+}
+.mainMenu__li {
+  font-size: calc(0px + 1.25vw);
+}
+.mainMenu__link {
+  position: relative;
+  display: inline-block;
+}
+.mainMenu__link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, rgba(216, 57, 52, 0), rgb(255, 255, 255), rgba(216, 57, 52, 0));
+  transition: width 0.4s ease, left 0.4s ease;
+}
+.mainMenu__link:hover::after {
+  width: 100%;
+  left: 0;
+}
+.mainMenu__link:hover {
+  color: #ffffff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.mainMenu__link:not(:hover) {
+  color: #fff;
+  transition: 1s;
+}
+
+.socialContainer {
+  margin: 0 0 -7px 22.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+}
+
+.socialUpperWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socialUpperWrapper__separator {
+  display: none;
+}
+.socialUpperWrapper__likeButton {
+  position: relative;
+  display: flex;
+  margin: 0 auto 0 0;
+}
+.socialUpperWrapper__likeButton::after {
+  content: "Like";
+  position: absolute;
+  top: 6px;
+  left: 38px;
+  font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #fff;
+}
+.socialUpperWrapper__shareButton {
+  position: relative;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.socialUpperWrapper__shareButton::before {
+  content: "Share";
+  position: absolute;
+  top: 6px;
+  right: 38px;
+  font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #fff;
+}
+
+.loginButton {
+  display: none;
+}
+
+.separatorImg {
+  display: flex;
+  width: 1px;
+  height: 32px;
+}
+
+.headerBurgerMenuButton {
+  margin: 0 0 0 28px;
+}
+.burgerButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10.4861111111vw;
+  height: 3.5416666667vw;
+  min-width: 94.75px;
+  min-height: 32px;
+  border-radius: 51px;
+  color: #fff;
+  border: none;
+  background-color: #3a8374;
+}
+.burgerButton__img {
+  margin: 0 0.4166666667vw 0 0;
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+  min-width: 20px;
+  min-height: 20px;
+}
+.burgerButton__title {
+  margin: 0 0 0 0.4166666667vw;
+  font-size: calc(18px + 0vw);
+}
+
+.socialDownWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -5px 0 0;
+}
+.socialDownWrapper__followUsTitle {
+  margin: 0 20px -1px 0;
+  width: auto;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+}
+.socialDownWrapper__separator {
+  margin: 0 25px 0 24px;
+}
+.socialDownWrapperButton {
+  margin: 0 5px;
 }
 
 .black {
