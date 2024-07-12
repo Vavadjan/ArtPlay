@@ -18,668 +18,889 @@
     src: url("../font/Chiller/chiller_regular.ttf") format("truetype");
 }
 
-body {
-    margin: 0;
+// body {
+//     margin: 0;
+//     font-family: "firasans", "centurygothic", "cormorantSC", "chiller";
+// }
+
+// .mainHeader {
+//     position: fixed;
+//     top: 0;
+//     width: 100vw;
+//     height: calc(0px + 177 * (100vw / 1440));
+//     min-height: 70px;
+//     background-color: black;
+//     color: white;
+//     display: flex;
+//     justify-content: space-between;
+//     transition: transform 0.3s ease;
+//     z-index: 1000;
+//     gap: calc(40 / 1440 * 100vw);
+// }
+
+// .logoWrapper {
+//     margin: 0 0 0 calc(70 / 1440 * 100vw);
+//     padding: calc(29 / 1440 * 100vw) 0 0 0;
+//     display: flex;
+//     flex-direction: row;
+//     width: calc(246 / 1440 * 100vw);
+// }
+
+// .logoImage {
+//     margin: calc(48 / 1440 * 100vw) 0 0 0;
+//     width: calc(122.47 / 1440 * 100vw);
+//     height: calc(68.43 / 1440 * 100vw);
+// }
+
+// .logoTitleWrapper {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .logoFirstWord {
+//     position: relative;
+//     margin: 0 0 0 calc(-12 / 1440 * 100vw);
+//     display: flex;
+//     font-family: "chiller";
+//     font-size: calc(0px + 156 * (100vw / 1440));
+//     line-height: 0.55; //Важная строка!!!
+//     display: inline-block; /* Необходимо для применения transform */
+//     transform: scaleX(1.1); /* Масштабирование по горизонтали */
+//     user-select: none;
+// }
+
+// .logoFirstWord::before {
+//     content: "";
+//     position: absolute;
+//     top: calc(41 / 1440 * 100vw);
+//     left: calc(123 / 1440 * 100vw);
+//     width: calc(8 / 1440 * 100vw);
+//     height: calc(6 / 1440 * 100vw);
+//     flex-shrink: 0;
+//     background: url(../pic/logoPoint.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: 100% 100%;
+//     border: none;
+// }
+
+// // .logoSecondWord {
+//     margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
+//     display: flex;
+//     font-family: "cormorantSC";
+//     font-size: calc(0px + 15.35 * (100vw / 1440));
+//     text-transform: uppercase;
+//     letter-spacing: calc(0px + 3.4 * (100vw / 1440));
+//     user-select: none;
+// }
+
+// .logoThirdWord {
+//     display: flex;
+//     margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
+//     font-family: "cormorantSC";
+//     font-size: calc(0px + 22 * (100vw / 1440));
+//     text-transform: uppercase;
+//     letter-spacing: calc(0px + 4 * (100vw / 1440));
+//     user-select: none;
+// }
+
+// .languageButton {
+//     // display: flex;
+//     margin: calc(57 / 1440 * 100vw) calc(-90 / 1440 * 100vw) 0 0;
+//     width: calc(40 / 1440 * 100vw);
+//     height: calc(20 / 1440 * 100vw);
+//     flex-shrink: 0;
+//     position: relative;
+//     perspective: 100px; /* Устанавливает перспективу для 3D вращения */
+//     cursor: pointer;
+// }
+
+// .languageButton:hover {
+//     box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
+//     // background-color: #D83934;
+//     background-color: rgba(216, 57, 52, 0.85); /* 50% прозрачности фона */
+//     transition: 0.4s;
+//     // cursor: default; /* Стандартный курсор при наведении */
+//     cursor: pointer; /* Изменение вида курсора на палец при наведении */
+// }
+
+// .languageButton:not(:hover) {
+//     transition: 1s;
+// }
+
+// .languageContainer {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     transform-style: preserve-3d;
+//     animation: rotate 3s linear infinite;
+// }
+
+// .ukr {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     backface-visibility: hidden;
+//     background: url("../pic/UkrLang.webp") no-repeat center center;
+//     background-size: cover;
+// }
+
+// .eng {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     backface-visibility: hidden;
+//     background: url("../pic/EngLang.webp") no-repeat center center;
+//     background-size: cover;
+//     transform: rotateX(180deg);
+// }
+
+// @keyframes rotate {
+//     0% {
+//         transform: rotateX(0deg);
+//     }
+//     100% {
+//         transform: rotateX(360deg);
+//     }
+// }
+
+// .headerTitleWrapper {
+//     // width: calc(432 / 1 * 100vw);
+//     width: auto;
+//     margin: 0 0 0 calc(-85 / 1440 * 100vw);
+//     padding: calc(26 / 1440 * 100vw) 0 0 calc(90 / 1440 * 100vw);
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// h1 {
+//     display: flex;
+//     margin: 0;
+//     font-size: calc(12px + 12 * (100vw / 1440));
+//     justify-content: center;
+//     text-transform: uppercase;
+//     user-select: none;
+//     text-align: center;
+// }
+
+// .mobileHeaderLikeButton {
+//     display: none;
+// }
+
+// .mobileHeaderShareButton {
+//     display: none;
+// }
+
+// .headerMenu {
+//     margin: calc(50 / 1440 * 100vw) 0 0 0;
+//     display: flex;
+
+//     &__ul {
+//         margin: 0;
+//         display: flex;
+//         flex-direction: row;
+//         gap: calc(40.7 / 1440 * 100vw);
+//     }
+
+//     &__li {
+//         position: relative;
+//         font-size: calc(0px + 18 * (100vw / 1440));
+//     }
+
+//     &__link {
+//         position: relative;
+//         display: inline-block;
+//     }
+
+//     &__link::after {
+//         content: "";
+//         position: absolute;
+//         left: 50%;
+//         bottom: -5px;
+//         width: 0;
+//         height: 2px;
+//         background: linear-gradient(to right, rgba(216, 57, 52, 0), rgba(216, 57, 52, 1), rgba(216, 57, 52, 0));
+//         transition:
+//             width 0.4s ease,
+//             left 0.4s ease;
+//     }
+
+//     &__link:hover::after {
+//         width: 100%;
+//         left: 0;
+//     }
+
+//     &__link:hover {
+//         color: #d83934;
+//         // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;  /* Падающая тень */
+//         transition: 0.4s;
+//         // cursor: default; /* Стандартный курсор при наведении */
+//         cursor: pointer; /* Изменение вида курсора на палец при наведении */
+//     }
+
+//     &__link:not(:hover) {
+//         color: #fff;
+//         transition: 1s;
+//     }
+// }
+//     .socialWrapper {
+//         margin: 0 calc(70 / 1440 * 100vw) 0 0;
+//         padding: 0;
+//         display: flex;
+//         // height: 100%;
+//         width: calc(356 / 1440 * 100vw);
+//         flex-direction: column;
+//         // gap: calc(5.5 / 1440 * 100vw);
+//         align-items: end;
+//         justify-content: space-between;
+//     }
+//     .socialUpperSubWrapper {
+//         margin: 0;
+//         padding: 0;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 100%;
+//         height: 100%;
+    
+//             &__headerLoginButton {
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 // width: 32px;
+//                 // height: 32px;
+//                 // border-radius: 50%;
+//                 // flex-shrink: 0;
+//                 // background: url(../pic/loginBlack.svg);
+//                 // background-repeat: no-repeat;
+//                 // background-size: contain;
+//                 // background-position: 100% 100%;
+//                 // border: none;
+//                 // cursor: pointer;
+//                 display: none;
+//             }
+    
+//             &__headerSeparator {
+//                 // margin: 0;
+//                 // width: 1px;
+//                 // height: calc(32 / 1440 * 100vw);
+//                 // height: 32px;
+//                 // background-color: #000000;
+//                 display: none;
+//             }
+    
+//             &__likeButton {
+//                 position: relative;
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 // margin: calc(48 / 1440 * 100vw) 0 0 0;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/likeHeart.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//                 overflow: hidden;
+//             }
+    
+//             &__likeButtonDiscription {
+//                 margin: calc(0 / 1440 * 100vw) 0 0 calc(5 / 1440 * 100vw);
+//                 font-size: calc(0px + 18 * (100vw / 1440));
+//                 font-family: "firasans";
+//                 user-select: none;
+//             }
+    
+//             &__shareButtonDiscription {
+//                 margin: calc(0 / 1440 * 100vw) calc(5 / 1440 * 100vw) 0 calc(25 / 1440 * 100vw);
+//                 font-size: calc(0px + 18 * (100vw / 1440));
+//                 font-family: "firasans";
+//                 user-select: none;
+//             }
+    
+//             &__shareButton {
+//                 position: relative;
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 margin: calc(0 / 1440 * 100vw) calc(28 / 1440 * 100vw) 0 0;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/shareArrow.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//                 overflow: hidden;
+//             }
+//     }
+//     .headerBurgerMenuButton {
+//         position: relative;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         gap: calc(8 / 1440 * 100vw);
+//         width: calc(151 / 1440 * 100vw);
+//         height: calc(51 / 1440 * 100vw);
+//         // width: 151px;
+//         // height: 51px;
+//         min-width: 94.75px;
+//         min-height: 32px;
+//         margin: 0;
+//         padding: 0;
+//         // border-radius: calc((51 / 1440 * 100vw) / 2);
+//         border-radius: 51px;
+//         color: #fff;
+//         flex-shrink: 0;
+//         border: none;
+//         background-color: #3a8374;
+    
+//             &__headerBurgerMenuButtonTitleImage {
+//                 // width: 32px;
+//                 // height: 32px;
+//                 width: calc(32 / 1440 * 100vw);
+//                 height: calc(32 / 1440 * 100vw);
+//             }
+    
+//             &__headerBurgerMenuButtonTitle {
+//                 font-size: calc(18px + 0 * (100vw / 1440));
+//                 font-family: "firasans";
+//             }
+//     }
+//     .socialDownSubwrapper {
+//         // height: 100%;
+//         margin: 0;
+//         display: flex;
+//         width: 100%;
+//         padding: 0 0 calc(22 / 1440 * 100vw) 0;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: space-between;
+//         // gap: calc(10 / 1440 * 100vw);
+    
+//             &__headerFollowUsTitle {
+//                 width: calc(97 / 1440 * 100vw);
+//                 font-size: calc(0px + 15.7 * (100vw / 1440));
+//                 text-transform: uppercase;
+//                 user-select: none;
+//             }
+    
+//             &__headerFacebookButton {
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/fasebook.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//             }
+    
+//             &__headerInstagramButton {
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/instagram.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//             }
+    
+//             &__headerTwitterButton {
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/twitter.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//             }
+    
+//             &__headerMailButton {
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/mail.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//             }
+    
+//             &__headerSeparator {
+//                 margin: 0 calc(20 / 1440 * 100vw);
+//                 width: 1px;
+//                 height: calc(32 / 1440 * 100vw);
+//                 background-color: #fff;
+//             }
+    
+//             &__headerLoginButton {
+//                 // width: calc(32 / 1440 * 100vw);
+//                 // height: calc(32 / 1440 * 100vw);
+//                 width: 32px;
+//                 height: 32px;
+//                 border-radius: 50%;
+//                 flex-shrink: 0;
+//                 background: url(../pic/login.svg);
+//                 background-repeat: no-repeat;
+//                 background-size: contain;
+//                 background-position: 100% 100%;
+//                 border: none;
+//                 cursor: pointer;
+//             }
+//     }
+    
+
+
+
+// .bodyLorem {
+//     margin: calc(177 / 1440 * 100vw) 0 0 0;
+//     color: black;
+// }
+
+// .staticHeader {
+//     position: fixed;
+//     top: 0;
+//     width: 100vw;
+//     height: calc(100 / 1440 * 100vw);
+//     min-height: 50px;
+//     background-color: rgb(255, 255, 255);
+//     color: rgb(0, 0, 0);
+//     display: flex;
+//     justify-content: space-between;
+//     transform: translateY(-100%);
+//     transition: transform 0.3s ease;
+//     z-index: 999;
+// }
+
+// .staticHeaderLogoWrapper {
+//     margin: 0 0 0 calc(70 / 1440 * 100vw);
+//     display: flex;
+//     flex-direction: row;
+//     // width: calc(118 / 1440 * 100vw);
+//     width: auto;
+//     align-items: center;
+
+//     &_staticHeaderlogoImage {
+//         display: none;
+//     }
+
+//     &_staticHeaderlogoTitleWrapper {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     &_staticHeaderlogoFirstWord {
+//         position: relative;
+//         margin: calc(-20 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
+//         display: flex;
+//         font-family: "chiller";
+//         font-size: calc(135 / 1440 * 100vw);
+//         line-height: 0.55; //Важная строка!!!
+//         display: inline-block; /* Необходимо для применения transform */
+//         transform: scaleX(1.1); /* Масштабирование по горизонтали */
+//         user-select: none;
+//     }
+
+//     &_staticHeaderlogoFirstWord::before {
+//         content: "";
+//         position: absolute;
+//         top: calc(35 / 1440 * 100vw);
+//         left: calc(104 / 1440 * 100vw);
+//         width: calc(8 / 1440 * 100vw);
+//         height: calc(6 / 1440 * 100vw);
+//         flex-shrink: 0;
+//         background: url(../pic/logoPoint.svg);
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//         background-position: 100% 100%;
+//         border: none;
+//     }
+
+//     &_staticHeaderlogoSecondWord {
+//         display: none;
+//     }
+
+//     &_staticHeaderlogoThirdWord {
+//         display: none;
+//     }
+// }
+
+// .staticHeader.visible {
+//     transform: translateY(0);
+// }
+
+// .staticHeaderTitleWrapper {
+//     margin: 0 0 0 calc(75 / 1440 * 100vw);
+//     display: flex;
+//     justify-content: center;
+//     display: flex;
+//     align-items: center;
+//     gap: calc(31 / 1440 * 100vw);
+// }
+
+// .staticHeaderLikeButton {
+//     position: relative;
+//     // width: calc(32 / 1440 * 100vw);
+//     // height: calc(32 / 1440 * 100vw);
+//     width: 32px;
+//     height: 32px;
+//     margin: 0;
+//     border-radius: 50%;
+//     flex-shrink: 0;
+//     background: url(../pic/likeHeart.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: 100% 100%;
+//     border: none;
+//     cursor: pointer;
+//     overflow: hidden;
+// }
+
+// .staticHeaderTitle {
+//     display: flex;
+//     margin: 0 0 0 calc(0 / 1440 * 100vw);
+//     font-size: calc(12px + 12 * (100vw / 1440));
+//     justify-content: center;
+//     align-items: center;
+//     text-transform: uppercase;
+//     user-select: none;
+//     text-align: center;
+// }
+
+// .staticHeaderShareButton {
+//     position: relative;
+//     // width: calc(32 / 1440 * 100vw);
+//     // height: calc(32 / 1440 * 100vw);
+//     width: 32px;
+//     height: 32px;
+//     margin: 0;
+//     border-radius: 50%;
+//     flex-shrink: 0;
+//     background: url(../pic/shareArrow.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: 100% 100%;
+//     border: none;
+//     cursor: pointer;
+//     overflow: hidden;
+// }
+
+// .staticHeaderLoginWrapper {
+//     margin: 0 calc(70 / 1440 * 100vw) 0 0;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     gap: calc(17 / 1440 * 100vw);
+// }
+
+// .staticHeadereaderLoginButton {
+//     // width: calc(32 / 1440 * 100vw);
+//     // height: calc(32 / 1440 * 100vw);
+//     width: 32px;
+//     height: 32px;
+//     border-radius: 50%;
+//     flex-shrink: 0;
+//     background: url(../pic/loginBlack.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: 100% 100%;
+//     border: none;
+//     cursor: pointer;
+// }
+
+// .staticHeaderSeparator {
+//     margin: 0;
+//     width: 1px;
+//     height: calc(32 / 1440 * 100vw);
+//     height: 32px;
+//     background-color: #000000;
+// }
+
+// .staticHeaderBurgerMenuButton {
+//     position: relative;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     gap: calc(8 / 1440 * 100vw);
+//     width: calc(151 / 1440 * 100vw);
+//     height: calc(51 / 1440 * 100vw);
+//     // width: 151px;
+//     // height: 51px;
+//     min-width: 94.75px;
+//     min-height: 32px;
+//     margin: 0;
+//     padding: 0;
+//     // border-radius: calc((51 / 1440 * 100vw) / 2);
+//     border-radius: 51px;
+//     color: #fff;
+//     flex-shrink: 0;
+//     border: none;
+//     background-color: #3a8374;
+// }
+
+// .staticBurgerMenuButtonTitleImage {
+//     // width: 32px;
+//     // height: 32px;
+//     width: calc(32 / 1440 * 100vw);
+//     height: calc(32 / 1440 * 100vw);
+// }
+
+// .staticHeaderBurgerMenuButtonTitle {
+//     font-size: calc(9px + 9 * (100vw / 1440));
+//     font-family: "firasans";
+// }
+
+
+
+body {    
     font-family: "firasans", "centurygothic", "cormorantSC", "chiller";
 }
-
-.mainHeader {
+header {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: calc(0px + 177 * (100vw / 1440));
+    height: calc(177 / 1440 * 100vw);
     min-height: 70px;
-    background-color: black;
+    background-color: #000000;
+}
+.headerContainer {
+    margin: calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw);
+    padding: calc(39 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(22 / 1440 * 100vw) calc(0 / 1440 * 100vw);
+    height: 100%;
     color: white;
     display: flex;
     justify-content: space-between;
     transition: transform 0.3s ease;
     z-index: 1000;
-    gap: calc(40 / 1440 * 100vw);
 }
-
-.logoWrapper {
-    margin: 0 0 0 calc(70 / 1440 * 100vw);
-    padding: calc(29 / 1440 * 100vw) 0 0 0;
+.headerLogoContainer {
+    padding: 0 0 calc(7 / 1440 * 100vw) 0;
     display: flex;
-    flex-direction: row;
-    width: calc(246 / 1440 * 100vw);
-}
-
-.logoImage {
-    margin: calc(48 / 1440 * 100vw) 0 0 0;
-    width: calc(122.47 / 1440 * 100vw);
-    height: calc(68.43 / 1440 * 100vw);
-}
-
-.logoTitleWrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.logoFirstWord {
-    position: relative;
-    margin: 0 0 0 calc(-12 / 1440 * 100vw);
-    display: flex;
-    font-family: "chiller";
-    font-size: calc(0px + 156 * (100vw / 1440));
-    line-height: 0.55; //Важная строка!!!
-    display: inline-block; /* Необходимо для применения transform */
-    transform: scaleX(1.1); /* Масштабирование по горизонтали */
-    user-select: none;
-}
-
-.logoFirstWord::before {
-    content: "";
-    position: absolute;
-    top: calc(41 / 1440 * 100vw);
-    left: calc(123 / 1440 * 100vw);
-    width: calc(8 / 1440 * 100vw);
-    height: calc(6 / 1440 * 100vw);
-    flex-shrink: 0;
-    background: url(../pic/logoPoint.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    border: none;
-}
-
-.logoSecondWord {
-    margin: calc(0 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
-    display: flex;
-    font-family: "cormorantSC";
-    font-size: calc(0px + 15.35 * (100vw / 1440));
-    text-transform: uppercase;
-    letter-spacing: calc(0px + 3.4 * (100vw / 1440));
-    user-select: none;
-}
-
-.logoThirdWord {
-    display: flex;
-    margin: calc(-2 / 1440 * 100vw) 0 0 calc(-13 / 1440 * 100vw);
-    font-family: "cormorantSC";
-    font-size: calc(0px + 22 * (100vw / 1440));
-    text-transform: uppercase;
-    letter-spacing: calc(0px + 4 * (100vw / 1440));
-    user-select: none;
-}
-
-.languageButton {
-    // display: flex;
-    margin: calc(57 / 1440 * 100vw) calc(-90 / 1440 * 100vw) 0 0;
-    width: calc(40 / 1440 * 100vw);
-    height: calc(20 / 1440 * 100vw);
-    flex-shrink: 0;
-    position: relative;
-    perspective: 100px; /* Устанавливает перспективу для 3D вращения */
-    cursor: pointer;
-}
-
-.languageButton:hover {
-    box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-    // background-color: #D83934;
-    background-color: rgba(216, 57, 52, 0.85); /* 50% прозрачности фона */
-    transition: 0.4s;
-    // cursor: default; /* Стандартный курсор при наведении */
-    cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-
-.languageButton:not(:hover) {
-    transition: 1s;
-}
-
-.languageContainer {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-style: preserve-3d;
-    animation: rotate 3s linear infinite;
 }
-
-.ukr {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    background: url("../pic/UkrLang.webp") no-repeat center center;
-    background-size: cover;
-}
-
-.eng {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    background: url("../pic/EngLang.webp") no-repeat center center;
-    background-size: cover;
-    transform: rotateX(180deg);
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotateX(0deg);
-    }
-    100% {
-        transform: rotateX(360deg);
-    }
-}
-
-.headerTitleWrapper {
-    // width: calc(432 / 1 * 100vw);
-    width: auto;
-    margin: 0 0 0 calc(-85 / 1440 * 100vw);
-    padding: calc(26 / 1440 * 100vw) 0 0 calc(90 / 1440 * 100vw);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h1 {
-    display: flex;
-    margin: 0;
-    font-size: calc(12px + 12 * (100vw / 1440));
-    justify-content: center;
-    text-transform: uppercase;
-    user-select: none;
-    text-align: center;
-}
-
-.mobileHeaderLikeButton {
-    display: none;
-}
-
-.mobileHeaderShareButton {
-    display: none;
-}
-
-.headerMenu {
-    margin: calc(50 / 1440 * 100vw) 0 0 0;
-    display: flex;
-
-    &__ul {
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        gap: calc(40.7 / 1440 * 100vw);
-    }
-
-    &__li {
-        position: relative;
-        font-size: calc(0px + 18 * (100vw / 1440));
-    }
-
-    &__link {
-        position: relative;
-        display: inline-block;
-    }
-
-    &__link::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        width: 0;
-        height: 2px;
-        background: linear-gradient(to right, rgba(216, 57, 52, 0), rgba(216, 57, 52, 1), rgba(216, 57, 52, 0));
-        transition:
-            width 0.4s ease,
-            left 0.4s ease;
-    }
-
-    &__link:hover::after {
-        width: 100%;
-        left: 0;
-    }
-
-    &__link:hover {
-        color: #d83934;
-        // text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px #fff, 0 0 15px #fff;  /* Падающая тень */
-        transition: 0.4s;
-        // cursor: default; /* Стандартный курсор при наведении */
-        cursor: pointer; /* Изменение вида курсора на палец при наведении */
-    }
-
-    &__link:not(:hover) {
-        color: #fff;
-        transition: 1s;
-    }
-}
-    .socialWrapper {
-        margin: 0 calc(70 / 1440 * 100vw) 0 0;
-        padding: 0;
-        display: flex;
-        // height: 100%;
-        width: calc(356 / 1440 * 100vw);
-        flex-direction: column;
-        // gap: calc(5.5 / 1440 * 100vw);
-        align-items: end;
-        justify-content: space-between;
-    }
-    .socialUpperSubWrapper {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-    
-            &__headerLoginButton {
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                // width: 32px;
-                // height: 32px;
-                // border-radius: 50%;
-                // flex-shrink: 0;
-                // background: url(../pic/loginBlack.svg);
-                // background-repeat: no-repeat;
-                // background-size: contain;
-                // background-position: 100% 100%;
-                // border: none;
-                // cursor: pointer;
-                display: none;
-            }
-    
-            &__headerSeparator {
-                // margin: 0;
-                // width: 1px;
-                // height: calc(32 / 1440 * 100vw);
-                // height: 32px;
-                // background-color: #000000;
-                display: none;
-            }
-    
-            &__likeButton {
-                position: relative;
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                // margin: calc(48 / 1440 * 100vw) 0 0 0;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/likeHeart.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-                overflow: hidden;
-            }
-    
-            &__likeButtonDiscription {
-                margin: calc(0 / 1440 * 100vw) 0 0 calc(5 / 1440 * 100vw);
-                font-size: calc(0px + 18 * (100vw / 1440));
-                font-family: "firasans";
-                user-select: none;
-            }
-    
-            &__shareButtonDiscription {
-                margin: calc(0 / 1440 * 100vw) calc(5 / 1440 * 100vw) 0 calc(25 / 1440 * 100vw);
-                font-size: calc(0px + 18 * (100vw / 1440));
-                font-family: "firasans";
-                user-select: none;
-            }
-    
-            &__shareButton {
-                position: relative;
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                margin: calc(0 / 1440 * 100vw) calc(28 / 1440 * 100vw) 0 0;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/shareArrow.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-                overflow: hidden;
-            }
-    }
-    .headerBurgerMenuButton {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: calc(8 / 1440 * 100vw);
-        width: calc(151 / 1440 * 100vw);
-        height: calc(51 / 1440 * 100vw);
-        // width: 151px;
-        // height: 51px;
-        min-width: 94.75px;
-        min-height: 32px;
-        margin: 0;
-        padding: 0;
-        // border-radius: calc((51 / 1440 * 100vw) / 2);
-        border-radius: 51px;
-        color: #fff;
-        flex-shrink: 0;
-        border: none;
-        background-color: #3a8374;
-    
-            &__headerBurgerMenuButtonTitleImage {
-                // width: 32px;
-                // height: 32px;
-                width: calc(32 / 1440 * 100vw);
-                height: calc(32 / 1440 * 100vw);
-            }
-    
-            &__headerBurgerMenuButtonTitle {
-                font-size: calc(18px + 0 * (100vw / 1440));
-                font-family: "firasans";
-            }
-    }
-    .socialDownSubwrapper {
-        // height: 100%;
-        margin: 0;
-        display: flex;
-        width: 100%;
-        padding: 0 0 calc(22 / 1440 * 100vw) 0;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        // gap: calc(10 / 1440 * 100vw);
-    
-            &__headerFollowUsTitle {
-                width: calc(97 / 1440 * 100vw);
-                font-size: calc(0px + 15.7 * (100vw / 1440));
-                text-transform: uppercase;
-                user-select: none;
-            }
-    
-            &__headerFacebookButton {
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/fasebook.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-            }
-    
-            &__headerInstagramButton {
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/instagram.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-            }
-    
-            &__headerTwitterButton {
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/twitter.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-            }
-    
-            &__headerMailButton {
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/mail.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-            }
-    
-            &__headerSeparator {
-                margin: 0 calc(20 / 1440 * 100vw);
-                width: 1px;
-                height: calc(32 / 1440 * 100vw);
-                background-color: #fff;
-            }
-    
-            &__headerLoginButton {
-                // width: calc(32 / 1440 * 100vw);
-                // height: calc(32 / 1440 * 100vw);
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                flex-shrink: 0;
-                background: url(../pic/login.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: 100% 100%;
-                border: none;
-                cursor: pointer;
-            }
-    }
-    
-
-
-
-.bodyLorem {
-    margin: calc(177 / 1440 * 100vw) 0 0 0;
-    color: black;
-}
-
-.staticHeader {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: calc(100 / 1440 * 100vw);
-    min-height: 50px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-    z-index: 999;
-}
-
-.staticHeaderLogoWrapper {
-    margin: 0 0 0 calc(70 / 1440 * 100vw);
-    display: flex;
-    flex-direction: row;
-    // width: calc(118 / 1440 * 100vw);
-    width: auto;
-    align-items: center;
-
-    &_staticHeaderlogoImage {
-        display: none;
-    }
-
-    &_staticHeaderlogoTitleWrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &_staticHeaderlogoFirstWord {
-        position: relative;
-        margin: calc(-20 / 1440 * 100vw) 0 0 calc(0 / 1440 * 100vw);
-        display: flex;
-        font-family: "chiller";
-        font-size: calc(135 / 1440 * 100vw);
-        line-height: 0.55; //Важная строка!!!
-        display: inline-block; /* Необходимо для применения transform */
-        transform: scaleX(1.1); /* Масштабирование по горизонтали */
-        user-select: none;
-    }
-
-    &_staticHeaderlogoFirstWord::before {
-        content: "";
-        position: absolute;
-        top: calc(35 / 1440 * 100vw);
-        left: calc(104 / 1440 * 100vw);
-        width: calc(8 / 1440 * 100vw);
-        height: calc(6 / 1440 * 100vw);
-        flex-shrink: 0;
-        background: url(../pic/logoPoint.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 100%;
-        border: none;
-    }
-
-    &_staticHeaderlogoSecondWord {
-        display: none;
-    }
-
-    &_staticHeaderlogoThirdWord {
-        display: none;
-    }
-}
-
-.staticHeader.visible {
-    transform: translateY(0);
-}
-
-.staticHeaderTitleWrapper {
-    margin: 0 0 0 calc(75 / 1440 * 100vw);
-    display: flex;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: calc(31 / 1440 * 100vw);
-}
-
-.staticHeaderLikeButton {
-    position: relative;
-    // width: calc(32 / 1440 * 100vw);
-    // height: calc(32 / 1440 * 100vw);
-    width: 32px;
-    height: 32px;
-    margin: 0;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background: url(../pic/likeHeart.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.staticHeaderTitle {
-    display: flex;
-    margin: 0 0 0 calc(0 / 1440 * 100vw);
-    font-size: calc(12px + 12 * (100vw / 1440));
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    user-select: none;
-    text-align: center;
-}
-
-.staticHeaderShareButton {
-    position: relative;
-    // width: calc(32 / 1440 * 100vw);
-    // height: calc(32 / 1440 * 100vw);
-    width: 32px;
-    height: 32px;
-    margin: 0;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background: url(../pic/shareArrow.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.staticHeaderLoginWrapper {
-    margin: 0 calc(70 / 1440 * 100vw) 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: calc(17 / 1440 * 100vw);
-}
-
-.staticHeadereaderLoginButton {
-    // width: calc(32 / 1440 * 100vw);
-    // height: calc(32 / 1440 * 100vw);
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background: url(../pic/loginBlack.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    border: none;
-    cursor: pointer;
-}
-
-.staticHeaderSeparator {
-    margin: 0;
-    width: 1px;
-    height: calc(32 / 1440 * 100vw);
-    height: 32px;
-    background-color: #000000;
-}
-
-.staticHeaderBurgerMenuButton {
+.logoContainer {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: calc(8 / 1440 * 100vw);
-    width: calc(151 / 1440 * 100vw);
-    height: calc(51 / 1440 * 100vw);
-    // width: 151px;
-    // height: 51px;
-    min-width: 94.75px;
-    min-height: 32px;
-    margin: 0;
-    padding: 0;
-    // border-radius: calc((51 / 1440 * 100vw) / 2);
-    border-radius: 51px;
-    color: #fff;
-    flex-shrink: 0;
-    border: none;
-    background-color: #3a8374;
+    align-items: end;
+
+		&__logoImg {
+            width: calc(122.47 / 1440 * 100vw);
+            height: calc(68.43 / 1440 * 100vw);
+		}
+
+		&__logoTitleWrapper {
+            position: relative;
+            margin: 0 0 calc(-3 / 1440 * 100vw) 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            width: auto;
+		}
+
+		&__logoFirstWord {
+            margin: 0 0 0 calc(-12 / 1440 * 100vw);
+            font-family: "chiller";
+            font-size: calc(0px + 156 * (100vw / 1440));
+            line-height: 0.53; //Важная строка!!!
+            display: inline-block; /* Необходимо для применения transform */
+            transform: scaleX(1.1); /* Масштабирование по горизонтали */
+            user-select: none;
+		}
+
+		&__logoSecondWord {
+            margin: 0 0 calc(-1 / 1440 * 100vw) calc(-13 / 1440 * 100vw);
+            display: flex;
+            font-family: "cormorantSC";
+            font-size: calc(0px + 15.25 * (100vw / 1440));
+            text-transform: uppercase;
+            letter-spacing: calc(0px + 3.3 * (100vw / 1440));
+            user-select: none;
+		}
+
+		&__logoThirdWord {
+            margin: 0 0 0 calc(-13 / 1440 * 100vw);
+            font-family: "cormorantSC";
+            font-size: calc(0px + 22 * (100vw / 1440));
+            text-transform: uppercase;
+            letter-spacing: calc(0px + 4 * (100vw / 1440));
+            user-select: none;
+		}
 }
-
-.staticBurgerMenuButtonTitleImage {
-    // width: 32px;
-    // height: 32px;
-    width: calc(32 / 1440 * 100vw);
-    height: calc(32 / 1440 * 100vw);
+.white {
+    color: #ffffff;
 }
+// .titleContainer {
+// }
+// .titleWrapper {
 
-.staticHeaderBurgerMenuButtonTitle {
-    font-size: calc(9px + 9 * (100vw / 1440));
-    font-family: "firasans";
+// 		&__likeButton {
+// 		}
+
+// 		&__shareButton {
+// 		}
+// }
+// .headerLanguageSwitchContainer {
+
+// 		&__ukrainianButton {
+// 		}
+
+// 		&__ukrainianButtonTitle {
+// 		}
+
+// 		&__englishButton {
+// 		}
+
+// 		&__englishButtonTitle {
+// 		}
+// }
+// .headerLanguageSwitchButton {
+// }
+// .likeButton {
+// }
+// .likeButtonImg {
+// }
+// .shareButton {
+// }
+// .shareButtonImg {
+// }
+// .mainMenuContainer {
+// }
+// .mainMenu {
+
+// 		&_ul {
+// 		}
+
+// 		&_li {
+// 		}
+
+// 		&_link {
+// 		}
+// }
+// .socialContainer {
+// }
+// .socialUpperWrapper {
+
+// 		&__loginButton {
+// 		}
+
+// 		&__separator {
+// 		}
+
+// 		&__likeButton {
+// 		}
+
+// 		&__shareButton {
+// 		}
+// }
+// .loginButton {
+// }
+// .loginButtonImg {
+// }
+// .separatorImg {
+// }
+// .headerBurgerMenuButton {
+
+// 		&__img {
+// 		}
+
+// 		&__title {
+// 		}
+// }
+// .burgerButton {
+// }
+// .socialDownWrapper {
+
+// 		&__followUsTitle {
+// 		}
+
+// 		&__facebookButton {
+// 		}
+
+// 		&__instagramButton {
+// 		}
+
+// 		&__twitterButton {
+// 		}
+
+// 		&__mailButton {
+// 		}
+
+// 		&__separator {
+// 		}
+
+// 		&__loginButton {
+// 		}
+// }
+// .socialButton {
+// }
+// .facebookButtonImg {
+// }
+// .instagramButtonImg {
+// }
+// .twitterButtonImg {
+// }
+// .mailButtonImg {
+// }
+// .staticHeader {
+// }
+// .staticHeaderContainer {
+// }
+// .staticHeaderLogoContainer {
+// }
+.black {
+    color: #000000;
+// }
+// .staticHeaderTitleContainer {
+
+// 		&__likeButton {
+// 		}
+
+// 		&__shareButton {
+// 		}
+// }
+// .staticHeaderTitle {
+// }
+// .staticHeaderLoginContainer {
+
+// 		&__loginButton {
+// 		}
+
+// 		&__separator {
+// 		}
+// }
+// .staticHeaderBurgerMenuButton {
+// }
+// .bodyLorem {
+// }
 }
-
-
-
-
-

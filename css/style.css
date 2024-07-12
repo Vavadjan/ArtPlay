@@ -16,88 +16,78 @@
   src: url("../font/Chiller/chiller_regular.ttf") format("truetype");
 }
 body {
-  margin: 0;
   font-family: "firasans", "centurygothic", "cormorantSC", "chiller";
 }
 
-.mainHeader {
+header {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: calc(0px + 12.2916666667vw);
+  height: 12.2916666667vw;
   min-height: 70px;
-  background-color: black;
+  background-color: #000000;
+}
+
+.headerContainer {
+  margin: 0vw 4.8611111111vw 0vw 4.8611111111vw;
+  padding: 2.7083333333vw 0vw 1.5277777778vw 0vw;
+  height: 100%;
   color: white;
   display: flex;
   justify-content: space-between;
   transition: transform 0.3s ease;
   z-index: 1000;
-  gap: 2.7777777778vw;
 }
 
-.logoWrapper {
-  margin: 0 0 0 4.8611111111vw;
-  padding: 2.0138888889vw 0 0 0;
+.headerLogoContainer {
+  padding: 0 0 0.4861111111vw 0;
+  display: flex;
+  width: 100%;
+}
+
+.logoContainer {
+  position: relative;
   display: flex;
   flex-direction: row;
-  width: 17.0833333333vw;
+  align-items: end;
 }
-
-.logoImage {
-  margin: 3.3333333333vw 0 0 0;
+.logoContainer__logoImg {
   width: 8.5048611111vw;
   height: 4.7520833333vw;
 }
-
-.logoTitleWrapper {
+.logoContainer__logoTitleWrapper {
+  position: relative;
+  margin: 0 0 -0.2083333333vw 0;
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  width: auto;
 }
-
-.logoFirstWord {
-  position: relative;
+.logoContainer__logoFirstWord {
   margin: 0 0 0 -0.8333333333vw;
-  display: flex;
   font-family: "chiller";
   font-size: calc(0px + 10.8333333333vw);
-  line-height: 0.55;
+  line-height: 0.53;
   display: inline-block; /* Необходимо для применения transform */
   transform: scaleX(1.1); /* Масштабирование по горизонтали */
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-
-.logoFirstWord::before {
-  content: "";
-  position: absolute;
-  top: 2.8472222222vw;
-  left: 8.5416666667vw;
-  width: 0.5555555556vw;
-  height: 0.4166666667vw;
-  flex-shrink: 0;
-  background: url(../pic/logoPoint.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-}
-
-.logoSecondWord {
-  margin: 0vw 0 0 -0.9027777778vw;
+.logoContainer__logoSecondWord {
+  margin: 0 0 -0.0694444444vw -0.9027777778vw;
   display: flex;
   font-family: "cormorantSC";
-  font-size: calc(0px + 1.0659722222vw);
+  font-size: calc(0px + 1.0590277778vw);
   text-transform: uppercase;
-  letter-spacing: calc(0px + 0.2361111111vw);
+  letter-spacing: calc(0px + 0.2291666667vw);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-
-.logoThirdWord {
-  display: flex;
-  margin: -0.1388888889vw 0 0 -0.9027777778vw;
+.logoContainer__logoThirdWord {
+  margin: 0 0 0 -0.9027777778vw;
   font-family: "cormorantSC";
   font-size: calc(0px + 1.5277777778vw);
   text-transform: uppercase;
@@ -107,500 +97,10 @@ body {
           user-select: none;
 }
 
-.languageButton {
-  margin: 3.9583333333vw -6.25vw 0 0;
-  width: 2.7777777778vw;
-  height: 1.3888888889vw;
-  flex-shrink: 0;
-  position: relative;
-  perspective: 100px; /* Устанавливает перспективу для 3D вращения */
-  cursor: pointer;
+.white {
+  color: #ffffff;
 }
 
-.languageButton:hover {
-  box-shadow: 0 0 10px 5px #d83934; /* Падающая тень */
-  background-color: rgba(216, 57, 52, 0.85); /* 50% прозрачности фона */
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-
-.languageButton:not(:hover) {
-  transition: 1s;
-}
-
-.languageContainer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-style: preserve-3d;
-  animation: rotate 3s linear infinite;
-}
-
-.ukr {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  background: url("../pic/UkrLang.webp") no-repeat center center;
-  background-size: cover;
-}
-
-.eng {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  background: url("../pic/EngLang.webp") no-repeat center center;
-  background-size: cover;
-  transform: rotateX(180deg);
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotateX(0deg);
-  }
-  100% {
-    transform: rotateX(360deg);
-  }
-}
-.headerTitleWrapper {
-  width: auto;
-  margin: 0 0 0 -5.9027777778vw;
-  padding: 1.8055555556vw 0 0 6.25vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h1 {
-  display: flex;
-  margin: 0;
-  font-size: calc(12px + 0.8333333333vw);
-  justify-content: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  text-align: center;
-}
-
-.mobileHeaderLikeButton {
-  display: none;
-}
-
-.mobileHeaderShareButton {
-  display: none;
-}
-
-.headerMenu {
-  margin: 3.4722222222vw 0 0 0;
-  display: flex;
-}
-.headerMenu__ul {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  gap: 2.8263888889vw;
-}
-.headerMenu__li {
-  position: relative;
-  font-size: calc(0px + 1.25vw);
-}
-.headerMenu__link {
-  position: relative;
-  display: inline-block;
-}
-.headerMenu__link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(to right, rgba(216, 57, 52, 0), rgb(216, 57, 52), rgba(216, 57, 52, 0));
-  transition: width 0.4s ease, left 0.4s ease;
-}
-.headerMenu__link:hover::after {
-  width: 100%;
-  left: 0;
-}
-.headerMenu__link:hover {
-  color: #d83934;
-  transition: 0.4s;
-  cursor: pointer; /* Изменение вида курсора на палец при наведении */
-}
-.headerMenu__link:not(:hover) {
-  color: #fff;
-  transition: 1s;
-}
-
-.socialWrapper {
-  margin: 0 4.8611111111vw 0 0;
-  padding: 0;
-  display: flex;
-  width: 24.7222222222vw;
-  flex-direction: column;
-  align-items: end;
-  justify-content: space-between;
-}
-
-.socialUpperSubWrapper {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-.socialUpperSubWrapper__headerLoginButton {
-  display: none;
-}
-.socialUpperSubWrapper__headerSeparator {
-  display: none;
-}
-.socialUpperSubWrapper__likeButton {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/likeHeart.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-.socialUpperSubWrapper__likeButtonDiscription {
-  margin: 0vw 0 0 0.3472222222vw;
-  font-size: calc(0px + 1.25vw);
-  font-family: "firasans";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.socialUpperSubWrapper__shareButtonDiscription {
-  margin: 0vw 0.3472222222vw 0 1.7361111111vw;
-  font-size: calc(0px + 1.25vw);
-  font-family: "firasans";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.socialUpperSubWrapper__shareButton {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  margin: 0vw 1.9444444444vw 0 0;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/shareArrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.headerBurgerMenuButton {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5555555556vw;
-  width: 10.4861111111vw;
-  height: 3.5416666667vw;
-  min-width: 94.75px;
-  min-height: 32px;
-  margin: 0;
-  padding: 0;
-  border-radius: 51px;
-  color: #fff;
-  flex-shrink: 0;
-  border: none;
-  background-color: #3a8374;
-}
-.headerBurgerMenuButton__headerBurgerMenuButtonTitleImage {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
-}
-.headerBurgerMenuButton__headerBurgerMenuButtonTitle {
-  font-size: calc(18px + 0vw);
-  font-family: "firasans";
-}
-
-.socialDownSubwrapper {
-  margin: 0;
-  display: flex;
-  width: 100%;
-  padding: 0 0 1.5277777778vw 0;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.socialDownSubwrapper__headerFollowUsTitle {
-  width: 6.7361111111vw;
-  font-size: calc(0px + 1.0902777778vw);
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.socialDownSubwrapper__headerFacebookButton {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/fasebook.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-}
-.socialDownSubwrapper__headerInstagramButton {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/instagram.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-}
-.socialDownSubwrapper__headerTwitterButton {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/twitter.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-}
-.socialDownSubwrapper__headerMailButton {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/mail.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-}
-.socialDownSubwrapper__headerSeparator {
-  margin: 0 1.3888888889vw;
-  width: 1px;
-  height: 2.2222222222vw;
-  background-color: #fff;
-}
-.socialDownSubwrapper__headerLoginButton {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/login.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-}
-
-.bodyLorem {
-  margin: 12.2916666667vw 0 0 0;
-  color: black;
-}
-
-.staticHeader {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 6.9444444444vw;
-  min-height: 50px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
-  z-index: 999;
-}
-
-.staticHeaderLogoWrapper {
-  margin: 0 0 0 4.8611111111vw;
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  align-items: center;
-}
-.staticHeaderLogoWrapper_staticHeaderlogoImage {
-  display: none;
-}
-.staticHeaderLogoWrapper_staticHeaderlogoTitleWrapper {
-  display: flex;
-  flex-direction: column;
-}
-.staticHeaderLogoWrapper_staticHeaderlogoFirstWord {
-  position: relative;
-  margin: -1.3888888889vw 0 0 0vw;
-  display: flex;
-  font-family: "chiller";
-  font-size: 9.375vw;
-  line-height: 0.55;
-  display: inline-block; /* Необходимо для применения transform */
-  transform: scaleX(1.1); /* Масштабирование по горизонтали */
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.staticHeaderLogoWrapper_staticHeaderlogoFirstWord::before {
-  content: "";
-  position: absolute;
-  top: 2.4305555556vw;
-  left: 7.2222222222vw;
-  width: 0.5555555556vw;
-  height: 0.4166666667vw;
-  flex-shrink: 0;
-  background: url(../pic/logoPoint.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-}
-.staticHeaderLogoWrapper_staticHeaderlogoSecondWord {
-  display: none;
-}
-.staticHeaderLogoWrapper_staticHeaderlogoThirdWord {
-  display: none;
-}
-
-.staticHeader.visible {
-  transform: translateY(0);
-}
-
-.staticHeaderTitleWrapper {
-  margin: 0 0 0 5.2083333333vw;
-  display: flex;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 2.1527777778vw;
-}
-
-.staticHeaderLikeButton {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  margin: 0;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/likeHeart.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.staticHeaderTitle {
-  display: flex;
-  margin: 0 0 0 0vw;
-  font-size: calc(12px + 0.8333333333vw);
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  text-align: center;
-}
-
-.staticHeaderShareButton {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  margin: 0;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/shareArrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.staticHeaderLoginWrapper {
-  margin: 0 4.8611111111vw 0 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.1805555556vw;
-}
-
-.staticHeadereaderLoginButton {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: url(../pic/loginBlack.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  border: none;
-  cursor: pointer;
-}
-
-.staticHeaderSeparator {
-  margin: 0;
-  width: 1px;
-  height: 2.2222222222vw;
-  height: 32px;
-  background-color: #000000;
-}
-
-.staticHeaderBurgerMenuButton {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5555555556vw;
-  width: 10.4861111111vw;
-  height: 3.5416666667vw;
-  min-width: 94.75px;
-  min-height: 32px;
-  margin: 0;
-  padding: 0;
-  border-radius: 51px;
-  color: #fff;
-  flex-shrink: 0;
-  border: none;
-  background-color: #3a8374;
-}
-
-.staticBurgerMenuButtonTitleImage {
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
-}
-
-.staticHeaderBurgerMenuButtonTitle {
-  font-size: calc(9px + 0.625vw);
-  font-family: "firasans";
+.black {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
