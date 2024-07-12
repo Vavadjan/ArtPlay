@@ -25,12 +25,13 @@ header {
   width: 100vw;
   height: calc(0px + 12.2916666667vw);
   min-height: 70px;
+  max-height: 177px;
   background-color: #000000;
 }
 
 .headerContainer {
   margin: 0vw 4.8611111111vw 0vw 4.8611111111vw;
-  padding: calc(0px + 2.7083333333vw) 0vw 2.0138888889vw 0vw;
+  padding: 2.7083333333vw 0vw 2.0138888889vw 0vw;
   height: 100%;
   color: white;
   display: flex;
@@ -40,7 +41,7 @@ header {
 }
 
 .headerLogoContainer {
-  margin: 0 22.5px 0 0;
+  margin: 0 1.5625vw 0 0;
   display: flex;
   width: auto;
 }
@@ -54,6 +55,8 @@ header {
 .logoContainer__logoImg {
   width: 8.5048611111vw;
   height: 4.7520833333vw;
+  max-width: 122.47px;
+  max-height: 68.43px;
 }
 .logoContainer__logoTitleWrapper {
   position: relative;
@@ -82,6 +85,8 @@ header {
   left: 8.5416666667vw;
   width: 0.625vw;
   height: 0.4861111111vw;
+  max-width: 9px;
+  max-height: 7px;
   background: url(../pic/logoPoint.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -128,9 +133,16 @@ header {
 .headerLanguageSwitchContainer {
   margin: 0 10px 10px 0;
 }
+.headerLanguageSwitchContainer__ukrainianButtonTitle {
+  white-space: nowrap;
+}
 .headerLanguageSwitchContainer__englishButton {
   display: none;
 }
+.headerLanguageSwitchContainer__englishButtonTitle {
+  white-space: nowrap;
+}
+
 .headerLanguageSwitchButton {
   border: none;
   cursor: pointer;
@@ -173,6 +185,8 @@ h1 {
 .mainMenu__ul {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1072px;
 }
 .mainMenu__li {
   font-size: calc(0px + 1.25vw);
@@ -277,6 +291,8 @@ h1 {
   height: 3.5416666667vw;
   min-width: 94.75px;
   min-height: 32px;
+  max-width: 151px;
+  max-height: 51px;
   border-radius: 51px;
   color: #fff;
   border: none;
@@ -288,6 +304,8 @@ h1 {
   height: 2.2222222222vw;
   min-width: 20px;
   min-height: 20px;
+  max-width: 32px;
+  max-height: 32px;
 }
 .burgerButton__title {
   margin: 0 0 0 0.4166666667vw;

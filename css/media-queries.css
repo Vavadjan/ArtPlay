@@ -1,1 +1,35 @@
-/*# sourceMappingURL=media-queries.css.map */
+@media (min-width: 1441px) {
+  .headerContainer {
+    margin: 0 70px;
+    padding: 39px 0 29px 0;
+  }
+  .logoContainer__logoTitleWrapper {
+    margin: 0 0 -3px 0;
+  }
+  .logoContainer__logoFirstWord {
+    margin: 0 0 0 -12px;
+    font-size: 156px;
+  }
+  .logoContainer__logoFirstWord::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 123px;
+  }
+  .logoContainer__logoSecondWord {
+    margin: 0 0 -1px -13px;
+    font-size: 15.25px;
+    letter-spacing: 3.3px;
+  }
+  .logoContainer__logoThirdWord {
+    margin: 0 0 0 -13px;
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+  .titleContainer {
+    margin: 17px 1.5625vw 0 1.5625vw;
+  }
+  .mainMenu__li {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=media-queries.css.map */
