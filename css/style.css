@@ -75,6 +75,18 @@ header {
      -moz-user-select: none;
           user-select: none;
 }
+.logoContainer__logoFirstWord::before {
+  content: "";
+  position: absolute;
+  top: 2.6388888889vw;
+  left: 8.5416666667vw;
+  width: 0.625vw;
+  height: 0.4861111111vw;
+  background: url(../pic/logoPoint.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+}
 .logoContainer__logoSecondWord {
   margin: 0 0 -0.0694444444vw -0.9027777778vw;
   display: flex;

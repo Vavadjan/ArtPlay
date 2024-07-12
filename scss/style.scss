@@ -737,6 +737,19 @@ header {
             transform: scaleX(1.1); /* Масштабирование по горизонтали */
             user-select: none;
 		}
+        
+        &__logoFirstWord::before {
+            content: "";
+            position: absolute;
+            top: calc(38 / 1440 * 100vw);
+            left: calc(123 / 1440 * 100vw);
+            width: calc(9 / 1440 * 100vw);
+            height: calc(7 / 1440 * 100vw);
+            background: url(../pic/logoPoint.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+}
 
 		&__logoSecondWord {
             margin: 0 0 calc(-1 / 1440 * 100vw) calc(-13 / 1440 * 100vw);
@@ -760,147 +773,147 @@ header {
 .white {
     color: #ffffff;
 }
-// .titleContainer {
-// }
-// .titleWrapper {
+.titleContainer {
+    
+}
+.titleWrapper {
 
-// 		&__likeButton {
-// 		}
+		&__likeButton {
+		}
 
-// 		&__shareButton {
-// 		}
-// }
-// .headerLanguageSwitchContainer {
+		&__shareButton {
+		}
+}
+.headerLanguageSwitchContainer {
 
-// 		&__ukrainianButton {
-// 		}
+		&__ukrainianButton {
+		}
 
-// 		&__ukrainianButtonTitle {
-// 		}
+		&__ukrainianButtonTitle {
+		}
 
-// 		&__englishButton {
-// 		}
+		&__englishButton {
+		}
 
-// 		&__englishButtonTitle {
-// 		}
-// }
-// .headerLanguageSwitchButton {
-// }
-// .likeButton {
-// }
-// .likeButtonImg {
-// }
-// .shareButton {
-// }
-// .shareButtonImg {
-// }
-// .mainMenuContainer {
-// }
-// .mainMenu {
+		&__englishButtonTitle {
+		}
+}
+.headerLanguageSwitchButton {
+}
+.likeButton {
+}
+.likeButtonImg {
+}
+.shareButton {
+}
+.shareButtonImg {
+}
+.mainMenuContainer {
+}
+.mainMenu {
 
-// 		&_ul {
-// 		}
+		&_ul {
+		}
 
-// 		&_li {
-// 		}
+		&_li {
+		}
 
-// 		&_link {
-// 		}
-// }
-// .socialContainer {
-// }
-// .socialUpperWrapper {
+		&_link {
+		}
+}
+.socialContainer {
+}
+.socialUpperWrapper {
 
-// 		&__loginButton {
-// 		}
+		&__loginButton {
+		}
 
-// 		&__separator {
-// 		}
+		&__separator {
+		}
 
-// 		&__likeButton {
-// 		}
+		&__likeButton {
+		}
 
-// 		&__shareButton {
-// 		}
-// }
-// .loginButton {
-// }
-// .loginButtonImg {
-// }
-// .separatorImg {
-// }
-// .headerBurgerMenuButton {
+		&__shareButton {
+		}
+}
+.loginButton {
+}
+.loginButtonImg {
+}
+.separatorImg {
+}
+.headerBurgerMenuButton {
 
-// 		&__img {
-// 		}
+		&__img {
+		}
 
-// 		&__title {
-// 		}
-// }
-// .burgerButton {
-// }
-// .socialDownWrapper {
+		&__title {
+		}
+}
+.burgerButton {
+}
+.socialDownWrapper {
 
-// 		&__followUsTitle {
-// 		}
+		&__followUsTitle {
+		}
 
-// 		&__facebookButton {
-// 		}
+		&__facebookButton {
+		}
 
-// 		&__instagramButton {
-// 		}
+		&__instagramButton {
+		}
 
-// 		&__twitterButton {
-// 		}
+		&__twitterButton {
+		}
 
-// 		&__mailButton {
-// 		}
+		&__mailButton {
+		}
 
-// 		&__separator {
-// 		}
+		&__separator {
+		}
 
-// 		&__loginButton {
-// 		}
-// }
-// .socialButton {
-// }
-// .facebookButtonImg {
-// }
-// .instagramButtonImg {
-// }
-// .twitterButtonImg {
-// }
-// .mailButtonImg {
-// }
-// .staticHeader {
-// }
-// .staticHeaderContainer {
-// }
-// .staticHeaderLogoContainer {
-// }
+		&__loginButton {
+		}
+}
+.socialButton {
+}
+.facebookButtonImg {
+}
+.instagramButtonImg {
+}
+.twitterButtonImg {
+}
+.mailButtonImg {
+}
+.staticHeader {
+}
+.staticHeaderContainer {
+}
+.staticHeaderLogoContainer {
+}
 .black {
     color: #000000;
-// }
-// .staticHeaderTitleContainer {
+}
+.staticHeaderTitleContainer {
 
-// 		&__likeButton {
-// 		}
+		&__likeButton {
+		}
 
-// 		&__shareButton {
-// 		}
-// }
-// .staticHeaderTitle {
-// }
-// .staticHeaderLoginContainer {
+		&__shareButton {
+		}
+}
+.staticHeaderTitle {
+}
+.staticHeaderLoginContainer {
 
-// 		&__loginButton {
-// 		}
+		&__loginButton {
+		}
 
-// 		&__separator {
-// 		}
-// }
-// .staticHeaderBurgerMenuButton {
-// }
-// .bodyLorem {
-// }
+		&__separator {
+		}
+}
+.staticHeaderBurgerMenuButton {
+}
+.bodyLorem {
 }
