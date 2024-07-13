@@ -37,4 +37,7 @@
   .burgerButton__title {
     margin: 0 0 0 6px;
   }
+  .staticHeaderLogoTitle {
+    font-size: 135px;
+  }
 }/*# sourceMappingURL=media-queries.css.map */
