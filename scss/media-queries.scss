@@ -4,29 +4,29 @@
         margin: 0 70px;
         padding: 39px 0 29px 0;
     }
-    .logoContainer {    
-        &__logoTitleWrapper {
+    .logo {    
+        &__titleWrapper {
             margin: 0 0 -3px 0;
         }
     
-        &__logoFirstWord {
+        &__firstWord {
             margin: 0 0 0 -12px;
             font-size: 156px;
         }
         
-        &__logoFirstWord::before {
+        &__firstWord::before {
             content: "";
             top: 38px;            
             left: 123px;
         }
     
-        &__logoSecondWord {
+        &__secondWord {
             margin: 0 0 -1px -13px;
             font-size: 15.25px;
             letter-spacing: 3.3px;
             }
     
-        &__logoThirdWord {
+        &__thirdWord {
             margin: 0 0 0 -13px;
             font-size: 22px;
             letter-spacing: 4px;

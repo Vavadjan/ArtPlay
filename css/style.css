@@ -46,19 +46,19 @@ header {
   width: auto;
 }
 
-.logoContainer {
+.logo {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: end;
 }
-.logoContainer__logoImg {
+.logo__img {
   width: 8.5048611111vw;
   height: 4.7520833333vw;
   max-width: 122.47px;
   max-height: 68.43px;
 }
-.logoContainer__logoTitleWrapper {
+.logo__titleWrapper {
   position: relative;
   margin: 0 0 -0.2083333333vw 0;
   display: flex;
@@ -67,7 +67,7 @@ header {
   align-items: start;
   width: auto;
 }
-.logoContainer__logoFirstWord {
+.logo__firstWord {
   margin: 0 0 0 -0.8333333333vw;
   font-family: "chiller";
   font-size: calc(0px + 10.8333333333vw);
@@ -78,7 +78,7 @@ header {
      -moz-user-select: none;
           user-select: none;
 }
-.logoContainer__logoFirstWord::before {
+.logo__firstWord::before {
   content: "";
   position: absolute;
   top: 2.6388888889vw;
@@ -92,7 +92,7 @@ header {
   background-size: contain;
   background-position: 100% 100%;
 }
-.logoContainer__logoSecondWord {
+.logo__secondWord {
   margin: 0 0 -0.0694444444vw -0.9027777778vw;
   display: flex;
   font-family: "cormorantSC";
@@ -103,7 +103,7 @@ header {
      -moz-user-select: none;
           user-select: none;
 }
-.logoContainer__logoThirdWord {
+.logo__thirdWord {
   margin: 0 0 0 -0.9027777778vw;
   font-family: "cormorantSC";
   font-size: calc(0px + 1.5277777778vw);
