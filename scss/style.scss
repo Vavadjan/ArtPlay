@@ -696,7 +696,7 @@ header {
     background-color: #000000;
 }
 .mainHeaderWrapper {
-    margin: calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw);
+    margin: calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw);
     padding: calc(39 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(29 / 1440 * 100vw) calc(0 / 1440 * 100vw);
     height: 100%;
     color: white;
@@ -1061,10 +1061,19 @@ h1 {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 999;
-}.staticHeader.visible {
+}
+.staticHeader.visible {
     transform: translateY(0);
 }
-.staticHeaderLogoContainer {
+.staticHeaderWrapper {
+    margin: calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw) ;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.staticHeaderLogo {
+    margin: 0 calc(22.5 / 1440 * 100vw) 0 0;
 }
 .black {
     color: #000000;
