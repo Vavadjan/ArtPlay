@@ -685,6 +685,8 @@ body {
     font-family: "firasans", "centurygothic", "cormorantSC", "chiller";
 }
 header {
+}
+.mainHeader {
     position: fixed;
     top: 0;
     width: 100vw;
@@ -693,7 +695,7 @@ header {
     max-height: 177px;
     background-color: #000000;
 }
-.headerContainer {
+.mainHeaderWrapper {
     margin: calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(70 / 1440 * 100vw);
     padding: calc(39 / 1440 * 100vw) calc(0 / 1440 * 100vw) calc(29 / 1440 * 100vw) calc(0 / 1440 * 100vw);
     height: 100%;
@@ -1013,19 +1015,15 @@ h1 {
 		}
 
 		&__facebookButton {
-            // margin: 0 5px;
 		}
 
 		&__instagramButton {
-            // margin: 0 5px;
 		}
 
 		&__twitterButton {
-            // margin: 0 5px;
 		}
 
 		&__mailButton {
-            // margin: 0 5px;
 		}
 
 		&__separator {
@@ -1033,7 +1031,6 @@ h1 {
 		}
 
 		&__loginButton {
-            // margin: 0 5px;
 		}
 }
 .socialDownWrapperButton {    
@@ -1050,8 +1047,22 @@ h1 {
 .mailButtonImg {
 }
 .staticHeader {
-}
-.staticHeaderContainer {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: calc(100 / 1440 * 100vw);
+    min-height: 50px;
+    max-height: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}.staticHeader.visible {
+    transform: translateY(0);
 }
 .staticHeaderLogoContainer {
 }

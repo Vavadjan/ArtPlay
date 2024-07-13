@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @media (min-width: 1441px) {
-    .headerContainer {
+    .mainHeaderWrapper {
         margin: 0 70px;
         padding: 39px 0 29px 0;
     }
@@ -37,7 +37,8 @@
     }
     .mainMenu__li {
         font-size: 18px;
-    }.burgerButton {
+    }
+    .burgerButton {
     
             &__img {
                 margin: 0 6px 0 0;

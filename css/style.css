@@ -19,7 +19,7 @@ body {
   font-family: "firasans", "centurygothic", "cormorantSC", "chiller";
 }
 
-header {
+.mainHeader {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -29,7 +29,7 @@ header {
   background-color: #000000;
 }
 
-.headerContainer {
+.mainHeaderWrapper {
   margin: 0vw 4.8611111111vw 0vw 4.8611111111vw;
   padding: 2.7083333333vw 0vw 2.0138888889vw 0vw;
   height: 100%;
@@ -333,6 +333,27 @@ h1 {
 }
 .socialDownWrapperButton {
   margin: 0 5px;
+}
+
+.staticHeader {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 6.9444444444vw;
+  min-height: 50px;
+  max-height: 100px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.staticHeader.visible {
+  transform: translateY(0);
 }
 
 .black {
