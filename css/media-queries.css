@@ -12,7 +12,6 @@
   }
   .logoContainer__logoFirstWord::before {
     content: "";
-    position: absolute;
     top: 38px;
     left: 123px;
   }
@@ -31,5 +30,11 @@
   }
   .mainMenu__li {
     font-size: 18px;
+  }
+  .burgerButton__img {
+    margin: 0 6px 0 0;
+  }
+  .burgerButton__title {
+    margin: 0 0 0 6px;
   }
 }/*# sourceMappingURL=media-queries.css.map */
