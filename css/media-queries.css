@@ -1,6 +1,5 @@
 @media (min-width: 1441px) {
   .mainHeaderWrapper {
-    margin: 0 70px;
     padding: 39px 0 29px 0;
   }
   .logo__titleWrapper {
@@ -28,6 +27,9 @@
   .titleContainer {
     margin: 17px 1.5625vw 0 1.5625vw;
   }
+  .headerLanguageSwitchButtonTitle {
+    font-size: 18px;
+  }
   .mainMenu__li {
     font-size: 18px;
   }
@@ -39,5 +41,112 @@
   }
   .staticHeaderLogoTitle {
     font-size: 135px;
+  }
+}
+@media (max-width: 1279px) {
+  .socialLikeAndShareInner {
+    width: 35%;
+  }
+  .socialLikeAndShareInner__likeButton::after {
+    display: none;
+  }
+  .socialLikeAndShareInner__shareButton::before {
+    display: none;
+  }
+  .socialDownWrapper__followUsTitle {
+    display: none;
+  }
+  .socialDownWrapper__facebookButton {
+    margin: 0 5px 0 0;
+  }
+}
+@media (max-width: 1023px) {
+  .mainHeaderWrapper {
+    padding: 0;
+  }
+  .mainHeaderLogo {
+    margin: auto 1.5625vw auto 0;
+    display: flex;
+    width: auto;
+  }
+  .headerLanguageSwitchContainer {
+    display: none;
+  }
+  .titleContainer {
+    margin: 0 1.5625vw;
+    justify-content: center;
+  }
+  .mainMenuContainer {
+    display: none;
+  }
+  .socialContainer {
+    margin: 0 0 0 1.5625vw;
+    justify-content: center;
+  }
+  .socialLikeAndShareInner__likeButton {
+    margin: 0 20px 0 0;
+  }
+  .socialDownWrapper {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .staticHeaderLogoTitle {
+    font-size: 67.5px;
+  }
+}
+@media (max-width: 759px) {
+  .titleWrapper {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .staticHeaderTitleContainer {
+    width: 40%;
+  }
+  .staticHeaderTitleContainer__likeButton {
+    margin: 0;
+    display: flex;
+  }
+  .staticHeaderTitleContainer__shareButton {
+    margin: 0;
+    display: flex;
+  }
+}
+@media (max-width: 579px) {
+  .titleContainer {
+    display: none;
+  }
+  .socialContainer {
+    width: 100%;
+  }
+  .staticHeaderTitleContainer {
+    justify-content: space-around;
+  }
+  .staticHeaderTitle {
+    display: none;
+  }
+}
+@media (max-width: 569px) {
+  .logo__titleWrapper {
+    margin: 0 0 -1.185px 0;
+  }
+  .logo__firstWord {
+    margin: 0 0 0 -4.742px;
+    font-size: 61.641px;
+  }
+  .logo__firstWord::before {
+    content: "";
+    top: 15px;
+    left: 48px;
+  }
+  .logo__secondWord {
+    margin: 0 0 -0.069px -5.137px;
+    font-size: 6.026px;
+    letter-spacing: 1.304px;
+  }
+  .logo__thirdWord {
+    margin: 0 0 0 -5.137px;
+    font-size: 8.693px;
+    letter-spacing: 1.581px;
   }
 }/*# sourceMappingURL=media-queries.css.map */

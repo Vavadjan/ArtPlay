@@ -40,7 +40,7 @@ body {
   z-index: 1000;
 }
 
-.headerLogoContainer {
+.mainHeaderLogo {
   margin: 0 1.5625vw 0 0;
   display: flex;
   width: auto;
@@ -55,6 +55,8 @@ body {
 .logo__img {
   width: 8.5048611111vw;
   height: 4.7520833333vw;
+  min-width: 48.39px;
+  min-height: 27.03px;
   max-width: 122.47px;
   max-height: 68.43px;
 }
@@ -85,6 +87,8 @@ body {
   left: 8.5416666667vw;
   width: 0.625vw;
   height: 0.4861111111vw;
+  min-width: 3.9px;
+  min-height: 2.77px;
   max-width: 9px;
   max-height: 7px;
   background: url(../pic/logoPoint.svg);
@@ -144,15 +148,15 @@ body {
   white-space: nowrap;
 }
 
+.headerLanguageSwitchButtonTitle {
+  font-size: calc(0px + 1.25vw);
+}
+
 .headerLanguageSwitchButton {
   border: none;
   cursor: pointer;
   background: #000000;
   color: #fff;
-}
-
-.likeButton {
-  display: none;
 }
 
 .circleButton {
@@ -174,10 +178,6 @@ h1 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-
-.shareButton {
-  display: none;
 }
 
 .mainMenu {
@@ -225,7 +225,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: auto;
 }
 
 .socialUpperWrapper {
@@ -233,15 +232,17 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-.socialUpperWrapper__separator {
-  display: none;
+
+.socialLikeAndShareInner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.socialUpperWrapper__likeButton {
+.socialLikeAndShareInner__likeButton {
   position: relative;
   display: flex;
-  margin: 0 auto 0 0;
 }
-.socialUpperWrapper__likeButton::after {
+.socialLikeAndShareInner__likeButton::after {
   content: "Like";
   position: absolute;
   top: 6px;
@@ -252,12 +253,11 @@ h1 {
           user-select: none;
   color: #fff;
 }
-.socialUpperWrapper__shareButton {
+.socialLikeAndShareInner__shareButton {
   position: relative;
   display: flex;
-  margin: 0 0 0 auto;
 }
-.socialUpperWrapper__shareButton::before {
+.socialLikeAndShareInner__shareButton::before {
   content: "Share";
   position: absolute;
   top: 6px;
@@ -267,16 +267,6 @@ h1 {
      -moz-user-select: none;
           user-select: none;
   color: #fff;
-}
-
-.loginButton {
-  display: none;
-}
-
-.separatorImg {
-  display: flex;
-  width: 1px;
-  height: 32px;
 }
 
 .headerBurgerMenuButton {
@@ -332,6 +322,11 @@ h1 {
 }
 .socialDownWrapper__separator {
   margin: 0 25px 0 24px;
+}
+.socialDownWrapper__separatorImg {
+  display: flex;
+  width: 1px;
+  height: 32px;
 }
 
 .socialDownWrapperButton {
@@ -389,7 +384,7 @@ h1 {
   align-items: center;
 }
 .staticHeaderTitleContainer__likeButton {
-  margin: 0 31px 0 0px;
+  margin: 0 31px 0 0;
   display: flex;
 }
 .staticHeaderTitleContainer__shareButton {
