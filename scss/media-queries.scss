@@ -34,8 +34,11 @@
     .titleContainer {
         margin: 17px calc(22.5 / 1440 * 100vw) 0 calc(22.5 / 1440 * 100vw);
     }
-    .headerLanguageSwitchButtonTitle {
-        font-size: 18px;
+
+    .headerLanguageSwitchButton {
+        &__title {
+            font-size: 18px;
+        }
     }
     .mainMenu__li {
         font-size: 18px;
@@ -56,7 +59,6 @@
 
 @media (max-width: 1279px) {
     .socialLikeAndShareInner {
-
         &__likeButton::after {
             display: none;
         }
@@ -142,7 +144,7 @@
     }
     .socialLikeAndShareInner {
         justify-content: space-around;
-    
+
         &__likeButton {
             margin: 0;
         }
@@ -159,7 +161,7 @@
     }
     .staticHeaderLoginContainer {
         display: flex;
-    
+
         &__separator {
             display: none;
         }

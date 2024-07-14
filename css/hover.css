@@ -1,0 +1,38 @@
+.socialLikeAndShareInner__likeButton:hover, .socialLikeAndShareInner__shareButton:hover {
+  box-shadow: 0 0 7px 3px rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease;
+}
+.socialLikeAndShareInner__likeButton:not(:hover), .socialLikeAndShareInner__shareButton:not(:hover) {
+  transition: 1s;
+}
+
+.socialDownWrapper__facebookButton:hover, .socialDownWrapper__instagramButton:hover, .socialDownWrapper__twitterButton:hover, .socialDownWrapper__mailButton:hover {
+  box-shadow: 0 0 10px 5px #3a8374;
+  transition: box-shadow 0.3s ease;
+}
+.socialDownWrapper__facebookButton:not(:hover), .socialDownWrapper__instagramButton:not(:hover), .socialDownWrapper__twitterButton:not(:hover), .socialDownWrapper__mailButton:not(:hover) {
+  transition: 1s;
+}
+.socialDownWrapper__loginButton:hover {
+  box-shadow: 0 0 10px 5px #d83934;
+  transition: box-shadow 0.3s ease;
+}
+.socialDownWrapper__loginButton:not(:hover) {
+  transition: 1s;
+}
+
+.staticHeaderTitleContainer__likeButton:hover, .staticHeaderTitleContainer__shareButton:hover {
+  box-shadow: 0 0 10px 5px #3a8374;
+  transition: box-shadow 0.3s ease;
+}
+.staticHeaderTitleContainer__likeButton:not(:hover), .staticHeaderTitleContainer__shareButton:not(:hover) {
+  transition: 1s;
+}
+
+.staticHeaderLoginContainer__loginButton:hover {
+  box-shadow: 0 0 10px 5px #d83934;
+  transition: box-shadow 0.3s ease;
+}
+.staticHeaderLoginContainer__loginButton:not(:hover) {
+  transition: 1s;
+}/*# sourceMappingURL=hover.css.map */

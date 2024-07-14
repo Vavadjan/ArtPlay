@@ -27,7 +27,7 @@
   .titleContainer {
     margin: 17px 1.5625vw 0 1.5625vw;
   }
-  .headerLanguageSwitchButtonTitle {
+  .headerLanguageSwitchButton__title {
     font-size: 18px;
   }
   .mainMenu__li {

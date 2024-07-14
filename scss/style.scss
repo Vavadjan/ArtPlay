@@ -144,14 +144,16 @@ body {
         white-space: nowrap;
     }
 }
-.headerLanguageSwitchButtonTitle {
-    font-size: calc(0px + 18 * (100vw / 1440));
-}
+
 .headerLanguageSwitchButton {
     border: none;
     cursor: pointer;
     background: #000000;
-    color: #fff;
+
+    &__title {
+        font-size: calc(0px + 18 * (100vw / 1440));
+        color: #fff;
+    }
 }
 .circleButton {
     width: 32px;
@@ -187,6 +189,7 @@ h1 {
     &__link {
         position: relative;
         display: inline-block;
+        transition: box-shadow 0.3s ease;
     }
 
     &__link::after {
@@ -283,6 +286,7 @@ h1 {
     color: #fff;
     border: none;
     background-color: #3a8374;
+    cursor: pointer;
 
     &__img {
         margin: 0 calc(6 / 1440 * 100vw) 0 0;
