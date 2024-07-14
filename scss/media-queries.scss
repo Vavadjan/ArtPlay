@@ -140,11 +140,32 @@
     .socialContainer {
         width: 100%;
     }
+    .socialLikeAndShareInner {
+        justify-content: space-around;
+    
+        &__likeButton {
+            margin: 0;
+        }
+    }
+    .burgerButtonWrapper {
+        margin: 0 0 0 calc(22.5 / 1440 * 100vw);
+    }
     .staticHeaderTitleContainer {
         justify-content: space-around;
+        width: 100%;
     }
     .staticHeaderTitle {
         display: none;
+    }
+    .staticHeaderLoginContainer {
+        display: flex;
+    
+        &__separator {
+            display: none;
+        }
+        &__loginButton {
+            display: none;
+        }
     }
 }
 

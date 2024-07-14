@@ -116,10 +116,29 @@
   .socialContainer {
     width: 100%;
   }
-  .staticHeaderTitleContainer {
+  .socialLikeAndShareInner {
     justify-content: space-around;
   }
+  .socialLikeAndShareInner__likeButton {
+    margin: 0;
+  }
+  .burgerButtonWrapper {
+    margin: 0 0 0 1.5625vw;
+  }
+  .staticHeaderTitleContainer {
+    justify-content: space-around;
+    width: 100%;
+  }
   .staticHeaderTitle {
+    display: none;
+  }
+  .staticHeaderLoginContainer {
+    display: flex;
+  }
+  .staticHeaderLoginContainer__separator {
+    display: none;
+  }
+  .staticHeaderLoginContainer__loginButton {
     display: none;
   }
 }
